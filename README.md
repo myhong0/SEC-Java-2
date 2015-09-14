@@ -1,2 +1,2 @@
-Mobile Starter Kit - Bluemix Java Application - Basic - Template Code
+Bluemix Java Application - Basic - Working Code
 ===
