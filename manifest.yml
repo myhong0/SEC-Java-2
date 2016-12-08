@@ -1,0 +1,14 @@
+---
+declared-services:
+  dashDB-microsite:
+    label: dashDB
+    plan: Entry
+applications:
+- path: jpbackendmsktemplate.war
+  memory: 386M
+  instances: 1
+  disk_quota: 1024M
+  services:
+  - dashDB-microsite
+services:
+- dashDB-microsite
