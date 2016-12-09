@@ -1,0 +1,187 @@
+/* import utilityIcons */
+@import url("/common/next/css/utilityIcons.css");
+
+/* tech-spec-module */
+.ss_samsung .tech-spec-module {clear:both}
+
+/* module-heading */
+.ss_samsung .tech-spec-module .module-heading{font-family:"SamsungIFBd",Arial,"sans-serif";letter-spacing:-.9px;padding:20px;box-sizing:border-box;float:none!important;line-height:1}
+.ss_samsung .tech-spec-module .module-heading span{line-height:1;text-transform:uppercase}
+@media (min-width:50em) {.ss_samsung .tech-spec-module .module-heading{padding:30px}}
+
+/* glance-section */
+.ss_samsung .tech-spec-module .glance-section{background:#1428a0;color:#fff;padding:20px}
+.ss_samsung .tech-spec-module .glance-section ul{display:table;width:100%;font-size:0;margin-top:-20px}
+.ss_samsung .tech-spec-module .glance-section ul li{display:inline-table;vertical-align:top;width:50%;word-break:break-all;padding-top:20px;font-size:18px}
+.ss_samsung .tech-spec-module .glance-section ul li .glance-con .icon{position:absolute;font-size:26px;width:26px;height:26px;background-size:contain;-webkit-background-size:contain}
+html.ltr .ss_samsung .tech-spec-module .glance-section ul li .glance-con .title{padding:3px 0 0 30px}
+.ss_samsung .tech-spec-module .glance-section ul li .glance-con .desc{font-size:22px}
+html.ltr .ss_samsung .tech-spec-module .glance-section ul li .glance-con .desc{margin:10px 10px 0 0}
+@media (min-width:50em) {
+	.ss_samsung .tech-spec-module .glance-section{padding:30px}
+	.ss_samsung .tech-spec-module .glance-section ul{margin-top:0}
+	.ss_samsung .tech-spec-module .glance-section ul li{width:25%;padding-top:0}
+	.ss_samsung .tech-spec-module .glance-section ul li .glance-con .desc{font-size:24px}
+	html.ltr .ss_samsung .tech-spec-module .glance-section ul li .glance-con .desc{padding-left:30px}
+}
+
+/* dimension-section */
+.ss_samsung .tech-spec-module .dimension-section{text-align:center;border:1px solid #cbcbcb;border-left:none;border-right:none;padding:20px;overflow:hidden}
+.ss_samsung .tech-spec-module .dimension-section img{display:inline!important;max-width:100%}
+@media (min-width:50em) {.ss_samsung .tech-spec-module .dimension-section{padding:30px}}
+
+/* spec-section */
+.ss_samsung .tech-spec-module .spec-section .spec-list{border-bottom:1px solid #ccc;padding:20px}
+.ss_samsung .tech-spec-module .spec-section .spec-list .tit{color:#0071bf;padding-bottom:20px;font-weight:bold;font-size:16px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul{margin-top:-20px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li{padding-top:20px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec:after{content:" ";clear:both;display:block}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{font-weight:bold;color:#000;font-size:14px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit{font-size:14px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit+.desc{padding-right:0;border-bottom:1px solid #e2e2e2;padding-bottom:5px;margin-bottom:5px;font-size:14px}
+.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .desc{font-size:14px}
+@media (min-width:30em) {
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul{width:100%;display:table;font-size:0}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li{width:50%;padding:20px 10px 0 0;display:inline-table;vertical-align:top;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{padding-right:0}
+}
+@media (min-width:48em) {
+	.ss_samsung .tech-spec-module .spec-section .spec-list:after{content:" ";clear:both;display:block}
+	.ss_samsung .tech-spec-module .spec-section .spec-list .tit{width:33.333333%;padding-right:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	html.ltr .ss_samsung .tech-spec-module .spec-section .spec-list .tit{float:left}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul{width:66.666666%}
+	html.ltr .ss_samsung .tech-spec-module .spec-section .spec-list ul{float:left}
+	.ss_samsung .tech-spec-module.type-02 .spec-section .spec-list ul{width:100%}
+}
+@media(min-width:48.0625em) {
+	.ss_samsung .tech-spec-module .spec-section .spec-list .tit{font-size:18px}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{font-size:18px}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit{font-size:18px}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li .spec .desc{font-size:16px}
+}
+@media (min-width:50em) {
+	.ss_samsung .tech-spec-module .spec-section .spec-list{padding:30px}
+	html.ltr .ss_samsung .tech-spec-module .spec-section .spec-list .tit{padding:0 15px 0 0}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul{margin-top:-30px}
+	html.ltr .ss_samsung .tech-spec-module .spec-section .spec-list ul li{padding:30px 15px 0 0}
+}
+@media (min-width:64.0625em) {
+	/* spec-section */
+	.ss_samsung .tech-spec-module .spec-section .spec-list .tit{width:25%}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul{width:75%}
+	.ss_samsung .tech-spec-module .spec-section .spec-list ul li{width:33.333333%}
+	.ss_samsung .tech-spec-module.type-02 .spec-section .spec-list ul{width:100%}
+	.ss_samsung .tech-spec-module.type-02 .spec-section .spec-list ul li{width:25%}
+}
+
+/* sar-info-section */
+.ss_samsung .tech-spec-module .sar-info-section {padding:20px;}
+.ss_samsung .tech-spec-module .sar-info-section .tit{color:#0071bf;font-weight:bold;font-size:16px;display:none}
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con{overflow:hidden}
+
+/* POV B2C design 20150205 */
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con a:hover .sub-tit {color: #000 }
+ 
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .sub-tit{color:#0071bf;font-weight:bold;display:inline-block;font-size:14px}
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc{display:inline-block;font-size:14px}
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc a{color:#000;margin-left:10px}
+
+/* POV B2C design 20150205 */
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play{vertical-align:-2px;color:#0071bf!important;font-size:14px}
+.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play:hover{color:#000000!important}
+@media(min-width:48.0625em) {
+	.ss_samsung .tech-spec-module .sar-info-section .tit{font-size:18px}
+	.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .sub-tit{font-size:18px}
+	.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc{font-size:16px}
+	.ss_samsung .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play{font-size:16px}
+}
+@media (min-width:50em) {.ss_samsung .tech-spec-module .sar-info-section{padding:30px}}
+
+/* more button */
+.ss_samsung .tech-spec-module .btn-more{margin:0}
+.ss_samsung .tech-spec-module .btn-more a{background:#f9f9f9;display:block;padding:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.ss_samsung .tech-spec-module .btn-more span{float:none!important;font-size:12px}
+.ss_samsung .tech-spec-module .btn-more span:first-child{font-size:14px}
+@media(min-width:48.0625em) {
+	.ss_samsung .tech-spec-module .btn-more span{font-size:14px}
+	.ss_samsung .tech-spec-module .btn-more span:first-child{font-size:16px}
+}
+.ltr .tech-spec-module .btn-more span.icon-plus{margin-left:10px}
+@media (min-width:50em) {.ss_samsung .tech-spec-module .btn-more a{padding:30px}}
+
+/* more-spec-section */
+.ss_samsung .tech-spec-module .more-spec-section{overflow:hidden;height:0;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+
+/* support tech-spec */
+.ss_samsung.support-pdp .module-heading .heading-text{font-family:"SamsungIFRg",Arial,sans-serif}
+.ss_samsung.support-pdp .tech-spec-module .spec-section .spec-list{padding:20px 30px}
+.ss_samsung.support-pdp .tech-spec-module .btn-more a{padding:30px}
+
+/* font type */
+.b2c .tech-spec-module .module-heading{font-family:"SamsungIFBd",Arial,"sans-serif";line-height:1;font-weight:normal}
+.b2c .tech-spec-module .module-heading span{line-height:1}
+.b2c .tech-spec-module .glance-section ul{font-size:0}
+.b2c .tech-spec-module .glance-section ul li{font-size:14px}
+.b2c .tech-spec-module .glance-section ul li .glance-con .icon{font-size:26px}
+.b2c .tech-spec-module .glance-section ul li .glance-con .desc{font-size:20px}
+@media (min-width:48em) {
+	.b2c .tech-spec-module .glance-section ul li{font-size:16px}
+	.b2c .tech-spec-module .glance-section ul li .glance-con .desc{font-size:26px}
+}
+@media (min-width:80em) {.b2c .tech-spec-module .glance-section ul li{font-size:18px}}
+.b2c .tech-spec-module .spec-section .spec-list .tit{font-family:"SamsungIFBd";font-size:14px;font-weight:normal}
+.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{font-family:"SamsungIFBd";font-size:14px;font-weight:normal}
+.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit{font-size:14px}
+.b2c .tech-spec-module .spec-section .spec-list ul li .spec .desc{font-size:14px}
+@media (min-width:30em) {.b2c .tech-spec-module .spec-section .spec-list ul{font-size:0}}
+@media(min-width:48em) {
+	.b2c .tech-spec-module .spec-section .spec-list .tit{font-size:16px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{font-size:16px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit{font-size:16px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .desc{font-size:16px}
+}
+@media(min-width:80em) {
+	.b2c .tech-spec-module .spec-section .spec-list .tit{font-size:18px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-tit{font-size:16px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .sub-level-tit{font-size:16px}
+	.b2c .tech-spec-module .spec-section .spec-list ul li .spec .desc{font-size:16px}
+}
+.b2c .tech-spec-module .sar-info-section .tit{font-family:"SamsungIFBd";font-size:16px;font-weight:normal}
+/* POV B2C design 20150205 */
+.b2c .tech-spec-module .sar-info-section .sar-info-con .sub-tit{font-weight:normal;font-size:14px;font-family:"SamsungIFBd";color: #0071bf}
+
+.b2c .tech-spec-module .sar-info-section .sar-info-con .desc{font-size:14px}
+.b2c .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play{font-size:14px}
+@media(min-width:48em) {
+	.b2c .tech-spec-module .sar-info-section .tit{font-size:16px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .sub-tit{font-size:16px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .desc{font-size:16px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play{font-size:14px}
+}
+@media(min-width:80em) {
+	.b2c .tech-spec-module .sar-info-section .tit{font-size:18px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .sub-tit{font-size:18px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .desc{font-size:18px}
+	.b2c .tech-spec-module .sar-info-section .sar-info-con .desc a .icon-link-play{font-size:18px}
+}
+.b2c .tech-spec-module .btn-more span{float:none!important;font-size:12px}
+.b2c .tech-spec-module .btn-more span:first-child{font-size:14px}
+@media(min-width:48em) {
+	.b2c .tech-spec-module .btn-more span{font-size:14px}
+	.b2c .tech-spec-module .btn-more span:first-child{font-size:16px}
+}
+@media(min-width:80em) {
+	.b2c .tech-spec-module .btn-more span{font-size:16px}
+	.b2c .tech-spec-module .btn-more span:first-child{font-size:18px}
+}
+.ss_samsung.support-pdp.b2c .module-heading .heading-text{font-family:"SamsungIFRg",Arial,sans-serif}
+
+
+/* memory_disclaimer  2015.01.15 */
+.memory_disclaimer { overflow:hidden; box-sizing:border-box; word-break:break-word; padding:12px 20px; background-color:#f1f2f4; color:#333; font-size:14px; line-height:1.3; }
+
+
+@media (min-width: 50em) {
+	.memory_disclaimer { padding:20px 31px; }
+
+}

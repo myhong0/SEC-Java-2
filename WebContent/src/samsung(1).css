@@ -1,0 +1,1102 @@
+﻿@charset "utf-8";
+@import url("/sec/next/css/modules/compare.css");
+@import url("/sec/next/css/modules/filter-sortby.css");
+@import url("/sec/next/css/modules/find-my-device.css");
+@import url("/sec/next/css/modules/hero.css");
+@import url("/sec/next/css/modules/module-small.css");
+@import url("/sec/next/css/modules/product-card.css");
+@import url("/sec/next/css/modules/recommend-items.css");
+@import url("/sec/next/css/modules/related-products.css");
+@import url("/sec/next/css/modules/share-popover.css");
+@import url("/sec/next/css/modules/similar-items.css");
+/*삼성긴고딕 Light*/
+/* font를 cdn에서 호출로 변경 2015-05-13 */
+@font-face{
+	font-family:'SECGCWL';
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWL.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWL.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWL.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWL.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+/*삼성긴고딕 Medium*/
+/* font를 cdn에서 호출로 변경 2015-05-13 */
+@font-face{
+	font-family:'SECGCWM';
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWM.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWM.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWM.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWM.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+/*삼성긴고딕 Bold*/
+/* font를 cdn에서 호출로 변경 2015-05-13 */
+@font-face{
+	font-family:'SECGCWB';
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWB.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWB.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWB.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWB.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  	src:url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWeb.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWeb.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWeb.ttf") format("truetype");
+	font-weight:300;
+	font-style:normal;
+}
+@font-face {
+   font-family: 'NanumBarunGothicBold';
+   font-style: normal;
+   font-weight: 700;
+  	src:url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWebBold.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWebBold?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWebBold.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/NanumBarunGothicWebBold.ttf") format("truetype");
+ }
+/*추가된 아이콘 폰트 선언*/
+@font-face{
+	font-family:'samsungSecIcon';
+	src:url("http://cdn.samsung.com/sec/next/font/samsungSecIcon.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/samsungSecIcon.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/samsungSecIcon.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/samsungSecIcon.ttf") format("truetype"),
+	url("http://cdn.samsung.com/sec/next/font/samsungSecIcon.svg#samsung") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+[class*='icon-sec-']{
+	font-family:'samsungSecIcon';
+	speak:none;
+	font-style:normal;
+	font-weight:normal;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	direction:ltr;
+}
+@font-face {font-family:"samsungIcon";src:url("/sec/common/font/samsungIcon.woff") format("woff"),url("/sec/common/font/samsungIcon.ttf") format("truetype"),url("/sec/common/font/samsungIcon.svg#samsung") format("svg");font-weight:normal;font-style:normal}
+
+.icon-sec-bus:before{content:"\e600"}
+.icon-sec-hyper:before{content:"\e601"}
+.icon-sec-kakao:before{content:"\e602"}
+.icon-sec-metro:before{content:"\e603"}
+.icon-sec-sms:before{content:"\e604"}
+.icon-sec-store-phone:before{content:"\e605"}
+.icon-sec-taxi:before{content:"\e606"}
+.icon-sec-won:before{content:"\e607"}
+.icon-sec-card:before{content:"\e608"}
+.icon-sec-question:before{content:"\e609"}
+.icon-sec-building:before{content:"\e60a"}
+.icon-sec-hpguide:before{content:"\e60b"}
+.icon-sec-hpquestion:before{content:"\e60c"}
+html, button, input, .ss_samsung .input .placeholder, select, textarea { font-family: 'SECGCWL', sans-serif; }
+code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace;}
+button, input, .ss_samsung .input .placeholder, select, textarea { font-family: 'SECGCWL', sans-serif;}
+body { font-family: 'SECGCWL', sans-serif;}
+input, .ss_samsung .input .placeholder, select, textarea { font-family: 'SECGCWL', sans-serif ; }
+.ss_samsung .inner h1, .ss_samsung .inner-x h1, .ss_samsung .inner-y h1 {font-family: 'SECGCWM', sans-serif !important;}
+.ss_samsung .module-subtitle {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .module-header { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .ss-base { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .ss-bold { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .ss-light { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .ss_input input, .ss_samsung .ss_input .input .placeholder,
+.ss_samsung .input .ss_input .placeholder { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .ss-textarea textarea {font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .option-selector .selected-option {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .option-selector.open .options,
+.ss_samsung .option-selector.open #shop-popover-container .popover .shop-popover .buy-direct .status,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .option-selector.open .status,
+.ss_samsung .option-selector.open #shop-popover-container .popover .shop-popover .buy-direct .actions,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .option-selector.open .actions {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .ui-datepicker .ui-datepicker-title {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .input label { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .input input, .ss_samsung .input .placeholder { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .ss-button {font-family: 'SECGCWM', sans-serif;}
+.ss_samsung .accordion-button a { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .accordion-button.active a { font-family: 'SECGCWM', sans-serif !important;}
+.ss_samsung .accordion-button .accordion-subtitle {font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .ss-simple-button {font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung .button { font-family: 'SECGCWM', sans-serif !important;}
+.ss_samsung .breadcrumb a { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .module-heading {font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #sec-nav .titleContainer input,  .ss_samsung #sec-nav .titleContainer .input .placeholder,
+.ss_samsung .input #sec-nav .titleContainer .placeholder { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #sec-nav .titleContainer .title { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #sec-nav .actions li .nav-button { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .footer { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung .footer .topBtn {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .tabs li a {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .tabs li a .price {font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .stand-out { font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .label { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .link-button {font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .placeholder,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .placeholder,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .placeholder { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status li p { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .shipping-notice {font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-online ul li .price { font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .price {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore h2 { font-family: 'SECGCWL', sans-serif !important;}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .store-address,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .store-phone { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .review-sort-popover ul li {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .product-popover-container .popover h3 { font-family: 'SECGCWL', sans-serif !important; }
+.ss_samsung .product-popover-container .product-category {font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung .product-popover-container .product-tutorial * { font-family: 'SECGCWL', sans-serif !important; font-weight: normal; }
+.ss_samsung .product-popover-container .product-tutorial small { display: block; font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .product-popover-container .accordion-button a { font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung .product-popover-container .accordion-content a { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .dealer-loc strong { font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .ss-compare-button {font-family: 'SECGCWM', sans-serif !important; }
+.ss_samsung .product-specs-module .product-specs-full .specs-wrap ul li .spec { font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung .ac-form input, .ss_samsung .ac-form .input .placeholder,
+.ss_samsung .input .ac-form .placeholder { font-family: 'SECGCWL', sans-serif !important;  }
+.ss_samsung div.auto-complete div h5 { font-family: 'SECGCWM', sans-serif !important;  }
+.ss_samsung div.auto-complete.results-returned div.link { font-family: 'SECGCWL', sans-serif !important;  }
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+h1{font-size:1.813em;}
+h2{font-size:1.313em;}
+h3{font-size:0.938em;}
+h4{font-size:0.875em}
+h5{font-size:0.75em;}
+h6{font-size:0.75em;}
+code, kbd, pre, samp{font-size:0.875em;}
+small{font-size:80%;}
+sub, sup{font-size:75%;}
+button, input, .ss_samsung .input .placeholder, select, textarea{font-size:100%;}
+body{font-size:100%;}
+input, .ss_samsung .input .placeholder, select, textarea{font-size:100%;}
+.ss_samsung .inner h1, .ss_samsung .inner-x h1, .ss_samsung .inner-y h1{ font-size:34px; font-size:2.125rem;}
+@media (min-width:48em){.ss_samsung .inner h1, .ss_samsung .inner-x h1, .ss_samsung .inner-y h1{ font-size:53px; font-size:3.313rem;}}
+@media (min-width:80em){.ss_samsung .inner h1, .ss_samsung .inner-x h1, .ss_samsung .inner-y h1{ font-size:43px; font-size:2.688rem;}}
+@media (min-width:80.063em){.ss_samsung .inner h1, .ss_samsung .inner-x h1, .ss_samsung .inner-y h1{ font-size:53px; font-size:3.313rem;}}
+/*20150108 adn/jun 타이틀 미디엄폰트로 변경*/
+.ss_samsung .inner h2, .ss_samsung .inner-x h2, .ss_samsung .inner-y h2{ font-family: 'SECGCWM', sans-serif !important;font-size:21px; font-size:1.313rem;}
+@media (min-width:48em){.ss_samsung .inner h2, .ss_samsung .inner-x h2, .ss_samsung .inner-y h2{ font-size:33px; font-size:2.063rem;}}
+@media (min-width:80em){.ss_samsung .inner h2, .ss_samsung .inner-x h2, .ss_samsung .inner-y h2{ font-size:27px; font-size:1.688rem;}}
+@media (min-width:80.063em){.ss_samsung .inner h2, .ss_samsung .inner-x h2, .ss_samsung .inner-y h2{ font-size:33px; font-size:2.063rem;}}
+@media (min-width:80.063em){.ss_samsung .theme3 .vertical2 .inner h2{font-size:27px; font-size:1.688rem;}}
+/*20150108 adn/jun 타이틀 미디엄폰트로 변경*/
+.ss_samsung .inner h3, .ss_samsung .inner-x h3, .ss_samsung .inner-y h3{ font-family: 'SECGCWM', sans-serif !important;font-size:15px; font-size:0.938rem;}
+@media (min-width:48em){.ss_samsung .inner h3, .ss_samsung .inner-x h3, .ss_samsung .inner-y h3{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:80em){.ss_samsung .inner h3, .ss_samsung .inner-x h3, .ss_samsung .inner-y h3{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80.063em){.ss_samsung .inner h3, .ss_samsung .inner-x h3, .ss_samsung .inner-y h3{ font-size:25px; font-size:1.563rem;}}
+.ss_samsung .inner .cta, .ss_samsung .inner-x .cta, .ss_samsung .inner-y .cta{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .inner .cta span, .ss_samsung .inner-x .cta span, .ss_samsung .inner-y .cta span{ font-size:12px; font-size:0.75rem;}
+@media (min-width:48em){.ss_samsung .inner .cta, .ss_samsung .inner-x .cta, .ss_samsung .inner-y .cta{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung .inner .cta span, .ss_samsung .inner-x .cta span, .ss_samsung .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80em){.ss_samsung .inner .cta, .ss_samsung .inner-x .cta, .ss_samsung .inner-y .cta{ font-size:19px; font-size:1.188rem;}
+  .ss_samsung .inner .cta span, .ss_samsung .inner-x .cta span, .ss_samsung .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80.063em){.ss_samsung .inner .cta, .ss_samsung .inner-x .cta, .ss_samsung .inner-y .cta{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung .inner .cta span, .ss_samsung .inner-x .cta span, .ss_samsung .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung .module-subtitle{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .module-header h2{ font-size:20px; font-size:1.250rem;}
+.ss_samsung .module-header small{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .cta{font-size:inherit;}
+.ss_samsung .cta span{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .ss_input input, .ss_samsung .ss_input .input .placeholder, .ss_samsung .input .ss_input .placeholder{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .ss-textarea textarea{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .checkbox input[type="checkbox"]:checked + label:after,
+.ss_samsung .checkbox .input [type="checkbox"].placeholder:checked + label:after,
+.ss_samsung .input .checkbox [type="checkbox"].placeholder:checked + label:after{font-size:11px;font-size:0.6875rem;}
+.ss_samsung .checkbox-label{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .option-selector.option-selector-small .selected-option{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .ui-datepicker .ui-datepicker-prev,
+.ss_samsung .ui-datepicker .ui-datepicker-next{ font-size:14px; font-size:0.875rem;}
+.ss_samsung .ui-datepicker .ui-datepicker-title{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .ui-datepicker th{ font-size:12px; font-size:0.750rem;}
+.ss_samsung .input label{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung .input label{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:64em){.ss_samsung .input label{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80.063em){.ss_samsung .input label{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung .input input, .ss_samsung .input .placeholder{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung .input input, .ss_samsung .input .placeholder{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:64em){.ss_samsung .input input, .ss_samsung .input .placeholder{ font-size:17px; font-size:1.063rem;}}
+@media (min-width:80.063em){.ss_samsung .input input, .ss_samsung .input .placeholder{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung form:not(#foo) > fieldset input[type='checkbox']:checked + label:before, .ss_samsung form:not(#foo) > fieldset .input [type='checkbox'].placeholder:checked + label:before,
+.ss_samsung .input form:not(#foo) > fieldset [type='checkbox'].placeholder:checked + label:before{ font-size:17px; font-size:1.063rem;}
+.ss_samsung .ss-button{ font-size:12px; font-size:0.75rem;}
+.ss_samsung .ss-button.load-more-button{ font-size:12px; font-size:0.750rem;}
+@media (min-width:64em){.ss_samsung .ss-button.load-more-button{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80em){.ss_samsung .ss-button.load-more-button{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung .accordion-button a{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .accordion-button a span[class*="icon-"]{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .accordion-button label{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .accordion-button .accordion-subtitle{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .ss-simple-button{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung .ss-simple-button{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung .module-heading{ font-size:21px; font-size:1.313rem;}
+.ss_samsung .module-heading .heading-icon{ font-size:37px; font-size:2.313rem;}
+.ss_samsung .module-heading .heading-icon.toggle-icon{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){
+  .ss_samsung .module-heading{ font-size:51px; font-size:3.188rem;}
+  .ss_samsung .module-heading .heading-icon{ font-size:57px; font-size:3.563rem;}
+  .ss_samsung .module-heading .heading-icon.toggle-icon{ font-size:37px; font-size:2.313rem;}
+}
+@media (min-width:50.063em){
+  .ss_samsung .module-heading{ font-size:33px; font-size:2.063rem;}
+  .ss_samsung .module-heading .heading-icon{ font-size:57px; font-size:3.563rem;}
+}
+input[type="text"].animate-placeholder.active::-webkit-input-placeholder,
+.ss_samsung .input [type="text"].animate-placeholder.active.placeholder::-webkit-input-placeholder,
+input[type="date"].animate-placeholder.active::-webkit-input-placeholder, .ss_samsung .input [type="date"].animate-placeholder.active.placeholder::-webkit-input-placeholder{font-size:11px;font-size:0.6875rem;}
+input[type="text"].animate-placeholder.active::-moz-placeholder, .ss_samsung .input [type="text"].animate-placeholder.active.placeholder::-moz-placeholder, input[type="date"].animate-placeholder.active::-moz-placeholder, .ss_samsung .input [type="date"].animate-placeholder.active.placeholder::-moz-placeholder{font-size:11px;font-size:0.6875rem;}
+input[type="text"].animate-placeholder.active:-ms-input-placeholder, .ss_samsung .input [type="text"].animate-placeholder.active.placeholder:-ms-input-placeholder, input[type="date"].animate-placeholder.active:-ms-input-placeholder, .ss_samsung .input [type="date"].animate-placeholder.active.placeholder:-ms-input-placeholder{font-size:11px;font-size:0.6875rem;}
+.ss_samsung #sec-nav .titleContainer input, .ss_samsung #sec-nav .titleContainer .input .placeholder, .ss_samsung .input #sec-nav .titleContainer .placeholder{ font-size:15px; font-size:0.938rem;}
+@media (min-width:80.063em){
+	 .ss_samsung #sec-nav .titleContainer input,
+     .ss_samsung #sec-nav .titleContainer .input .placeholder,
+     .ss_samsung .input #sec-nav .titleContainer .placeholder{ font-size:32px; font-size:2rem;}
+}
+.ss_samsung #sec-nav .titleContainer .title{ font-size:15px; font-size:0.938rem;}
+@media (min-width:80.063em){.ss_samsung #sec-nav .titleContainer .title{ font-size:32px; font-size:2rem;}}
+.ss_samsung #sec-nav .actions li .nav-button{font-size:10px;font-size:0.625rem;}
+@media (min-width:50em){.ss_samsung #sec-nav .actions li .nav-button{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung #sec-nav .actions li .nav-button span.title{ font-size:13px; font-size:0.813rem; vertical-align: top;}
+.ss_samsung #sec-nav .actions li .nav-button .icon{ font-size:21px; font-size:1.313rem;}
+.ss_samsung .footer{ font-size:14px; font-size:0.875rem;}
+.ss_samsung .footer .fbico, .ss_samsung .footer .twico{ font-size:17px; font-size:1.063rem;}
+.ss_samsung .footer .topBtn .jump-up{ margin-left:0; font-size:12px !important; font-size:0.75rem !important;}
+.ss_samsung #shop-popover-container .popover .shop-popover{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung #shop-popover-container .popover .shop-popover{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung #shop-popover-container .popover .shop-popover .close-button{ font-size:22px; font-size:1.375rem;}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .tabs li a{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .label{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .option-selector .selected-option{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .link-button span{font-size:11px;font-size:0.6875rem;}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .tab-content .link-button span{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity input,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .placeholder,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .placeholder,
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .input .placeholder,
+.ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .placeholder{ font-size:19px; font-size:1.188rem;}
+@media (min-width:80em){
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity input,
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity input,
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity input,
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .input .placeholder,
+  .ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .placeholder,
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .input .placeholder,
+  .ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .placeholder,
+  .ss_samsung #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .input .placeholder,
+  .ss_samsung .input #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .placeholder{ font-size:15px; font-size:0.938rem;}
+}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .price{ font-size:14px; font-size:0.875rem;}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore h2{ font-size:14px; font-size:0.875rem;}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore h2{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .store-info .icon{ font-size:37px; font-size:2.313rem;}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .store-info .store-hours .stand-out{ font-size:12px; font-size:0.750rem;}
+@media (min-width:80em){.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .store-info .store-hours .stand-out{ font-size:16px; font-size:1rem;}}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .tw-contents .tit{font-size:15px;}
+.ss_samsung #shop-popover-container .popover .shop-popover .buy-instore .tw-contents .sub-tit{font-size:15px;}
+.ss_samsung .review-sort-popover ul li{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung .review-sort-popover ul li{ font-size:24px; font-size:1.5rem;}}
+@media (min-width:50.063em){.ss_samsung .review-sort-popover ul li{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung .product-popover-container .popover h3{ font-size:29px; font-size:1.813rem;}
+.ss_samsung .product-popover-container .popover .close-button{ font-size:27px; font-size:1.688rem;}
+@media (min-width:48em){.ss_samsung .product-popover-container .popover .close-button{ font-size:22px; font-size:1.375rem;}}
+.ss_samsung .product-popover-container .product-category{ font-size:13px; font-size:0.813rem;}
+.ss_samsung .product-popover-container .product-tutorial h2{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .product-popover-container .product-tutorial p{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .product-popover-container .product-tutorial small{ font-size:13px; font-size:0.813rem;}
+.ss_samsung .product-popover-container .accordion-button a{ font-size:13px; font-size:0.813rem;}
+.ss_samsung .product-popover-container .accordion-content a{ font-size:13px; font-size:0.813rem;}
+.ss_samsung .dealer-loc .icon-locator{ font-size:42px; font-size:2.625rem;}
+@media (min-width:48em){.ss_samsung .dealer-loc .icon-locator{ font-size:50px; font-size:3.125rem;}}
+.ss_samsung .dealer-loc a{ font-size:19.34px;font-size:1.20875rem;}
+@media (min-width:48em){.ss_samsung .dealer-loc a{ font-size:27px; font-size:1.688rem;}}
+/*20150108 adn/jun 폰트 변경*/
+.ss_samsung .dealer-loc p{ font-family: 'SECGCWM', sans-serif !important;font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung .dealer-loc p{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:80em){.ss_samsung .dealer-loc p{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80.063em){.ss_samsung .dealer-loc p{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:48em){.ss_samsung .dealer-loc .cta{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80em){.ss_samsung .dealer-loc .cta{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:80.063em){.ss_samsung .dealer-loc .cta{ font-size:21px; font-size:1.313rem;}}
+.ss_samsung .dealer-loc .cta span{ font-size:12px; font-size:.75rem;}
+@media (min-width:48em){.ss_samsung .dealer-loc .cta span{ font-size:12.5px; font-size:0.781rem;}}
+.ss_samsung .ss-compare-button{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung .ss-compare-button{ font-size:24px; font-size:1.5rem;}}
+@media (min-width:48em){.ss_samsung .ss-compare-button{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung .product-specs-module .glance ul:after{font-size:0;}
+.ss_samsung .product-specs-module .glance ul li{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .product-specs-module .glance ul li .icon{ font-size:47px; font-size:2.938rem;}
+@media (min-width:48em){.ss_samsung .product-specs-module .glance ul li .icon{ font-size:77px; font-size:4.813rem;}}
+.ss_samsung .product-specs-module .glance ul li .icon.alpha-rating{ font-size:42px; font-size:2.625rem;}
+@media (min-width:48em){.ss_samsung .product-specs-module .glance ul li .icon.alpha-rating{ font-size:80px; font-size:5rem;}}
+.ss_samsung .product-specs-module .glance ul li .icon.icon-ports{ font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung .product-specs-module .glance ul li .icon.icon-ports{ font-size:32px; font-size:2rem;}}
+.ss_samsung .product-specs-module .glance ul li .icon.icon-a-plus{ font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung .product-specs-module .glance ul li .icon.icon-a-plus{ font-size:32px; font-size:2rem;}}
+.ss_samsung .product-specs-module .glance ul li .icon.img{font-size:0;}
+@media (min-width:48em){.ss_samsung .product-specs-module .glance ul li{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung .product-specs-module .product-specs-full .specs-wrap{ font-size:15px; font-size:0.938rem;}
+.ss_samsung .product-specs-module .product-specs-full .header{ font-size:19px; font-size:1.188rem;}
+.ss_samsung .product-specs-module .product-specs-full .extra-specs{ font-size:14px; font-size:0.875rem;}
+.ss_samsung .product-specs-module .product-specs-full .extra-specs span{font-size:10px;font-size:0.625rem;}
+.ss_samsung .manuals-module .title-expandable a span:first-child{ font-size:42px; font-size:2.625rem;}
+.ss_samsung .more-options .manual-option p{ font-size:13px; font-size:0.813rem;}
+.ss_samsung .user-manual{ font-size:14px; font-size:0.875rem;}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{font-size:0.875em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{font-size:0.875em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{font-size:0.875em;}}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:inherit;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.938em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:50.063em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:inherit;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:80.063em){.ss_samsung .ac-form input, .ss_samsung .ac-form .input .placeholder, .ss_samsung .input .ac-form .placeholder{font-size:14px;}}
+.ss_samsung div.auto-complete div h5{ font-size:14px; font-size:0.875rem;}
+@media (min-width:80.063em){.ss_samsung div.auto-complete div h5{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung div.auto-complete div li{ font-size:14px; font-size:0.875rem;}
+.ss_samsung div.auto-complete li a{ font-size:15px; font-size:0.938rem;}
+.ss_samsung div.auto-complete .ac-message{ font-size:15px; font-size:0.938rem;}
+.awards-popover .icon-close-x{font-size:0.938em;}
+.ss_samsung .awards-title{font-size:20px;}
+a.y_btnMore{font-size:14px;}
+a.y_btnMore span{font-size:14px;}
+a.y_btnMore span .icon-plus{font-size:11px;}
+@media (max-width:48em){
+  .ss_samsung .awards-title{font-size:14px;}
+  a.y_btnMore{font-size:13px;}
+  a.y_btnMore span{font-size:13px;}
+  a.y_btnMore span.icon-plus{font-size:11px;}
+}
+.ss_samsung .ss-benefit .inner .benefit-title{ font-size:13px; font-size:0.813rem;}
+@media (min-width:30em){.ss_samsung .ss-benefit .inner .benefit-title{font-size:10px;font-size:0.625rem;}}
+@media (min-width:48em){.ss_samsung .ss-benefit .inner .benefit-title{ font-size:29px; font-size:1.813rem;}}
+@media (min-width:50.063em){.ss_samsung .ss-benefit .inner .benefit-title{ font-size:15px; font-size:0.938rem;}}
+@media (min-width:80.063em){.ss_samsung .ss-benefit .inner .benefit-title{ font-size:29px; font-size:1.813rem;}}
+.ss_samsung .ss-benefit .inner .feature-title{ font-size:27px; font-size:1.688rem;}
+@media (min-width:22.5em){.ss_samsung .ss-benefit .inner .feature-title{ font-size:29px; font-size:1.813rem;}}
+@media (min-width:30em){.ss_samsung .ss-benefit .inner .feature-title{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:48em){.ss_samsung .ss-benefit .inner .feature-title{ font-size:51px; font-size:3.188rem;}}
+@media (min-width:50.063em){.ss_samsung .ss-benefit .inner .feature-title{ font-size:39px; font-size:2.438rem;}}
+@media (min-width:80.063em){.ss_samsung .ss-benefit .inner .feature-title{ font-size:51px; font-size:3.188rem;}}
+.ss_samsung .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}
+@media (min-width:22.5em){.ss_samsung .ss-benefit .inner .feature-desc{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:30em){.ss_samsung .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:48em){.ss_samsung .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:50.063em){.ss_samsung .ss-benefit .inner .feature-desc{ font-size:15px; font-size:0.938rem;}}
+@media (min-width:80.063em){.ss_samsung .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung .ss-benefit .next, .ss_samsung .ss-benefit .prev{ font-size:47px; font-size:2.938rem;}
+.ss_samsung .accessories-module .wrap .accessory .name{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung .accessories-module .wrap .accessory .name{ font-size:33px; font-size:2.063rem;}}
+@media (min-width:50.063em){
+  .ss_samsung .accessories-module .wrap .accessory .name{ font-size:33px; font-size:2.063rem;}
+  .ss_samsung .accessories-module .wrap.layout2 .accessory .name{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung .accessories-module .wrap.layout3 .accessory .name{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung .accessories-module .wrap.layout4 .accessory .name{ font-size:21px; font-size:1.313rem;}
+  }
+.thumb-description span{font-size:14px;}
+.ss_samsung .disclaimerBox{font-size:13px; line-height:130%;}
+.ss_samsung .no-result p{ font-size:35px; font-size:2.188rem;}
+.ss_samsung .no-result p + p{font-size:13px;}
+.ss_samsung .no-result p + p strong{font-size:14px;}
+@media (max-width:767px){
+  .ss_samsung .no-result p{font-size:27px;}
+  .ss_samsung .no-result p + p{font-size:13px;}
+  .ss_samsung .no-result p + p strong{font-size:14px;}
+}
+@media (max-width:479px){
+  .ss_samsung .no-result p{font-size:17px;}
+  .ss_samsung .no-result p + p{font-size:12px;}
+  .ss_samsung .no-result p + p strong{font-size:12px;}
+}
+.cart-popover ul li{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .inner h1, .ss_samsung.b2c .inner-x h1, .ss_samsung.b2c .inner-y h1{ font-size:34px; font-size:2.125rem;}
+@media (min-width:48em){.ss_samsung.b2c .inner h1, .ss_samsung.b2c .inner-x h1, .ss_samsung.b2c .inner-y h1{ font-size:53px; font-size:3.313rem;}}
+@media (min-width:80em){.ss_samsung.b2c .inner h1, .ss_samsung.b2c .inner-x h1, .ss_samsung.b2c .inner-y h1{ font-size:43px; font-size:2.688rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .inner h1, .ss_samsung.b2c .inner-x h1, .ss_samsung.b2c .inner-y h1{ font-size:53px; font-size:3.313rem;}}
+.ss_samsung.b2c .inner h2, .ss_samsung.b2c .inner-x h2, .ss_samsung.b2c .inner-y h2{ font-size:21px; font-size:1.313rem;}
+@media (min-width:48em){.ss_samsung.b2c .inner h2, .ss_samsung.b2c .inner-x h2, .ss_samsung.b2c .inner-y h2{ font-size:33px; font-size:2.063rem;}}
+@media (min-width:80em){.ss_samsung.b2c .inner h2, .ss_samsung.b2c .inner-x h2, .ss_samsung.b2c .inner-y h2{ font-size:27px; font-size:1.688rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .inner h2, .ss_samsung.b2c .inner-x h2, .ss_samsung.b2c .inner-y h2{ font-size:33px; font-size:2.063rem;}}
+.ss_samsung.b2c .inner h3, .ss_samsung.b2c .inner-x h3, .ss_samsung.b2c .inner-y h3{ font-size:15px; font-size:0.938rem;}
+@media (min-width:48em){.ss_samsung.b2c .inner h3, .ss_samsung.b2c .inner-x h3, .ss_samsung.b2c .inner-y h3{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:80em){.ss_samsung.b2c .inner h3, .ss_samsung.b2c .inner-x h3, .ss_samsung.b2c .inner-y h3{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .inner h3, .ss_samsung.b2c .inner-x h3, .ss_samsung.b2c .inner-y h3{ font-size:25px; font-size:1.563rem;}}
+.ss_samsung.b2c .inner .cta, .ss_samsung.b2c .inner-x .cta, .ss_samsung.b2c .inner-y .cta{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .inner .cta span, .ss_samsung.b2c .inner-x .cta span, .ss_samsung.b2c .inner-y .cta span{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c .inner .cta, .ss_samsung.b2c .inner-x .cta, .ss_samsung.b2c .inner-y .cta{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung.b2c .inner .cta span, .ss_samsung.b2c .inner-x .cta span, .ss_samsung.b2c .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80em){.ss_samsung.b2c .inner .cta, .ss_samsung.b2c .inner-x .cta, .ss_samsung.b2c .inner-y .cta{ font-size:19px; font-size:1.188rem;}
+  .ss_samsung.b2c .inner .cta span, .ss_samsung.b2c .inner-x .cta span, .ss_samsung.b2c .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .inner .cta, .ss_samsung.b2c .inner-x .cta, .ss_samsung.b2c .inner-y .cta{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung.b2c .inner .cta span, .ss_samsung.b2c .inner-x .cta span, .ss_samsung.b2c .inner-y .cta span{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung.b2c .module-subtitle{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .module-header h2{ font-size:20px; font-size:1.250rem;}
+.ss_samsung.b2c .module-header small{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .cta{font-size:inherit;}
+.ss_samsung.b2c .cta span{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .ss_input input, .ss_samsung.b2c .ss_input .input .placeholder, .ss_samsung.b2c .input .ss_input .placeholder{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .ss-textarea textarea{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .checkbox input[type="checkbox"]:checked + label:after, .ss_samsung.b2c .checkbox .input [type="checkbox"].placeholder:checked + label:after, .ss_samsung.b2c .input .checkbox [type="checkbox"].placeholder:checked + label:after{font-size:11px;font-size:0.6875rem;}
+.ss_samsung.b2c .checkbox-label{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .option-selector.option-selector-small .selected-option{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .ui-datepicker .ui-datepicker-prev, .ss_samsung.b2c .ui-datepicker .ui-datepicker-next{ font-size:14px; font-size:0.875rem;}
+.ss_samsung.b2c .ui-datepicker .ui-datepicker-title{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .ui-datepicker th{ font-size:12px; font-size:0.750rem;}
+.ss_samsung.b2c .input label{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c .input label{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:64em){.ss_samsung.b2c .input label{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .input label{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung.b2c .input input, .ss_samsung.b2c .input .placeholder{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung.b2c .input input, .ss_samsung.b2c .input .placeholder{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:64em){.ss_samsung.b2c .input input, .ss_samsung.b2c .input .placeholder{ font-size:17px; font-size:1.063rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .input input, .ss_samsung.b2c .input .placeholder{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c form:not(#foo) > fieldset input[type='checkbox']:checked + label:before, .ss_samsung.b2c form:not(#foo) > fieldset .input [type='checkbox'].placeholder:checked + label:before, .ss_samsung.b2c .input form:not(#foo) > fieldset [type='checkbox'].placeholder:checked + label:before{ font-size:17px; font-size:1.063rem;}
+.ss_samsung.b2c .ss-button{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .ss-button.load-more-button{ font-size:12px; font-size:0.750rem;}
+@media (min-width:64em){.ss_samsung.b2c .ss-button.load-more-button{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80em){.ss_samsung.b2c .ss-button.load-more-button{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung.b2c .accordion-button a{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .accordion-button a span[class*="icon-"]{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .accordion-button label{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .accordion-button .accordion-subtitle{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .ss-simple-button{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung.b2c .ss-simple-button{ font-size:14px; font-size:0.875rem;}}
+.ss_samsung.b2c .module-heading{ font-size:21px; font-size:1.313rem;}
+.ss_samsung.b2c .module-heading .heading-icon{ font-size:37px; font-size:2.313rem;}
+.ss_samsung.b2c .module-heading .heading-icon.toggle-icon{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung.b2c .module-heading{ font-size:51px; font-size:3.188rem;}
+  .ss_samsung.b2c .module-heading .heading-icon{ font-size:57px; font-size:3.563rem;}
+  .ss_samsung.b2c .module-heading .heading-icon.toggle-icon{ font-size:37px; font-size:2.313rem;}}
+@media (min-width:50.063em){.ss_samsung.b2c .module-heading{ font-size:33px; font-size:2.063rem;}
+  .ss_samsung.b2c .module-heading .heading-icon{ font-size:57px; font-size:3.563rem;}}
+input[type="text"].animate-placeholder.active::-webkit-input-placeholder, .ss_samsung.b2c .input [type="text"].animate-placeholder.active.placeholder::-webkit-input-placeholder, input[type="date"].animate-placeholder.active::-webkit-input-placeholder, .ss_samsung.b2c .input [type="date"].animate-placeholder.active.placeholder::-webkit-input-placeholder{font-size:11px;font-size:0.6875rem;}
+input[type="text"].animate-placeholder.active::-moz-placeholder, .ss_samsung.b2c .input [type="text"].animate-placeholder.active.placeholder::-moz-placeholder, input[type="date"].animate-placeholder.active::-moz-placeholder, .ss_samsung.b2c .input [type="date"].animate-placeholder.active.placeholder::-moz-placeholder{font-size:11px;font-size:0.6875rem;}
+input[type="text"].animate-placeholder.active:-ms-input-placeholder, .ss_samsung.b2c .input [type="text"].animate-placeholder.active.placeholder:-ms-input-placeholder, input[type="date"].animate-placeholder.active:-ms-input-placeholder, .ss_samsung.b2c .input [type="date"].animate-placeholder.active.placeholder:-ms-input-placeholder{font-size:11px;font-size:0.6875rem;}
+.ss_samsung.b2c #sec-nav .titleContainer input, .ss_samsung.b2c #sec-nav .titleContainer .input .placeholder, .ss_samsung.b2c .input #sec-nav .titleContainer .placeholder{ font-size:15px; font-size:0.938rem;}
+@media (min-width:80.063em){.ss_samsung.b2c #sec-nav .titleContainer input, .ss_samsung.b2c #sec-nav .titleContainer .input .placeholder, .ss_samsung.b2c .input #sec-nav .titleContainer .placeholder{ font-size:32px; font-size:2rem;}}
+.ss_samsung.b2c #sec-nav .titleContainer .title{ font-size:15px; font-size:0.938rem;}
+@media (min-width:80.063em){.ss_samsung.b2c #sec-nav .titleContainer .title{ font-size:32px; font-size:2rem;}}
+.ss_samsung.b2c #sec-nav .actions li .nav-button{font-size:10px;font-size:0.625rem;}
+@media (min-width:50em){.ss_samsung.b2c #sec-nav .actions li .nav-button{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung.b2c #sec-nav .actions li .nav-button span.title{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c #sec-nav .actions li .nav-button .icon{ font-size:21px; font-size:1.313rem;}
+.ss_samsung.b2c .footer{ font-size:12px; font-size:0.75rem;}
+.ss_samsung.b2c .footer .fbico, .ss_samsung.b2c .footer .twico{ font-size:22px; font-size:1.375rem;}
+.ss_samsung.b2c .footer .topBtn .jump-up{ font-size:19px; font-size:0.75rem;}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .close-button{ font-size:22px; font-size:1.375rem;}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .tabs li a{ font-size:14px; font-size:0.875rem;}}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .tab-content .label{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .tab-content .option-selector .selected-option{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .tab-content .link-button span{font-size:11px;font-size:0.6875rem;}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .tab-content .link-button span{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .options .quantity input,
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .status .quantity input,
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity input,
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .input .placeholder,
+.ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .placeholder,
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .input .placeholder,
+.ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .placeholder,
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .input .placeholder,
+.ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .placeholder{ font-size:19px; font-size:1.188rem;}
+@media (min-width:80em){
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .options .quantity input,
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .status .quantity input,
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity input,
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .input .placeholder,
+  .ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .options .quantity .placeholder,
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .input .placeholder,
+  .ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .status .quantity .placeholder,
+  .ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .input .placeholder,
+  .ss_samsung.b2c .input #shop-popover-container .popover .shop-popover .buy-direct .actions .quantity .placeholder{ font-size:15px; font-size:0.938rem;}
+}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .price{ font-size:14px; font-size:0.875rem;}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore h2{ font-size:14px; font-size:0.875rem;}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore h2{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .store-info .icon{ font-size:37px; font-size:2.313rem;}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .store-info .store-hours .stand-out{ font-size:12px; font-size:0.750rem;}
+@media (min-width:80em){.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .store-info .store-hours .stand-out{ font-size:16px; font-size:1rem;}}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .tw-contents .tit{font-size:15px;}
+.ss_samsung.b2c #shop-popover-container .popover .shop-popover .buy-instore .tw-contents .sub-tit{font-size:15px;}
+.ss_samsung.b2c .review-sort-popover ul li{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c .review-sort-popover ul li{ font-size:24px; font-size:1.5rem;}}
+@media (min-width:50.063em){.ss_samsung.b2c .review-sort-popover ul li{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c .product-popover-container .popover h3{ font-size:29px; font-size:1.813rem;}
+.ss_samsung.b2c .product-popover-container .popover .close-button{ font-size:27px; font-size:1.688rem;}
+@media (min-width:48em){.ss_samsung.b2c .product-popover-container .popover .close-button{ font-size:22px; font-size:1.375rem;}}
+.ss_samsung.b2c .product-popover-container .product-category{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c .product-popover-container .product-tutorial h2{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .product-popover-container .product-tutorial p{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .product-popover-container .product-tutorial small{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c .product-popover-container .accordion-button a{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c .product-popover-container .accordion-content a{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c .dealer-loc .icon-locator{ font-size:42px; font-size:2.625rem;}
+@media (min-width:48em){.ss_samsung.b2c .dealer-loc .icon-locator{ font-size:50px; font-size:3.125rem;}}
+.ss_samsung.b2c .dealer-loc a{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c .dealer-loc a{ font-size:27px; font-size:1.688rem;}}
+.ss_samsung.b2c .dealer-loc p{ font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung.b2c .dealer-loc p{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:80em){.ss_samsung.b2c .dealer-loc p{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .dealer-loc p{ font-size:25px; font-size:1.563rem;}}
+@media (min-width:48em){.ss_samsung.b2c .dealer-loc .cta{ font-size:21px; font-size:1.313rem;}}
+@media (min-width:80em){.ss_samsung.b2c .dealer-loc .cta{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .dealer-loc .cta{ font-size:21px; font-size:1.313rem;}}
+.ss_samsung.b2c .dealer-loc .cta span{ font-size:19px; font-size:1.188rem;}
+@media (min-width:48em){.ss_samsung.b2c .dealer-loc .cta span{ font-size:12.5px; font-size:0.781rem;}}
+.ss_samsung.b2c .ss-compare-button{font-size:13px;}
+@media (min-width:48em){.ss_samsung.b2c .ss-compare-button{font-size:14px;}}
+.ss_samsung.pdp_wow .ss-compare-button{font-size:13px;}
+@media (min-width:48em){.ss_samsung.pdp_wow .ss-compare-button{font-size:14px;}}
+.ss_samsung.b2c .product-specs-module .glance ul li{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .product-specs-module .glance ul li .icon{ font-size:47px; font-size:2.938rem;}
+@media (min-width:48em){.ss_samsung.b2c .product-specs-module .glance ul li .icon{ font-size:77px; font-size:4.813rem;}}
+.ss_samsung.b2c .product-specs-module .glance ul li .icon.alpha-rating{ font-size:42px; font-size:2.625rem;}
+@media (min-width:48em){.ss_samsung.b2c .product-specs-module .glance ul li .icon.alpha-rating{ font-size:80px; font-size:5rem;}}
+.ss_samsung.b2c .product-specs-module .glance ul li .icon.icon-ports{ font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung.b2c .product-specs-module .glance ul li .icon.icon-ports{ font-size:32px; font-size:2rem;}}
+.ss_samsung.b2c .product-specs-module .glance ul li .icon.icon-a-plus{ font-size:17px; font-size:1.063rem;}
+@media (min-width:48em){.ss_samsung.b2c .product-specs-module .glance ul li .icon.icon-a-plus{ font-size:32px; font-size:2rem;}}
+.ss_samsung.b2c .product-specs-module .glance ul li .icon.img{font-size:0;}
+@media (min-width:48em){.ss_samsung.b2c .product-specs-module .glance ul li{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c .product-specs-module .product-specs-full .specs-wrap{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c .product-specs-module .product-specs-full .header{ font-size:19px; font-size:1.188rem;}
+.ss_samsung.b2c .product-specs-module .product-specs-full .extra-specs{ font-size:14px; font-size:0.875rem;}
+.ss_samsung.b2c .product-specs-module .product-specs-full .extra-specs span{font-size:10px;font-size:0.625rem;}
+.ss_samsung.b2c .manuals-module .title-expandable a span:first-child{ font-size:42px; font-size:2.625rem;}
+.ss_samsung.b2c .more-options .manual-option p{ font-size:13px; font-size:0.813rem;}
+.ss_samsung.b2c .user-manual{ font-size:14px; font-size:0.875rem;}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{ font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{ font-size:0.875em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{ font-size:0.875em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper div:nth-child(4) div{ font-size:0.875em;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 blockquote{font-size:0.813em;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:inherit;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 span{font-size:0.75em;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:1.313em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 div{font-size:0.75em;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.938em;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 dl dt{font-size:0.813em;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:inherit;}}
+@media (min-width:22.563em) and (max-width:40em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:0em) and (max-width:22.5em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:40.063em) and (max-width:50em){.ss_samsung.b2c .ss-glance-grid .fullview .copywrapper .fullview-l-aside1 ul li{font-size:0.75em;}}
+@media (min-width:80.063em){.ss_samsung.b2c .ac-form input, .ss_samsung.b2c .ac-form .input .placeholder, .ss_samsung.b2c .input .ac-form .placeholder{font-size:14px;}}
+.ss_samsung.b2c div.auto-complete div h5{ font-size:14px; font-size:0.875rem;}
+@media (min-width:80.063em){.ss_samsung.b2c div.auto-complete div h5{ font-size:15px; font-size:0.938rem;}}
+.ss_samsung.b2c div.auto-complete div li{ font-size:14px; font-size:0.875rem;}
+.ss_samsung.b2c div.auto-complete li a{ font-size:15px; font-size:0.938rem;}
+.ss_samsung.b2c div.auto-complete .ac-message{ font-size:15px; font-size:0.938rem;}
+.b2c .awards-popover .icon-close-x{font-size:0.938rem;}
+.ss_samsung.b2c .awards-title{font-size:20px;}
+a.y_btnMore{font-size:14px;}
+a.y_btnMore span{font-size:14px;}
+a.y_btnMore span .icon-plus{font-size:11px;}
+@media (max-width:48em){
+  .ss_samsung.b2c .awards-title{font-size:14px;}
+  .b2c a.y_btnMore{font-size:13px;}
+  .b2c a.y_btnMore span{font-size:13px;}
+  .b2c a.y_btnMore span.icon-plus{font-size:11px;}
+}
+.ss_samsung.b2c .ss-benefit .inner .benefit-title{ font-size:13px; font-size:0.813rem;}
+@media (min-width:30em){.ss_samsung.b2c .ss-benefit .inner .benefit-title{font-size:10px;font-size:0.625rem;}}
+@media (min-width:48em){.ss_samsung.b2c .ss-benefit .inner .benefit-title{ font-size:29px; font-size:1.813rem;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-benefit .inner .benefit-title{ font-size:15px; font-size:0.938rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .ss-benefit .inner .benefit-title{ font-size:29px; font-size:1.813rem;}}
+.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:27px; font-size:1.688rem;}
+@media (min-width:22.5em){.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:29px; font-size:1.813rem;}}
+@media (min-width:30em){.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:48em){.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:51px; font-size:3.188rem;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:39px; font-size:2.438rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .ss-benefit .inner .feature-title{ font-size:51px; font-size:3.188rem;}}
+.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}
+@media (min-width:22.5em){.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:13px; font-size:0.813rem;}}
+@media (min-width:30em){.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:48em){.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+@media (min-width:50.063em){.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:15px; font-size:0.938rem;}}
+@media (min-width:80.063em){.ss_samsung.b2c .ss-benefit .inner .feature-desc{ font-size:19px; font-size:1.188rem;}}
+.ss_samsung.b2c .accessories-module .wrap .accessory .name{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.ss_samsung.b2c .accessories-module .wrap .accessory .name{ font-size:33px; font-size:2.063rem;}}
+@media (min-width:50.063em){
+  .ss_samsung.b2c .accessories-module .wrap .accessory .name{ font-size:33px; font-size:2.063rem;}
+  .ss_samsung.b2c .accessories-module .wrap.layout2 .accessory .name{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung.b2c .accessories-module .wrap.layout3 .accessory .name{ font-size:21px; font-size:1.313rem;}
+  .ss_samsung.b2c .accessories-module .wrap.layout4 .accessory .name{ font-size:21px; font-size:1.313rem;}
+}
+.b2c .thumb-description span{font-size:14px;}
+.ss_samsung.b2c .disclaimerBox{font-size:13px; line-height:130%;}
+@media (min-width:48em){ .ss_samsung.b2c .disclaimerBox{font-size:13px; line-height:130%;} }
+.ss_samsung.b2c .no-result p{ font-size:35px; font-size:2.188rem;}
+.ss_samsung.b2c .no-result p + p{font-size:13px;}
+.ss_samsung.b2c .no-result p + p strong{font-size:14px;}
+@media (max-width:767px){
+  .ss_samsung.b2c .no-result p{font-size:27px;}
+  .ss_samsung.b2c .no-result p + p{font-size:11px;}
+  .ss_samsung.b2c .no-result p + p strong{font-size:14px;}
+}
+@media (max-width:479px){
+  .ss_samsung.b2c .no-result p{font-size:17px;}
+  .ss_samsung.b2c .no-result p + p{font-size:12px;}
+  .ss_samsung.b2c .no-result p + p strong{font-size:12px;}
+}
+.b2c .cart-popover ul li{ font-size:15px; font-size:0.938rem; }
+@media (max-width: 80em) and (min-width: 50.063em) { .ss_samsung .footer ul {padding: 0; width: 100%;}}
+.ss_samsung #sec-nav .actions li .nav-button .icon.icon-breadcrumb-back, .ss_samsung #sec-nav .actions li .nav-button .icon.icon-link-play { width: 25px;}
+/* 20151222 msminsu */
+html.ltr .ss_samsung .footer .topBtn .jump-up {margin-left: 0px;vertical-align: -2px;}
+.ss_samsung .footer .middle ul li .fbico, .ss_samsung .footer .middle ul li .twico {line-height: 36px;}
+@media (min-width: 80.063em) {
+    .ss_samsung .dealer-loc .cta { margin-top: 1em;}
+}
+/*===================================20151231 - sign.css 내용이관============================================================*/
+#sign_wrap {font-family: SECGCWL, sans-serif !important;}
+@media (min-width:961px) { #sign_wrap {font-family: SECGCWL, sans-serif !important;} }
+@media (min-width:48em) { #sign_wrap .sign-inner-wrap .title {font-family: SECGCWM, sans-serif !important;} }
+#sign_wrap .popup_cont .sub-tit {font-family: SECGCWM, sans-serif !important;}
+#sign_wrap .chk label { font-family: SECGCWL, sans-serif !important;}
+#sign_wrap .sign-link a { font-family: SECGCWL, sans-serif !important;}
+#sign_wrap .btn-wrap p a {font-family: SECGCWL, sans-serif !important;}
+#sign_wrap .connect_wrap .connet-tit {font-family: SECGCWM, sans-serif !important;}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-family: SECGCWM, sans-serif !important;}
+@media (min-width:961px) { .question-wrap {font-family: SECGCWL, sans-serif !important;} }
+.question-wrap .title {font-family: SECGCWM, sans-serif !important;}
+.link_popup .layer_wrap .layer_title h1 {font-family: SECGCWM, sans-serif !important;}
+.link_popup .layer_wrap .layer_title span.store {font-family: SECGCWM, sans-serif !important;}
+#popup-type10 .pop-tit, #ie8alert .popAlign .pop-tit{font-family: SECGCWM, sans-serif !important;}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a{font-family: SECGCWM, sans-serif}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc{font-family: SECGCWL, sans-serif}
+.layer_popup #popup_privacy .popup_wrap .popup_title{font-family: SECGCWM, sans-serif}
+.layer_popup{font-size:0.75em; }
+legend { font-size:0;}
+input, select, textarea {font-size:100%; }
+caption {font-size: 0;}
+.ss_samsung .sign-inner-wrap input[type='checkbox']:checked + label:before{ font-size: 10px;font-size: 1rem;}
+.ss_samsung form:not(#foo) > fieldset input[type='checkbox']:checked + label:before {font-size:0.8em;}
+/*
+.ss_samsung form:not(#foo) > fieldset input[type='checkbox']:checked + label:before {font-size:1em; background:#0071bf 0 none !important;}
+*/
+.ss_samsung .error, .ss_samsung p.error { font-size: 0.938em}
+.ss_samsung #sign_wrap .input input, .ss_samsung #sign_wrap .input .placeholder {font-size: 14px;}
+.layer_popup .sign-inner-wrap .popup_title { font-size:17px;}
+.layer_popup .sign-inner-wrap .close-button { font-size:1.813em; }
+@media (min-width:48em) {  .layer_popup .sign-inner-wrap .close-button { font-size:2.313em; }}
+#sign_wrap .sign-inner-wrap .title {font-size: 19px;}
+@media (min-width:48em) {#sign_wrap .sign-inner-wrap .title {font-size: 29px;}}
+#sign_wrap .popup_cont .sub-tit {font-size:14px;}
+@media (min-width:48em) {  #sign_wrap .popup_cont .sub-tit {font-size:19px;}}
+#sign_wrap .input-wrap label {font-size:13px;}
+@media (min-width:48em) {  #sign_wrap .input-wrap label {font-size:14px;}}
+#sign_wrap .chk label { font-size:12px;}
+@media (min-width:48em) {  #sign_wrap .chk label { font-size:13px}}
+#sign_wrap .sign-link a {font-size:12px !important;}
+@media (min-width:48em) {  #sign_wrap .sign-link a {font-size:14px !important}}
+#sign_wrap .btn-wrap .button {font-size:13px;}
+@media(min-width:48em) {  #sign_wrap .btn-wrap .button {font-size:14px;}}
+#sign_wrap .btn-wrap p {font-size:15px !important}
+@media (min-width:48em) {  #sign_wrap .btn-wrap p, #sign_wrap .btn-wrap p a { font-size:14px}}
+#sign_wrap .connect_wrap .connet-tit {font-size:14px;}
+@media (min-width:48em) {  #sign_wrap .connect_wrap .connet-tit {font-size:19px;}}
+#sign_wrap .sign-inner-wrap .error {font-size:12px}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 15px;}
+@media (min-width:960px) {#sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 19px;}}
+#sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 13px;}
+@media (min-width:960px) {#sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 15px;}}
+#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .title {font-size:15px}
+.question-wrap .title h2{font-size:17px;}
+.question-wrap .title h2 .number {font-size:14px;}
+@media (max-width:800px) {
+	.question-wrap .title h2{font-size:15px}
+	.question-wrap .title h2 .number {font-size:14px;}
+	}
+.question-wrap .list .list-cont li a {font-size:13px;}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:13px;}
+@media (min-width:768px) { #sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:15px;}}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:15px}
+@media (min-width:768px) {#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:21px}}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:12px;}
+@media (min-width:768px) {  #sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:14px;}}
+.layer_popup .popup_wrap .popup_title2 {font-size:17px;}
+.layer_popup #popup_privacy .popup_wrap .popup_title {font-size: 19px;}
+.popup_wrap .pop-tit {font-size:17px;}
+.popup_wrap .msg-text {font-size:14px;line-height: 1.4}
+.layer_popup .popup_wrap .popup_title {font-size:17px;}
+html.ltr .layer_popup .popup_wrap .close-button { font-size:1.688em; }
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer {font-size:14px;}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow,
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow {font-size: 6px;}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle-content p {font-size:12px}
+.link_popup .layer_wrap .layer_title h1 {font-size:17px;}
+.link_popup .layer_wrap .layer_title span.store {font-size:12px;}
+.link_popup .layer_wrap .layer_cont .cont .in_title {font-size:14px;}
+.link_popup .layer_wrap .layer_cont .cont .in_cont {font-size:12px;}
+.link_popup .layer_wrap strong {font-size:13px;}
+#popup-type10 .pop-tit, #ie8alert .popAlign .pop-tit{font-size: 19px;}
+.b2c .layer_popup{font-size:0.75em;}
+.ss_samsung.b2c .sign-inner-wrap input[type='checkbox']:checked + label:before{font-size: 10px;font-size: 1rem;}
+.ss_samsung.b2c form:not(#foo) > fieldset input[type='checkbox']:checked + label:before {font-size:1em; background:#0071bf 0 none !important;}
+.ss_samsung.b2c .error, .ss_samsung.b2c p.error { font-size: 0.938em}
+.ss_samsung.b2c #sign_wrap .input input, .ss_samsung.b2c #sign_wrap .input .placeholder {font-size: 14px;}
+.b2c .layer_popup .sign-inner-wrap .popup_title {font-size:17px;}
+.b2c .layer_popup .sign-inner-wrap .close-button { font-size:1.813em; }
+@media (min-width:48em) {  .b2c .layer_popup .sign-inner-wrap .close-button { font-size:2.313em; }}
+.b2c #sign_wrap .sign-inner-wrap .title {font-size: 19px;}
+@media (min-width:48em) {.b2c #sign_wrap .sign-inner-wrap .title {font-size: 27px;}}
+.b2c #sign_wrap .popup_cont .sub-tit {font-size:14px;}
+@media (min-width:48em) {  .b2c #sign_wrap .popup_cont .sub-tit {font-size:19px;}}
+.b2c #sign_wrap .input-wrap label {font-size:13px;}
+@media (min-width:48em) {  .b2c #sign_wrap .input-wrap label {font-size:14px;}}
+.b2c #sign_wrap .chk label { font-size:12px; }
+@media (min-width:48em) {  .b2c #sign_wrap .chk label { font-size:13px}}
+.b2c #sign_wrap .sign-link a {font-size:12px !important;}
+@media (min-width:48em) {  .b2c #sign_wrap .sign-link a {font-size:14px !important}}
+.b2c #sign_wrap .btn-wrap .button {font-size:13px;}
+@media(min-width:48em) {  .b2c #sign_wrap .btn-wrap .button {font-size:14px;}}
+.b2c #sign_wrap .btn-wrap p {font-size:14px !important}
+@media (min-width:48em) {  .b2c #sign_wrap .btn-wrap p, #sign_wrap .btn-wrap p a { font-size:14px}}
+.b2c #sign_wrap .connect_wrap .connet-tit {font-size:14px;}
+@media (min-width:48em) {  .b2c #sign_wrap .connect_wrap .connet-tit {font-size:19px;}}
+.b2c #sign_wrap .sign-inner-wrap .error {font-size:12px}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 15px;}
+@media (min-width:960px) {  .b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 19px;}}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 13px;}
+@media (min-width:960px) {  .b2c #sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 15px;}}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .title {font-size:15px}
+.b2c .question-wrap .title h2{font-size:17px;}
+.b2c .question-wrap .title h2 .number {font-size:14px;}
+@media (max-width:800px) {
+	.b2c .question-wrap .title h2{font-size:15px}
+	.b2c .question-wrap .title h2 .number {font-size:14px;}
+	}
+.b2c .question-wrap .list .list-cont li a {font-size:13px;}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:13px;}
+@media (min-width:768px) {  .b2c #sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:15px;}}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:15px}
+@media (min-width:768px) {.b2c #sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:21px}}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:12px;}
+@media (min-width:768px) {  .b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:14px;}}
+.b2c .layer_popup .popup_wrap .popup_title2 {font-size:17px;}
+.b2c .layer_popup #popup_privacy .popup_wrap .popup_title {font-size: 19px;}
+.b2c .popup_wrap .pop-tit {font-size:17px; font-weight:bold;}
+.b2c .popup_wrap .msg-text {font-size:12px;}
+.b2c .layer_popup .popup_wrap .popup_title {font-size:17px;}
+html.ltr .b2c .layer_popup .popup_wrap .close-button,
+html.rtl .b2c .layer_popup .popup_wrap .close-button { font-size:1.688em; }
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer {font-size:14px;}
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow,
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow {font-size: 6px;}
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle-content p {font-size:12px}
+.b2c .link_popup .layer_wrap .layer_title h1 {font-size:17px;}
+.b2c .link_popup .layer_wrap .layer_title span.store {font-size:12px;}
+.b2c .link_popup .layer_wrap .layer_cont .cont .in_title {font-size:14px;}
+.b2c .link_popup .layer_wrap .layer_cont .cont .in_cont {font-size:12px;}
+.b2c .link_popup .layer_wrap strong {font-size:13px;}
+.b2c #popup-type10 .pop-tit, .b2c #ie8alert .popAlign .pop-tit{font-size: 19px;}
+/* shin - sns 버튼 밀리는 현상 */
+.sns-wrap {font-size:0; line-height:0;}
+/* check-out 하단 운영시간 추가 */
+.question-wrap .time,.question-wrap .title,.question-wrap .list{font-family: SECGCWM, sans-serif !important;}
+.question-wrap .q-inner{display: table;width:100%}
+.question-wrap .title,.question-wrap .time,.question-wrap .list{position:relative;display: table-cell;padding:0.625em 1.25em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.question-wrap .title h2,.question-wrap .time h2,.question-wrap .list ul{font-size:14px;margin:0}
+.question-wrap .title{float:left;width:30%;}
+.question-wrap .time{float:left;width:50%;border-left:1px solid #e2e2e2;border-right:1px solid #e2e2e2;}
+.question-wrap .list{float:left;width:20%;border:none}
+.question-wrap .title h2{padding-top: 10px}
+.question-wrap .list .list-cont{margin:0;padding: 0 0 0 0;line-height: 1.4}
+.question-wrap .list .list-cont li{padding-left: 0;background: none;}
+.question-wrap .list .list-cont li a{color: #0279cc}
+.question-wrap .time h2{position: relative}
+.question-wrap .time h2 span {color:#0079c5}
+.question-wrap .time h2 .time_title{display: inline-block;padding-top: 12px;vertical-align: top;}
+.question-wrap .time h2 .time_txt {color:#000;font-size:14px;display:inline-block;line-height:1.4;border-left:1px solid #e2e2e2;padding-left:15px;margin-left:15px;}
+@media (max-width:960px) {
+	.question-wrap .title h2 .number, .question-wrap .time h2 .time_txt{display:block;margin:5px 0 0 0;padding-left: 0;border: none}
+	.question-wrap .title{width:30%;}
+	.question-wrap .time{width:45%;}
+	.question-wrap .list{width:25%;}
+	.question-wrap .title h2{padding-top: 0}
+	.question-wrap .title h2 .number{font-size: inherit;}
+	.question-wrap .list .list-cont{padding-left: 0}
+	.question-wrap .time h2 .time_title{display: inline;padding-bottom: 10px}
+}
+@media (max-width:767px) {
+	.question-wrap .title,.question-wrap .time,.question-wrap .list{padding: 0.938em}
+	.question-wrap .title, .question-wrap .time{width: 100%;border-top: 1px solid #e2e2e2}
+	.question-wrap .list{width:100%;margin:0 0 70px 0;padding-top: 0;border-bottom: 1px solid #e2e2e2}
+	.question-wrap .title h2 .number {color:#000;font-size:14px;display:inline-block;height:20px;line-height:20px;border-left:1px solid #e2e2e2;padding-left:15px;margin-left:15px;}
+	.question-wrap .time h2 .time_txt{padding-top:10px}
+}
+/* signIn-tab : 하단배너 마크업추가 */
+#order-wrap{padding:20px 0;border-top:1px solid #ddd;text-align: center;background:#e8ebf0}
+#order-wrap .order-contents a{padding-left:60px;background:url('/sec/next/img/signin/order_img1.gif') 0 0 no-repeat}
+#order-wrap .order-contents a span{padding-left:10px;}
+@media (min-width:768px){#order-wrap{margin:20px 50px 0;border:1px solid #ddd;}}
+@media (min-width:961px){#order-wrap{margin:20px auto 0;width:960px;border:1px solid #ddd;}}
+/* 버튼사이 간격조정 */
+.popup_wrap .pop-btn a:first-child{margin-right: 5px}
+@media (max-width:560px){#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.last a{padding:18px 0;}}
+.ss_samsung #content .cta,
+#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .sign-link,
+.b2c #sign_wrap .btn-wrap p, #sign_wrap .btn-wrap p a{font-size: 15px!important;}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_commt{font-size:12px}
+@media (min-width:640px) {#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section { margin-top:0}}
+@media (max-width:639px){#sign_wrap .sign-inner-wrap .sign-cont .right-group{margin-top: 70px}}
+/*==============================여기까지 20151231 - sign.css 내용이관============================================================*/
+/*==============================20141231 alert.css내용이관============================================================*/
+@charset "utf-8";
+#open-notification h3{ font-family:'SECGCWL', sans-serif !important;}
+#open-notification p{ font-family:'SECGCWL', sans-serif !important;}
+.alert-notification{ font-family:'SECGCWM', sans-serif !important;}
+#open-notification .close:before{ font-size:36px; font-size:2.25rem;}
+@media (min-width:50.063em){#open-notification h3{ font-size:33px; font-size:2.0625rem;}}
+#open-notification p{ font-size:12px; font-size:0.75rem;}
+@media (min-width:50.063em){#open-notification p{ font-size:17px; font-size:1.0625rem;}}
+.tooltip{ font-size:12px; }
+.popover-title{ font-size:11px; }
+.alert-notification{ font-size:12px; font-size:0.75rem;}
+@media (min-width:48em){.alert-notification{ font-size:15px; font-size:0.9375rem;}}
+.alert-notification span{ font-size:21px; font-size:1.3125rem;}
+/* b2c font reset */
+.b2c #open-notification .close:before{ font-size:39px; font-size:2.4375rem;}
+.b2c #open-notification h3{ font-size:21px; font-size:1.3125rem;}
+@media (min-width:50.063em){.b2c #open-notification h3{ font-size:33px; font-size:2.0625rem;}}
+.b2c #open-notification p{ font-size:12px; font-size:0.75rem;}
+@media (min-width:50.063em){.b2c #open-notification p{ font-size:17px; font-size:1.0625rem;}}
+.b2c .tooltip{ font-size:12px;}
+.b2c .popover-title{ font-size:14px;}
+.b2c .alert-notification{ font-size:14px; font-size:0.875rem;}
+@media (min-width:48em){.b2c .alert-notification{ font-size:15px; font-size:0.9375rem;}}
+.b2c .alert-notification span{ font-size:21px; font-size:1.3125rem;}
+/*==============================여기까지 alert.css내용이관============================================================*/
+
+.icon-microsite,.icon.icons-smartphone_android{font-family:"samsungIcon";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
+.icon-microsite::before{content:"\e048"; color:#000;}
+
+
+
+/* 카테고리 리스트 usp 모듈 */
+.promotion-text { font-size:12px !important; }
+html.ltr .promotion-text li {  margin:0 0 5px !important; line-height:18px; height:36px; }
+
+@media (min-width:48em) {
+/* promotion-text List */	
+	.promotion-text { font-size:14px !important; }
+	html.ltr .promotion-text li { line-height:20px; height:40px; }
+
+}
+
+
+/* 카테고리 페이지 usp 리스트 동적 div */
+.ss_samsung.category #listText  { font-size:12px !important; padding:0 0 0 10px !important; }
+
+@media (min-width: 48em) {
+	.ss_samsung.category #listText { font-size:14px !important; padding:0 0 0 10px !important; }
+}
+
+
+
+/* 카테고리 리스트 풀셋 (제품명, 컬러칩, 별점, usp, 가격 + 온라인라벨 까지 가능 4개이상) */
+@media (min-width: 25em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:190px !important}}
+@media (min-width: 30em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:215px !important}}
+@media (min-width: 38.75em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:220px !important}}
+@media (min-width: 48em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:280px !important}}
+@media (min-width: 56.125em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:235px !important}}
+@media (min-width: 64em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:220px !important}}
+@media (min-width: 80.0625em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{height:225px !important}}
+@media (min-width: 100em) { .scrollwrapper .container .label_wrap.full-set .product-card .product-description{ height:230px !important }}
+@media (max-width: 399px) {
+	.scrollwrapper .container .label_wrap.full-set .product-card .product-description{ height:210px !important; }
+	html.ltr .scrollwrapper .container .label_wrap.full-set .product-card .product-description p.product-price,
+	html.ltr .scrollwrapper .container .label_wrap.full-set .product-card .product-description p.product-code {bottom:5px}
+	.product_fiche{padding:3% 0 0}
+}
+
+
+@media (min-width: 25em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:500px !important }
+}
+@media (min-width: 30em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{height:570px !important }
+}
+@media (min-width: 38.75em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:670px !important }
+}
+@media (min-width: 48em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:750px !important }
+}
+@media (min-width: 56.125em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:830px !important}
+}
+@media (min-width: 64em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:610px !important }
+}
+@media (min-width: 80.0625em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:610px !important }
+}
+@media (min-width: 100em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:680px !important }
+}
+@media (max-width: 399px) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.full-set .col .product-container{ height:460px !important }
+}
+
+.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{overflow:hidden;width:100%;height:459px !important}
+@media (min-width: 25em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{overflow:hidden;width:100%;height:499px !important} }
+@media (min-width: 30em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:569px !important} }
+@media (min-width: 38.75em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:680px !important } }
+@media (min-width: 48em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:749px !important } }
+@media (min-width: 56.125em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:829px !important } }
+@media (min-width: 64em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:609px !important } }
+@media (min-width: 80.0625em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{height:610px !important } }
+@media (min-width: 100em) {.grid .label_wrap.full-set .col .blue-theme,.grid .label_wrap.full-set .col .bali-theme,.grid .label_wrap.full-set .col .turquoise-theme,.grid .label_wrap.full-set .col .purple-theme,.grid .label_wrap.full-set .col .white-theme,.grid .label_wrap.full-set .col .black-theme,.grid .label_wrap.full-set .col .grey-theme,.grid .label_wrap.full-set .col .grey-dark-theme,.grid .label_wrap.full-set .col .navy-theme{ height:680px !important } }
+
+
+
+/* 카테고리 리스트 sec 모바일 (제품명, 컬러칩, usp리스트 ) */
+
+/* promotion-text List */	
+html.ltr .sec-mobileSet .promotion-text { padding: 0 3%; margin:0 0 10px; font-size:12px;}
+html.ltr .sec-mobileSet .promotion-text li { padding:0 0 0 10px; overflow: hidden; text-overflow:ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  margin:0 0 5px; line-height:18px; height:36px; }
+html.ltr .sec-mobileSet  .promotion-text li:before { position: absolute;  content: "•"; margin:0 0 0 -10px; font-size:10px; }
+
+@media screen and (min-width:38em) { 
+	/* promotion-text List */	
+	html.ltr .sec-mobileSet  .promotion-text { padding: 0 4%; margin:10px 0 10px; font-size:14px;}
+	html.ltr .sec-mobileSet .promotion-text li { padding:0 0 0 10px; margin:0 0 5px 0; line-height:20px; height:40px; }
+	html.ltr .sec-mobileSet .promotion-text li:before { margin:0 0 0 -10px; font-size:10px; }
+}
+
+
+
+
+@media (min-width: 25em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:200px }}
+@media (min-width: 30em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:210px }}
+@media (min-width: 38.75em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:210px }}
+@media (min-width: 48em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:220px }}
+@media (min-width: 56.125em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:225px }}
+@media (min-width: 64em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:210px  }}
+@media (min-width: 80.0625em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{height:210px  }}
+@media (min-width: 100em) { .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{ height:220px  }}
+@media (max-width: 399px) {
+	.scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description{ height:200px ; }
+	html.ltr .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description p.product-price,
+	html.ltr .scrollwrapper .container .label_wrap.sec-mobileSet .product-card .product-description p.product-code {bottom:5px}
+	.product_fiche{padding:3% 0 0}
+}
+
+
+@media (min-width: 25em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:495px  }
+}
+@media (min-width: 30em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{height:570px  }
+}
+@media (min-width: 38.75em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:650px }
+}
+@media (min-width: 48em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:740px  }
+}
+@media (min-width: 56.125em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:820px }
+}
+@media (min-width: 64em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:595px  }
+}
+@media (min-width: 80.0625em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:595px  }
+}
+@media (min-width: 100em) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:670px  }
+}
+@media (max-width: 399px) {
+	html.ltr .scrollwrapper .container .grid .label_wrap.sec-mobileSet .col .product-container{ height:450px  }
+}
+
+.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{overflow:hidden;width:100%;height:459px }
+@media (min-width: 25em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{overflow:hidden;width:100%;height:499px } }
+@media (min-width: 30em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:569px } }
+@media (min-width: 38.75em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:680px  } }
+@media (min-width: 48em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:749px  } }
+@media (min-width: 56.125em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:829px  } }
+@media (min-width: 64em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:609px  } }
+@media (min-width: 80.0625em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{height:610px  } }
+@media (min-width: 100em) {.grid .label_wrap.sec-mobileSet .col .blue-theme,.grid .label_wrap.sec-mobileSet .col .bali-theme,.grid .label_wrap.sec-mobileSet .col .turquoise-theme,.grid .label_wrap.sec-mobileSet .col .purple-theme,.grid .label_wrap.sec-mobileSet .col .white-theme,.grid .label_wrap.sec-mobileSet .col .black-theme,.grid .label_wrap.sec-mobileSet .col .grey-theme,.grid .label_wrap.sec-mobileSet .col .grey-dark-theme,.grid .label_wrap.sec-mobileSet .col .navy-theme{ height:680px  } }
+
+/* 푸터 접근성 수정 20150316   */
+.ss_samsung .footer .section .sns_link{float:left; margin-top:0;}
+.ss_samsung .footer .section .sns_link .fbico{color:#3a5897 !important;}
+.ss_samsung .footer .section .sns_link .twico{color:#28aae1 !important;}
+.ss_samsung .footer .section .sns_link a:hover, .ss_samsung .footer .section .sns_link a:focus{color:#0071bf;}
+.ss_samsung .footer .section .accreditation{float: right;margin-top:0;}
+.ss_samsung .footer .section .accreditation ul li{margin-right:0;}
+.ss_samsung .footer .section .accreditation a{color:#292929;}
+.ss_samsung .footer .section .accreditation a:hover, .ss_samsung .footer .section .accreditation a:focus{color:#0071bf;}
+.ss_samsung .footer .flag-kr {background: url("http://www.samsung.com/common/next/img/flag-sec.gif"); width:32px; height:20px; margin-left:10px; display:-moz-inline-stack; display:inline-block !important; vertical-align:middle; zoom:1;}
+@media (max-width:530px){
+.ss_samsung .footer .middle ul li .lang {
+  display: inline-block !important;
+}
+}
+
+/* 서브타이트 컬러 변경 20150427 */
+.ss_samsung #sec-nav {background:#404040;}
+
+html.ltr .searchbox label{ display:block !important; width:0; height:0; overflow:hidden; font-size:0;}
+html.ltr .footer-navi .searchbox-footer label{ display:block !important; width:0; height:0; overflow:hidden; font-size:0;}
+
+/* 모바일 갤러리의 이미지 우측 쏠림 수정 15.07.01 */
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"] img.responsive-image {max-width:100%}
+
+/* 회사소개 페이지 장바구니 삭제 버튼 클릭후 레이어 버튼 폭 수정 (2015.09.17) */
+.ss_samsung .button{min-width:9em !important;}
+
+#footer .footer-inner .footer-address .legal-list .bbox{ display:none;}
+@media (min-width: 1024px) and (max-width:1920px){
+#footer .footer-inner .footer-address .legal-list .bbox{ display:block;}
+#footer .footer-inner .footer-address .legal-list span.last{display:none;}
+}
+
+#footer .others-list li{ margin-right:12px !important;}
+#footer .others-list a span[class^="flag-"]{ margin-right:4px; margin-left:0 !important;margin-bottom:0 !important;}
+#footer .others-list .ico-rgt-bar{display:inline-block;height:9px;width:1px;margin-left:8px;padding:0;background-color:#b7b7b7;opacity:0.6;border-left:1px solid #666}

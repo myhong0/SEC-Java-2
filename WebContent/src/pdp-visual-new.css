@@ -1,0 +1,528 @@
+/* pdp-hero clear fix*/
+.pdp_standard #content .pdp-hero:after{content:" ";display:block;clear:both}
+
+/* flag */
+.ss_samsung .flag{background:#2074dc;position:absolute;z-index:10;top:31px}
+html.ltr .ss_samsung .flag{left:-10px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
+.ss_samsung .flag .promotion{font-size:12px;margin:0;text-align:center;color:#fff;width:130px;padding:10px 0;position:relative}
+.ss_samsung .flag .promotion span{position:relative;z-index:10;display:block;line-height:1}
+.ss_samsung .flag .promotion span:first-child{font-family:"SamsungIFBd",Arial,sans-serif;font-size:14px}
+.ss_samsung .flag .promotion:before{content:" ";background:#2074dc;height:100%;width:100%;display:block;position:absolute;top:0;bottom:0;left:-31px;z-index:1;-webkit-transform:skewX(-45deg);-moz-transform:skewX(-45deg);-ms-transform:skewX(-45deg);-o-transform:skewX(-45deg);transform:skewX(-45deg)}
+.ss_samsung .flag .promotion:after{content:" ";background:#2074dc;height:100%;width:100%;display:block;position:absolute;top:0;bottom:0;left:31px;z-index:1;-webkit-transform:skewX(45deg);-moz-transform:skewX(45deg);-ms-transform:skewX(45deg);-o-transform:skewX(45deg);transform:skewX(45deg)}
+@media(min-width:48em) {
+	.ss_samsung .flag{top:42px}
+	.ss_samsung .flag .promotion{font-size:14px}
+	.ss_samsung .flag .promotion span:first-child{font-size:16px}
+}
+
+/* product-info-wrap*/
+@media(min-width:64em) {.ss_samsung .product-info-wrap{position:relative;display:table;table-layout:fixed;width:970px;padding:30px 0 50px 0;margin:0 auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}}
+@media(min-width:80.0625em) {.ss_samsung .product-info-wrap{width:1253px}}
+
+/* product-img-section */
+.ss_samsung .product-img-section{text-align:center;/* padding:0 20px;*/}
+@media(min-width:48em) {.ss_samsung .product-img-section .thumbnail-visual{margin:20px 0 0 0}}
+@media(min-width:64em) {
+	.ss_samsung .product-img-section{width:493px; display:table-cell;vertical-align:middle;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	.ss_samsung .product-img-section .controls{margin-bottom:-40px}
+	.ss_samsung .product-img-section .thumbnail-visual{margin:10px 0 0 0}
+}
+@media(min-width:80.0625em) {.ss_samsung .product-img-section{width:695px}}
+
+/* bg thema*/
+.pdp_standard #content .pdp-hero.hero-module.white-bg{background:#fff}
+.pdp_standard #content .pdp-hero.hero-module.lightgray-bg{background:#75787b}
+.pdp_standard #content .pdp-hero.hero-module.darkgray-bg{background:#52565a}
+.pdp_standard #content .pdp-hero.hero-module.black-bg{background:#000}
+.pdp_standard #content .pdp-hero.hero-module.blue-bg{background:#0071bf}
+.pdp_standard #content .pdp-hero.hero-module.navy-bg{background:#1428a0}
+.pdp_standard #content .pdp-hero.hero-module.turquoise-bg{background:#009ca6}
+
+/* ss-carousel */
+.pdp_standard #content .pdp-hero .ss-carousel.hero{min-height:0;max-height:none;/*overflow:visible !important;*/ width:auto; padding:0 30px;}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer{height:100%; overflow:hidden; position:relative;}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul{height:100%}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li{overflow:hidden;height:100%}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"]{width:100%;overflow:hidden;height:auto;min-height:0;max-height:none}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li>div{display:table;table-layout:fixed}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li>div>p{width:100%;margin:0!important}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li>div>p>.click-area{position:absolute;top:0;left:50%;margin-left:-30%;width:60%;height:100%;display:block}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li>div>p>span.responsive-image>img{min-height:0;width:auto;height:100%;margin-left:-100%;position:relative;left:50%}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li .play-btn{width:50px;height:50px;left:50%;top:50%;margin:-25px 0 0 -25px}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li .play-btn span{margin:0}
+.pdp_standard #content .pdp-hero .ss-carousel.hero .next,.pdp_standard #content .pdp-hero .ss-carousel.hero .prev{display:block;top:50%;margin-top:-20px;width:30px;height:40px;background-size:20px 80px}
+html.ltr .pdp_standard #content .pdp-hero .ss-carousel.hero .next{right:10px; background-position:100% 100%}
+html.ltr .pdp_standard #content .pdp-hero .ss-carousel.hero .prev{left:10px; background-position:0 0}
+@media(min-width:48em) {
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li>div>p>.click-area{display:none}
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li .play-btn{width:66px;height:66px;margin:-33px 0 0 -33px}
+}
+@media(min-width:64em) {
+	.pdp_standard #content .pdp-hero .ss-carousel.hero,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"] p,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"] p img,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"]{height:433px;overflow:hidden}
+	/*html.ltr .pdp_standard #content .pdp-hero .ss-carousel.hero .next{right:-.1em;}
+	html.ltr .pdp_standard #content .pdp-hero .ss-carousel.hero .prev{left:-.1em;}*/
+}
+@media(min-width:80.0625em) {.pdp_standard #content .pdp-hero .ss-carousel.hero,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"] p,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"] p img,.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer>ul>li [class*="hero"]{height:450px}}
+
+
+/* thebnamil visual controls*/
+.pdp_standard #content .pdp-hero .controls .controls-wrap{position:relative;font-size:0}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{display:none}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn{display:none}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap{overflow:hidden; width:100%; /*height:30px*/height:52px;position:relative;top:0;left:0;text-align:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap{border-left:1px solid #c6c6c6}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail{position:absolute;background:#fff;width:20%;line-height:56px;border:1px solid #c6c6c6;text-align:center;box-shadow:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail {left:0;}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail + a.thumbnail{left:20%;}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail + a.thumbnail + a.thumbnail{left:40%;}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail + a.thumbnail + a.thumbnail + a.thumbnail{left:60%;}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail + a.thumbnail + a.thumbnail + a.thumbnail + a.thumbnail{left:80%;}
+html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail{border-left:none}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail.current{border-bottom:2px solid #0071bf}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail span.icon-button{font-size:15px;height:30px;line-height:30px;color:#000}
+
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail img{width:46px;height:46px}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail img.kv{width:30px;height:20px}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .num-count{height:20px;line-height:20px;font-size:16px;text-align:center;margin-top:10px}
+
+@media(min-width:52em) {
+	.pdp_standard #content .pdp-hero .controls .controls-wrap{ width:500px; margin:0 auto;  }
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .wrap{display:block}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{/*width:30px*/width:40px;display:block;/*height:30px*/height:49px;/*line-height:30px*/line-height:49px;position:absolute;font-size:16px;z-index:2;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button:hover{color:#0071bf}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.next,.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.prev{top:0; }
+
+	html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.next{ right:0 }
+	html.ltr .pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.prev{ left:0 }
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.disabled{cursor:default;color:#eee}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button.disabled:hover{color:#eee}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn{overflow:hidden;width:99%;height:52px;padding:0 45px;display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .num-count{display:none}
+}
+
+
+@media(min-width:62em) {
+	.pdp_standard #content .pdp-hero .controls .controls-wrap{ width:430px;  }
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{ width:52px; }
+
+}
+
+
+@media(min-width:82em) {
+	.pdp_standard #content .pdp-hero .controls .controls-wrap{ width:520px; }
+	.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{width:48px; }
+
+}
+
+
+/* product-info-section*/
+.ss_samsung .product-info-section{padding-top:20px;line-height:1}
+.ss_samsung .product-info-section .module-wrap{position:relative;background:#f1f1f1;border:1px solid #c6c6c6;padding:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.ss_samsung .product-info-section .module-wrap:after{content:"";display:block;clear:both}
+@media(min-width:64em) {.ss_samsung .product-info-section .module-wrap{padding:24px 24px 0 24px}}
+
+/* product-info*/
+.ss_samsung .product-info-section .product-info{clear:both;float:none;position:static;width:auto;margin:0}
+.ss_samsung .product-info-section .product-info .optionsList{width:100%}
+.ss_samsung .product-info-section .product-info .breadcrumb{margin-bottom:14px}
+html.ltr .ss_samsung .product-info-section .product-info .breadcrumb{padding-right:145px}
+.ss_samsung .product-info-section .product-info .breadcrumb a{font-size:14px;margin:0 0 0 0}
+.ss_samsung .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{font-size:14px;line-height:1;vertical-align:-2px}
+.ss_samsung .product-info-section .product-info .mda-tagline{padding:0;margin-bottom:18px;font-size:16px;color:#000}
+.ss_samsung .product-info-section .product-info .product-title{margin:0 0 14px 0}
+.ss_samsung .product-info-section .product-info .product-code{margin:0 0 15px 0;color:#888}
+.ss_samsung .product-info-section .product-info .badges{margin:0 0 18px 0;font-size:14px}
+@media(min-width:48em) {
+	html.ltr .ss_samsung .product-info-section .product-info .breadcrumb{padding-right:115px}
+}
+@media(min-width:48em) {
+	.ss_samsung .product-info-section .product-info .product-title{font-size:32px}
+	.ss_samsung .product-info-section .product-info .badges{font-size:16px}
+}
+@media(min-width:80.0625em) {.pdp_standard #content .pdp-hero .product-info-section{padding:0 0 0 30px;width:503px}}
+@media(min-width:64em) {
+	.pdp_standard #content .pdp-hero .product-info-section{width:497px;display:table-cell;vertical-align:middle;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	html.ltr .pdp_standard #content .pdp-hero .product-info-section{padding:0 0 0 24px}
+}
+
+/* compare button*/
+.pdp_standard #content .pdp-hero .product-info-section .compare-button-container{position:absolute;top:0;color:#fff}
+html.ltr .pdp_standard #content .pdp-hero .product-info-section .compare-button-container{right:0}
+.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{color:#232323}
+
+/* POV B2C 챘�앪�씳�씸먄�씲맡ぢ거벭р��  20150205 */
+.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button:hover{background:#777}
+
+@media(min-width:48em) {.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{font-size:16px}}
+
+/* ecom module */
+.ss_samsung .product-info-section .ecom-module{font-size:14px;margin:0}
+html.ltr .ss_samsung .product-info-section .ecom-module{float:none!important;margin:0}
+.ss_samsung .product-info-section .ecom-module p{margin:0}
+html.ltr .ss_samsung .product-info-section .ecom-module .ecom-text{text-align:left}
+.ss_samsung .product-info-section .ecom-module .ecom-text:after{content:" ";display:block;clear:both}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price{margin-bottom:8px}
+html.ltr .ss_samsung .product-info-section .ecom-module .ecom-text .price{text-align:left;/*margin-top: 18px;*/margin:18px 0 14px;}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price:after{clear:both;display:block;content:'';}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num{margin-top:8px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num span{text-decoration:line-through;color:#999}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num span strong{text-decoration:none;font-size:14px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num strong{font-size:20px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .discount{display:block;margin-top:7px;color:#292929;font-size:15px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .discount .icon-signin{font-size:11px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price-dec{margin-bottom:8px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .point p{clear:left;margin-top:8px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .point p:first-child{margin-top:0}
+.ss_samsung .product-info-section .ecom-module .ecom-text .point .cb{color:#419fcf}
+.ss_samsung .product-info-section .ecom-module .ecom-text .point .cr{color:#e83e22}
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .info{font-size:14px;margin-top:9px;text-decoration:underline;white-space:nowrap}
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax{margin-top:8px;font-size:14px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax a{text-decoration:underline}
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax .btn_recyc{position:static;margin:0}
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax p{margin-top:8px}
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax p:first-child{margin-top:0}
+.ss_samsung .product-info-section .ecom-module .nor-btnList{margin:10px 0 0 0;padding:0;background:none;width:100%}
+.ss_samsung .product-info-section .ecom-module .nor-btnList a span{font-size:16px}
+.ss_samsung .product-info-section .ecom-module .nor-btnList .ss-onstore{background:#672f9b}
+.ss_samsung .product-info-section .ecom-module .nor-btnList .ss-onstore:hover,.ss_samsung .product-info-section .ecom-module .nor-btnList .ss-onstore.active{background:#52565a}
+.ss_samsung .product-info-section .ecom-module .nor-btnList .nor-button{margin:10px 0}
+@media(min-width:48em) {
+	.ss_samsung .product-info-section .ecom-module .ecom-text .price .stock{font-size:16px}
+    .ss_samsung .product-info-section .ecom-module .ecom-text .price .discount{font-size:16px}     
+    .ss_samsung .product-info-section .ecom-module .ecom-text .price .discount .icon-signin{font-size:13px}
+	.ss_samsung .product-info-section .ecom-module .ecom-text .price .info{font-size:15px;}
+	.ss_samsung .product-info-section .ecom-module .ecom-text .point{width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+	html.ltr .ss_samsung .product-info-section .ecom-module{margin-right:-8px;}
+	html.ltr .ss_samsung .product-info-section .ecom-module .ecom-text{margin-right:8px;}
+	html.ltr .ss_samsung .product-info-section .ecom-module .ecom-text .point{float:left;padding-right:8px}
+	.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax{width:50%;margin-top:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+	html.ltr .ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax{float:left;padding-left:8px}
+	.ss_samsung .product-info-section .ecom-module .nor-btnList{display:table!important; /*float:none!important */ }
+	.ss_samsung .product-info-section .ecom-module .nor-button{vertical-align:middle;display:table-cell;width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+	html.ltr .ss_samsung .product-info-section .ecom-module .nor-button{border-right:8px solid #f1f1f1}
+	.ss_samsung .product-info-section .ecom-module .nor-btnList.num-1{width:50%}
+	.ss_samsung .product-info-section .ecom-module .nor-btnList.num-1 .nor-button{width:100%}
+}
+@media (min-width: 80em) {
+	.ss_samsung .product-info-section .ecom-module .ecom-text .price .info{font-size:16px;}
+}
+
+/* media module*/
+.ss_samsung .product-info-section .media-module{margin:0 0 0 0;padding:13px 0 9px 0;float:none!important}
+.ss_samsung .product-info-section .media-module .wrap{font-size:0;text-align:center;float:none;width:100%}
+.ss_samsung .product-info-section .media-module .wrap a{font-size:16px;display:block;height:auto}
+html.ltr .ss_samsung .product-info-section .media-module .wrap a{float:left}
+.ss_samsung .product-info-section .media-module .wrap .media span.icon-SampleImages{width:100%}
+.ss_samsung .product-info-section .media-module .media{text-align:center}
+.ss_samsung .product-info-section .media-module .media .label{font-size:12px;margin-top:5px}
+.ss_samsung .product-info-section .media-module .wrap .media{width:25%;padding:1px 0}
+.ss_samsung .product-info-section .media-module .wrap.num-2 .media{width:50%}
+.ss_samsung .product-info-section .media-module .wrap.num-3 .media{width:33.333333%}
+.ss_samsung .product-info-section .media-module .wrap.num-4 .media{width:25%;height:auto;vertical-align:top}
+@media(min-width:48em) {
+	.ss_samsung .product-info-section .media-module .media .label{font-size:14px}
+}
+
+/* num-5 adding */
+.ss_samsung .product-info-section .media-module .wrap.num-5 .media{width:20%;height:auto;vertical-align:top}
+@media (max-width:20em) {.pdp_standard .media-module .wrap.num-5 .media .icon{font-size:36px}}
+
+/* view-section */
+.ss_samsung .view-section{position:absolute;top:0;left:0;width:100%;z-index:-1}
+.ss_samsung .view-section.on{z-index:9999}
+.ss_samsung .view-section .vm-player{height:0;overflow:hidden}
+.ss_samsung .view-section .vm-player.on{height:420px;position:relative}
+@media(min-width:48em) {.pdp_standard #content .view-section .vm-player.on{height:700px}}
+
+/* threesixty-module */
+.pdp_standard #content .threesixty-module .close-button{margin-top:0;z-index:10000}
+
+
+/* b2c font reset */
+.pdp_standard .flag .promotion{font-size:14px}
+.pdp_standard .flag .promotion span{line-height:1}
+.pdp_standard .flag .promotion span:first-child{font-family:"SamsungIFBd",Arial,sans-serif;font-weight:normal}
+@media(min-width:48em) {.pdp_standard .flag .promotion{font-size:16px}}
+.pdp_standard #content .pdp-hero .controls .controls-wrap{font-size:0}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail{/*line-height:30px*/line-height:49px;height:52px;}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail span.icon-button{font-size:15px;line-height:30px}
+.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .num-count{line-height:20px;font-size:16px}
+
+@media(min-width:64em) {.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{line-height:30px;/*font-size:16px}*/font-size:18px;}}
+
+.pdp_standard .product-info-section{line-height:1}
+.pdp_standard .product-info-section .product-info .breadcrumb > span{position:relative;display:block;padding-left:24px;height:30px}
+.pdp_standard .product-info-section .product-info .breadcrumb a,.pdp_standard .product-info-section .product-info .breadcrumb span{font-size:14px;vertical-align:middle}
+.pdp_standard .product-info-section .product-info .breadcrumb span.icon-right-arrow{font-size:8px}
+.pdp_standard .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{position:absolute;left:-2px;top:3px;font-size:14px;line-height:1}
+@media(min-width:48em) {
+	.pdp_standard .product-info-section .product-info .breadcrumb > span{height:32px}
+	.pdp_standard .product-info-section .product-info .breadcrumb a,.pdp_standard .product-info-section .product-info .breadcrumb span{font-size:16px}
+	.pdp_standard .product-info-section .product-info .breadcrumb span.icon-right-arrow{font-size:10px}
+	.pdp_standard .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{font-size:16px;top:2px;left:-3px}
+}
+.pdp_standard .product-info-section .product-info .mda-tagline{font-size:16px}
+.pdp_standard .product-info-section .product-info .badges{font-size:14px}
+.pdp_standard .product-info-section .product-info .product-title{font-size:26px}
+@media(min-width:48em) {
+	.pdp_standard .product-info-section .product-info .product-title{font-size:32px}
+	.pdp_standard .product-info-section .product-info .badges{font-size:16px}
+}
+@media(min-width:48em) {.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{font-size:16px}}
+.pdp_standard .product-info-section .ecom-module{font-size:12px}
+@media(min-width:48em) {.pdp_standard .product-info-section .ecom-module{font-size:14px}}
+.pdp_standard .product-info-section .ecom-module .ecom-text .price .num span strong{font-size:14px}
+.pdp_standard .product-info-section .ecom-module .ecom-text .price .num strong{font-size:20px;font-family:"SamsungIFBd",Arial,sans-serif;font-weight:normal}
+.pdp_standard .product-info-section .ecom-module .ecom-text .price .stock{font-size:14px;font-weight:bold;}
+@media(min-width:48em) {.pdp_standard .product-info-section .ecom-module .ecom-text .price .stock{font-size:16px}}
+.pdp_standard .product-info-section .ecom-module .ecom-text .eco-tax{font-size:12px}
+@media(min-width:48em) {.pdp_standard .product-info-section .ecom-module .ecom-text .eco-tax{font-size:14px}}
+.pdp_standard .product-info-section .ecom-module .nor-btnList a span{font-size:14px;font-family:"SamsungIFBd",Arial,sans-serif}
+@media(min-width:48em) {.pdp_standard .product-info-section .ecom-module .nor-btnList a span{font-size:16px}}
+@media(min-width:48em) {.pdp_standard .product-info-section .ecom-module .ecom-text .price .stock{font-size:16px}}
+.pdp_standard .product-info-section .media-module .wrap{font-size:0}
+.pdp_standard .product-info-section .media-module .wrap a{font-size:16px;display:block;height:auto}
+.pdp_standard .product-info-section .media-module .media .label{font-size:12px}
+@media(min-width:48em) {.pdp_standard .product-info-section .media-module .media .label{font-size:14px}}
+
+/* edit same b2b */
+@media (min-width:1281px) {.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer .pdp-mobile{display:none}}
+
+/* edit same b2b - tablet landscape */
+@media (min-width:1024px) and (max-width:1280px) {
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer .pdp-desktop{display:none}
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer.viewer ul{position:static;width:100%}
+}
+
+/* edit same b2b - tablet portrait */
+@media (min-width:768px) and (max-width:1023px) {
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer .pdp-mobile{display:none}
+	.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer ul li{position:relative}
+}
+@media (max-width:767px){.pdp_standard #content .pdp-hero .ss-carousel.hero .viewer .pdp-desktop{display:none}}
+
+/*online_pdp 15.02.05*/
+.pdp_standard .product-info-section .usp-module {margin-bottom:20px;}
+.pdp_standard .product-info-section .usp-module .star-score .point{font-size:18px;width:88px;line-height:1;color:#a6a8aa;font-family:"samsungIcon";overflow:hidden}
+html.ltr .pdp_standard .product-info-section .usp-module .star-score .point{float:left;position:relative;}
+html.ltr .pdp_standard .product-info-section .usp-module .star-score .reviews{padding-left:10px;float:left;}
+.pdp_standard .product-info-section .usp-module .star-score .reviews{font-size:14px;line-height:1.71;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.pdp_standard .product-info-section .usp-module ul {padding-left:12px}
+.pdp_standard .product-info-section .usp-module ul li {line-height:1.29; font-size:14px;text-indent:-5px;}
+html.ltr .pdp_standard .product-info-section .usp-module ul li:before{content:"-";position:relative;left:-5px;}
+.pdp_standard .product-info-section .usp-module .star-score:after{content:"";display:block;clear:both;}
+.pdp_standard .product-info-section .usp-module .star-score .point:before{content:"\4f\4f\4f\4f\4f"}
+.pdp_standard .product-info-section .usp-module .star-score .point p{overflow:hidden;font-family:"samsungIcon";color:#ffc600;position:absolute;top:0;}
+.pdp_standard .product-info-section .usp-module .star-score .point p:before{content:"\4f\4f\4f\4f\4f"}
+
+.pdp_standard .product-info-section .ecom-module .ecom-text .promotion ul {padding-left:12px}
+.pdp_standard .product-info-section .ecom-module .ecom-text .promotion ul li{text-indent:-5px;line-height:1.29; font-size:14px;word-wrap:break-word}
+html.ltr .pdp_standard .product-info-section .ecom-module .ecom-text .promotion ul li:before{content:"-";position:relative;left:-5px;}
+
+@media (min-width: 48em) {
+	.pdp_standard .product-info-section .usp-module .star-score .reviews{font-size:15px}
+	.pdp_standard .product-info-section .usp-module ul li{line-height:1.29; font-size:15px}
+	.pdp_standard .product-info-section .ecom-module .ecom-text .promotion ul li{font-size:15px;}
+	.pdp_standard .product-info-section .usp-module  .star-score .point{font-size:20px;width:100px;}
+}
+
+@media (min-width: 80em) {
+	.pdp_standard .product-info-section .usp-module .star-score .reviews{font-size:16px}
+	.pdp_standard .product-info-section .usp-module ul li{line-height:1.29; font-size:16px}
+	.pdp_standard .product-info-section .ecom-module .ecom-text .promotion ul li{font-size:16px;}
+	.pdp_standard .product-info-section .usp-module  .star-score .point{font-size:22px;width:108px;}
+}
+/*online_pdp 15.02.05*/
+
+
+/*online_pdp jump to menu 15.02.05*/
+@media (min-width:48em) { .pdp_standard.shop_gnb_add .feature-module {padding-top:35px}
+.pdp_standard.shop_gnb_add .tech-spec-module {padding-top:35px}
+.pdp_standard.shop_gnb_add .reviews-module {padding-top:65px}
+.pdp_standard.shop_gnb_add .need-support-module {padding-top:65px}
+.pdp_standard.shop_gnb_add .accessories-module {padding-bottom:40px}
+.pdp_standard.shop_gnb_add .similar-items-module {padding-top:35px}
+}
+.pdp_standard.shop_gnb_add .accessories-module {padding-top:35px;padding-bottom:35px;}
+.pdp_standard.shop_gnb_add .similar-items-module {padding-top:30px}
+/*online_pdp jump to menu 15.02.05*/
+
+/*online_pdp offer 15.02.05*/
+.pdp_standard.shop_gnb_add .flag {top:42px;}
+/*online_pdp offer 15.02.05*/
+
+/*online_pdp shop_ 15.03.18*/
+.pdp_standard .choose_section .product-info .badges{border-bottom:1px solid #dedee0;padding-bottom:10px;height:1em;}
+.pdp_standard .choose_section .layout-2 .carrier-sec p.tit, .pdp_standard .choose_section .layout-2 .others-sec p.tit{font-size:14px;font-weight:bold;margin:0;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .carrier-sec p.tit, .pdp_standard .choose_section .layout-2 .others-sec p.tit{font-size:16px;}}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .carrier-sec label, .pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label,
+	{
+    font-size:16px;
+}}
+.pdp_standard .choose_section .layout-2 .carrier-sec label, .pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label {
+    font-size:14px;
+    padding:0 10px 0 3px;
+}
+.pdp_standard .choose_section .layout-2 .carrier-sec .carrier_ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .carrier-sec .carrier_ul li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding:11px 0 0 1px}
+
+.pdp_standard .choose_section .layout-2 .memory-sec .memory_ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .memory-sec .memory_ul li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding-left:1px;}
+
+.pdp_standard .choose_section .layout-2 .others-sec ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .others-sec ul>li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding:11px 0 0 1px}
+
+.pdp_standard .choose_section .layout-2 .carrier-sec,
+.pdp_standard .choose_section .layout-2 .memory-sec,
+.pdp_standard .choose_section .layout-2 .others-sec, {
+	float:none!important;padding-bottom:14px;margin-top:-3px;
+}
+.pdp_standard .choose_section .layout-2 .carrier-sec, .pdp_standard .choose_section .layout-2 .memory-sec, .pdp_standard .choose_section .layout-2 .others-sec {
+	float:none!important;padding-bottom:14px;border-bottom: 1px solid #e3e3e3;margin-top:-3px;
+}
+.pdp_standard .choose_section .layout-2 .memory-sec {
+	border-bottom: 1px solid #c2c2c2;
+}
+@media (min-width:80em) {
+	.pdp_standard .choose_section .layout-2 .carrier-sec label,.pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label {
+		font-size:16px;
+	}
+}
+@media (min-width:80em) {
+	.pdp_standard .choose_section .layout-2 .memory-sec {
+		padding-bottom:13px;
+	}
+}
+/*choose a Carrier*/
+.pdp_standard .choose_section .layout-2 .carrier-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .carrier-sec .contract_ul {opacity:1;}
+
+
+/*choose a Memory*/
+.pdp_standard .choose_section .layout-2 .memory-sec{opacity:1;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:16px;font-weight:bold;}}
+.pdp_standard .choose_section .layout-2 .memory-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:14px;font-weight:bold;margin:15px 0 13px;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:16px;}}
+
+
+/*choose Others*/
+.pdp_standard .choose_section .layout-2 .others-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .others-sec {margin-top:11px;}
+
+/*Choose a Color*/
+.pdp_standard .choose_section .layout-2 .swatches {border-bottom: 1px solid #dedee0;margin-top:11px;margin-bottom:10px;padding-bottom:13px; opacity:1; }
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .swatches{margin-top:15px;}}
+.pdp_standard .choose_section .layout-2 .swatches .swatches-tit{font-weight:bold;margin:0 0 10px 0;font-size:14px;line-height: 18px;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .swatches .swatches-tit{font-size:16px;}}
+
+/*ecom-module membership-price*/
+.pdp_standard .choose_section .ecom-module .ecom-text .membership-price{margin-top:10px 0;}
+.pdp_standard .choose_section .ecom-module .ecom-text .membership-price .con{padding:0 0 17px 0;margin-top:-2px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .membership-price .con span.sale-price{font-size:20px;color:#0077bc;font-weight:bold;}
+html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .membership-price .con span.ico-man{position:absolute;margin:2px 0 0 17px;font-size:22px;color:#0077bc;background-image:url(/common/next/img/ico-man.png);width:15px;height:17px;}
+html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .membership-price .con span.sale-desc{font-size:16px;margin-left:36px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .membership-price .con span.discount-rate{font-size:16px;padding:0 0 13px 0;color:#0077bc;}
+.pdp_standard .choose_section .ecom-module .ecom-text .membership-price p.tit{font-size:14px;padding:0 0 14px 0;font-weight:bold;}
+@media(min-width:48em){
+	.pdp_standard .choose_section .ecom-module .ecom-text .membership-price p.tit{font-size:15px;}	
+}
+@media(min-width:80em){
+	.pdp_standard .choose_section .ecom-module .ecom-text .membership-price p.tit{font-size:16px;padding:0 0 9px 0;}	
+}
+
+/*ecom-module samsung-point*/
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point{background:#dddee3;padding:9px 11px 8px;}
+@media(min-width:64em){
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point{padding-top:12px;}
+}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point:after{clear:both;display:block;content:"";}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .tit_wrap{font-weight:bold;font-size:14px;width:100%;margin-bottom:8px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .tit_wrap * { vertical-align:middle}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .tit_wrap .tit{display:inline;}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point button{margin-left:10px;background-image:url(/common/next/img/ico-question.png); width:16px; height:16px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .con{overflow: hidden; word-wrap: break-word; font-size:14px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .con .discount-rate{color:#0077bc;margin:0 5px;}
+@media(min-width:64em){
+	html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .tit_wrap{float:left;width:204px;margin-right:10px;margin-bottom:0;}
+	html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .tit_wrap .tit{float:left;width:185px;}
+	html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .samsung-point button{float:left;margin:0;}
+	html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .samsung-point .con{float:left;width: 185px;}
+}
+
+/*ecom-module product-option*/
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option {overflow:hidden;}
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option li{width:100%;overflow:hidden;margin:20px 0 8px 0;font-size:14px;box-sizing: border-box;}
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .tit{overflow:hidden;float:left;width:25%;word-wrap:break-word;font-weight:bold}
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option .quantity-section .tit{padding-top:-3px;}
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option .gift-section .con{padding-top:-2px;line-height:1.31;}
+.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .con{float:left;width:75%;color:#0077bc;}
+html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .product-option li .find-store{background:#3471bf;color:#fff;padding:3px 6px;font-size:14px;display:inline-block;float:left;}
+html.ltr .pdp_standard .choose_section .ecom-module .ecom-text .product-option li.stock-section .sub-tit{float:left;margin-right:10px;margin-top:4px;}
+@media(min-width:46em){
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li{overflow:hidden;margin:21px 0 8px 0;font-size:16px;}
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .tit{width:15%;}
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .con{width:85%;}
+}
+@media(min-width:64em){
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li{overflow:hidden;margin:18px 0 11px 0;font-size:16px;}
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .tit{width:100px;}
+	.pdp_standard .choose_section .ecom-module .ecom-text .product-option li .con{width:323px;}
+}
+/*online_pdp shop_ 15.03.18*/
+
+
+
+/*ecom-module memory-option*/
+.pdp_standard .product-info-section .product-info .memory-option ul li{display:inline-block;padding-right:3px;}
+.pdp_standard .product-info-section .product-info .memory-option ul li:after{content:"|";position:relative;left:5px;padding-right:3px;}
+.pdp_standard .product-info-section .product-info .memory-option ul li:last-child:after{content:"";}
+.pdp_standard .product-info-section .product-info .memory-option{margin-bottom:15px;}
+.pdp_standard .product-info-section .product-info .memory-option p{font-weight:bold;margin-bottom:10px;font-size:14px;line-height:1.5;} 
+.pdp_standard .product-info-section .ecom-module .product-feature p{margin-bottom:6px;font-weight:bold;margin-left:-9px;font-size:14px;line-height:1.5;}
+@media(min-width:80em){
+	.pdp_standard .product-info-section .ecom-module .product-feature p{margin-bottom:10px;font-size:16px;line-height:1.3;}
+	.pdp_standard .product-info-section .product-info .memory-option p{font-size:16px;line-height:1.3;}
+}
+@media(min-width:48em){
+	.pdp_standard .product-info-section .ecom-module .product-feature p{margin-bottom:10px;font-size:15px;line-height:1;}
+	.pdp_standard .product-info-section .product-info .memory-option p{font-size:15px;line-height:1;}
+}
+.pdp_standard .product-info-section .ecom-module .product-feature{padding-left:12px;}
+.pdp_standard .product-info-section .ecom-module .product-feature ul li{line-height:1.5; font-size:14px;text-indent:-5px;}
+html.ltr .pdp_standard .product-info-section .ecom-module .product-feature ul li:before{content:"-";position:relative;left:-5px;}
+/*online_pdp no_shop_ 15.03.18*/
+
+.pdp_standard .product-info-wrap .product-info-section .media-module .wrap .media .icon{font-size:38.4px;}
+
+.pdp_standard .product-info-wrap .product-info-section .media-module .wrap .media .icon.icon-liveChat{font-size:40px !important;}
+
+.ss_samsung.b2c .media-module .wrap .media.liveChat .label  { margin:3px 0 0 0 !important; }
+
+.ss_samsung .product-info-section .media-module{padding:15px 0;}
+
+/* basket option 20160215 */
+.ss_samsung .product-info-section .basket-option{border-bottom:1px solid #e3e3e3;}
+.ss_samsung .product-info-section .basket-option li{border-top:1px solid #e3e3e3;}
+.ss_samsung .product-info-section .basket-option .btnToggle{position:relative;display:block;width:100%;padding:7px 30px 9px 0;text-align:left;font-size:14px;box-sizing:border-box;}
+.ss_samsung .product-info-section .basket-option .btnToggle .icon-plus{position:absolute;right:5px;top:50%;margin-top:-6px;color:#737373;font-size:10px;font-weight:normal;}
+.ss_samsung .product-info-section .basket-option .button-option-tit{position:relative;display:block;width:100%;min-height:31px;line-height:31px;padding-right:30px;text-align:left;font-size:14px;box-sizing:border-box;color:#000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ss_samsung .product-info-section .basket-option .button-option-tit span[class^="icon"]{position:absolute;right:5px;top:50%;margin-top:-6px;color:#737373;font-size:10px;font-weight:normal;}
+.ss_samsung .product-info-section .basket-option .basket-option-cont{display:none;padding:0 10px 10px;color:#888;font-size:13px;line-height:1.29;}
+.ss_samsung .ecom-module .badges{margin:0 0 18px 0;font-size:14px;text-align:left}
+
+@media (min-width: 48em){
+	.ss_samsung .product-info-section .basket-option .btnToggle{font-size:15px;}
+	.ss_samsung .product-info-section .basket-option .btnToggle span[class^="icon"]{font-size:11px;}
+	.ss_samsung .product-info-section .basket-option .button-option-tit{font-size:15px;}
+	.ss_samsung .product-info-section .basket-option .button-option-tit span[class^="icon"]{font-size:11px;}
+	.ss_samsung .ecom-module .badges{font-size:16px}
+}
+@media (min-width: 80em){
+	.ss_samsung .product-info-section .basket-option .btnToggle{font-size:16px;}
+	.ss_samsung .product-info-section .basket-option .btnToggle span[class^="icon"]{font-size:12px;}
+	.ss_samsung .product-info-section .basket-option .button-option-tit{font-size:16px;}
+	.ss_samsung .product-info-section .basket-option .button-option-tit span[class^="icon"]{font-size:12px;}
+	.ss_samsung .product-info-section .basket-option .basket-option-cont{font-size:14px;}
+}

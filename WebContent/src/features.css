@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+.mgFeature{color:#292929;font-weight:normal;font-family:"SamsungIFRg",Arial,sans-serif}
+.mgFeature_more{width:100%;overflow:hidden;display:block;padding-bottom:40px}
+@media all and (min-width:1025px) and (max-width:1280px) {.mgFeature_more{padding-bottom:40px} }
+@media all and (min-width:769px) and (max-width:1024px) {.mgFeature_more{padding-bottom:30px} }
+@media all and (min-width:481px) and (max-width:768px) {.mgFeature_more{padding-bottom:20px} }
+@media all and (max-width:480px) {.mgFeature_more{padding-bottom:20px} }
+.mgFeature{overflow:hidden;width:96%;margin:0 auto;padding:0 2%}
+@media all and (min-width:1025px) and (max-width:1280px) {.mgFeature{overflow:hidden;width:96%;margin:0 auto;padding:0 2%} }
+@media all and (min-width:769px) and (max-width:1024px) {.mgFeature{overflow:hidden;width:94%;margin:0 auto;padding:0 3%} }
+@media all and (min-width:481px) and (max-width:768px) {.mgFeature{overflow:hidden;width:92%;margin:0 auto;padding:0 4%} }
+@media all and (max-width:480px) {.mgFeature{overflow:hidden;width:90%;margin:0 auto;padding:0 5%} }
+.features_description{font-size:18px;font-size:1.125rem;padding:40px 0 20px 0}
+@media all and (min-width:1025px) and (max-width:1280px) {.features_description{font-size:17px;font-size:1.0625rem;padding:40px 0 20px 0} }
+@media all and (min-width:769px) and (max-width:1024px) {.features_description{font-size:16px;font-size:1rem;padding:30px 0 15px 0} }
+@media all and (min-width:481px) and (max-width:768px) {.features_description{font-size:16px;font-size:1rem;padding:20px 0 10px 0} }
+@media all and (max-width:480px) {.features_description{font-size:16px;font-size:1rem;padding:20px 0 10px 0} }
+.keynote_large_wide .description_pci,.keynote_large .description_pci,.keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:18px;font-size:1.125rem}
+.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:24px;font-size:1.5rem;font-weight:bold}
+.keynote_rbox_small h2.title{font-size:20px!important;font-size:1.25rem!important;font-weight:bold}
+.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.keynote_large_wide .description_pci,.keynote_large .description_pci,keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:17px;font-size:1.0625rem}
+	.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:23px;font-size:1.4375rem}
+	.keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+	.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.keynote_large_wide .description_pci,.keynote_large .description_pci,keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:22px;font-size:1.375rem}
+	.keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+	.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.keynote_large_wide .description_pci,.keynote_large .description_pci,keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+	.keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+	.keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+}
+@media all and (max-width:480px) {
+	.keynote_large_wide .description_pci,.keynote_large .description_pci,keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+	.keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+	.keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+}
+.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0;clear:both;display:block;width:auto}
+@media all and (min-width:1025px) and (max-width:1280px) {.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0} }
+@media all and (min-width:769px) and (max-width:1024px) {.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0} }
+@media all and (min-width:481px) and (max-width:768px) {.description_pci small{font-size:13px;font-size:.8125rem;padding:15px 0 0 0} }
+@media all and (max-width:480px) {.description_pci small{font-size:13px;font-size:.8125rem;padding:15px 0 0 0} }
+.description_pci b,.description_pci strong{max-width:100%;display:block;overflow:hidden}
+.keynote_large_wide{width:100%;overflow:hidden;padding:40px 0 20px 0}
+.keynote_large_wide h2.title{text-align:left;padding-bottom:20px}
+.keynote_large_wide img{width:38%;float:left;margin-right:2%}
+.keynote_large_wide .description_pci{width:auto}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.keynote_large_wide{width:100%;overflow:hidden;padding:40px 0 20px 0}
+	.keynote_large_wide h2.title{text-align:left;padding-bottom:20px}
+	.keynote_large_wide img{width:38%;float:left;margin-right:2%}
+	.keynote_large_wide .description_pci{width:auto}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:30px 0 15px 0}
+	.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+	.keynote_large_wide img{width:100%;float:left;margin-right:0;padding-bottom:10px}
+	.keynote_large_wide .description_pci{width:100%;text-align:left}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:20px 0 10px 0}
+	.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+	.keynote_large_wide img{width:100%;float:left;margin-left:0;padding-bottom:10px}
+	.keynote_large_wide .description_pci{width:100%;text-align:left}
+}
+@media all and (max-width:480px) {
+	.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:20px 0 10px 0}
+	.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+	.keynote_large_wide img{width:100%;float:left;margin-right:0;padding-bottom:10px}
+	.keynote_large_wide .description_pci{width:100%;text-align:left}
+}
+.keynote_row_group{width:100%;overflow:hidden;padding:40px 0 20px 0}
+.keynote_row_group .row_left,.keynote_row_group .row_right{width:48%}
+.ltr .keynote_row_group .row_left{float:left}
+.ltr .keynote_row_group .row_right{float:right}
+.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center;padding-bottom:20px}
+.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.keynote_row_group{width:100%;overflow:hidden;padding:40px 0 20px 0}
+	.keynote_row_group .row_left{width:48%;float:left}
+	.keynote_row_group .row_right{width:48%;float:right}
+	.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+	.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+	.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+	.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.keynote_row_group{width:100%;overflow:hidden;padding:30px 0 15px 0}
+	.keynote_row_group .row_left{width:48%;float:left}
+	.keynote_row_group .row_right{width:48%;float:right}
+	.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+	.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+	.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+	.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.keynote_row_group{width:100%;overflow:hidden;padding:20px 0 10px 0}
+	.keynote_row_group .row_left{width:100%;float:left;margin-bottom:20px}
+	.keynote_row_group .row_right{width:100%;float:right;margin-bottom:20px}
+	.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+	.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+	.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+	.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+}
+@media all and (max-width:480px) {
+	.keynote_row_group{width:100%;overflow:hidden;padding:20px 0 10px 0}
+	.keynote_row_group .row_left{width:100%;float:left;margin-bottom:20px}
+	.keynote_row_group .row_right{width:100%;float:right;margin-bottom:20px}
+	.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+	.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+	.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+	.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+}
+.keynote_mini{width:100%;overflow:hidden;padding-bottom:20px}
+.keynote_mini .sum{float:left;padding:0 20px 10px 0}
+.keynote_small{width:100%;overflow:hidden}
+.keynote_small .sum{float:left;min-width:inherit;max-width:47%;margin-right:3%;margin-bottom:2%}
+.keynote_small .sum img{min-width:inherit;max-width:100%}
+.keynote_small .text{min-width:50%;max-width:auto}
+.keynote_small .text h2.title{text-align:left;padding-bottom:5px}
+.keynote_small .text .description_pci{text-align:left;padding-top:5px}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.keynote_small{width:100%;overflow:hidden}
+	.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+	.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.keynote_small{width:100%;overflow:hidden}
+	.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+	.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.keynote_small{width:100%;overflow:hidden}
+	.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+	.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+}
+@media all and (max-width:480px) {
+	.keynote_small{width:100%;overflow:hidden}
+	.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+	.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+}	
+.npc_hdmi{width:100%;overflow:hidden;text-align:center;padding:40px 0 20px 0}
+.npc_hdmi h2.title{text-align:left;padding-bottom:10px}
+.npc_hdmi img{min-width:inherit;max-width:100%}
+@media all and (min-width:1025px) and (max-width:1280px) {.npc_hdmi{padding:40px 0 20px 0} }
+@media all and (min-width:769px) and (max-width:1024px) {.npc_hdmi{padding:30px 0 15px 0} }
+@media all and (min-width:481px) and (max-width:768px) {.npc_hdmi{padding:20px 0 10px 0} }
+@media all and (max-width:480px) {.npc_hdmi{padding:20px 0 10px 0} }
+.keynote_rbox_small_group{width:100%;overflow:hidden}
+.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%}
+.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+.ltr .keynote_rbox_small_group .keynote_rbox_small{float:left}
+.ltr .keynote_rbox_small_group .keynote_rbox_small .inbox{float:left}
+.ltr .keynote_rbox_small_group .keynote_rbox_small .sum{float:left}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.keynote_rbox_small_group{width:100%;overflow:hidden}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+	.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%}
+	.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.keynote_rbox_small_group{width:100%;overflow:hidden}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+	.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%}
+	.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.keynote_rbox_small_group{width:100%;overflow:hidden}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:98%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+	.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%}
+	.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+}
+@media all and (max-width:480px) {
+	.keynote_rbox_small_group{width:100%;overflow:hidden}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:98%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:1.5%;width:97%}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:0}
+	.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:80%}
+	.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+}
+.npc_youTube h2.title{margin-bottom:10px}
+.accShow{display:none}
+
+/* b2c font reset */
+/* common */
+.b2c .mgFeature{font-weight:normal;font-family:"SamsungIFRg",Arial,sans-serif}
+.b2c .features_description{font-size:18px;font-size:1.125rem}
+@media all and (min-width:1025px) and (max-width:1280px) {.b2c .features_description{font-size:17px;font-size:1.0625rem} }
+@media all and (min-width:769px) and (max-width:1024px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+@media all and (min-width:481px) and (max-width:768px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+@media all and (max-width:480px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:18px;font-size:1.125rem}
+.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:24px;font-size:1.5rem;font-weight:bold}
+.b2c .keynote_rbox_small h2.title{font-size:20px!important;font-size:1.25rem!important;font-weight:bold}
+.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+@media all and (min-width:1025px) and (max-width:1280px) {
+	.b2c .keynote_large_wide .description_pci,.keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:17px;font-size:1.0625rem}
+	.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:23px;font-size:1.4375rem}
+	.b2c .keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+	.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+	.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:22px;font-size:1.375rem}
+	.b2c .keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+	.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+}
+@media all and (min-width:481px) and (max-width:768px) {
+	.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+	.b2c .keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+	.b2c .keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+}
+@media all and (max-width:480px) {
+	.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+	.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+	.b2c .keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+	.b2c .keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+}
+.b2c .description_pci small{font-size:14px;font-size:.875rem}
+@media all and (min-width:1025px) and (max-width:1280px) {.b2c .description_pci small{font-size:14px;font-size:.875rem} }
+@media all and (min-width:769px) and (max-width:1024px) {.b2c .description_pci small{font-size:14px;font-size:.875rem} }
+@media all and (min-width:481px) and (max-width:768px) {.b2c .description_pci small{font-size:13px;font-size:.8125rem} }
+@media all and (max-width:480px) {.b2c .description_pci small{font-size:13px;font-size:.8125rem} }
+/* common end */

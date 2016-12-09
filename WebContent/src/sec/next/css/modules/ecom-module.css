@@ -1,0 +1,60 @@
+.ss_samsung .ecom-module .find-it-container .onstore .ss-button{ font-family:'SECGCWL', sans-serif !important; }
+.ss_samsung.b2c .ecom-module .find-it-container .onstore .ss-button{ font-family:'SECGCWL', sans-serif !important; }
+.ss_samsung .ecom-module{ font-size:12px; }
+.ss_samsung .ecom-module .etc-btnList .stock-info .ecomText{ font-size:13px; }
+.ss_samsung .ecom-module .etc-btnList .stock-info .ecomText p.cl{ font-size:14px; }
+.ss_samsung .ecom-module .nor-button{font-size:13px;}
+.ss_samsung .ecom-module .nor-button span.etc{font-size:13px;}
+.ss_samsung .ecom-module .toggle.clearfix.y-toggle{font-size:13px;}
+@media (min-width:48em){
+	.ss_samsung .ecom-module .etc-btnList .stock-info .ecomText{ font-size:14px; }
+	.ss_samsung .ecom-module .nor-button{ font-size:13px; }
+	.ss_samsung .ecom-module .nor-button span.etc{ font-size:13px; }
+	.ss_samsung .ecom-module .toggle.clearfix.y-toggle{ font-size:13px; }
+}
+@media (min-width:64em){
+	.ss_samsung .ecom-module .etc-btnList .stock-info .ecomText p.cl{ font-size:15px; }
+	.ss_samsung .ecom-module .nor-btnList,
+	.ss_samsung .ecom-module .nor-btnList-etc{ font-size:0; }
+
+	.ss_samsung .ecom-module .nor-button{ font-size:15px; }
+	.ss_samsung .ecom-module .nor-button span.etc{ font-size:15px; }
+	.ss_samsung .ecom-module .toggle.clearfix.y-toggle{ font-size:15px; }
+
+}
+.ss_samsung .ecom-module .find-it-container .onstore .ss-button{ font-size:13px; }
+@media (min-width:48em){
+	.ss_samsung .ecom-module .find-it-container .onstore .ss-button{ font-size:14px; }
+}
+@media (min-width:64em){
+	.ss_samsung .ecom-module .find-it-container .onstore .ss-button{ font-size:14px; }
+}
+/* b2c font reset */
+.ss_samsung.b2c .ecom-module{ font-size:12px; }
+.ss_samsung.b2c .ecom-module .etc-btnList .stock-info .ecomText{ font-size:13px; }
+.ss_samsung.b2c .ecom-module .etc-btnList .stock-info .ecomText p.cl{ font-size:14px; }
+/* nor-button */
+.ss_samsung.b2c .ecom-module .nor-button{ font-size:12px; }
+.ss_samsung.b2c .ecom-module .nor-button span.etc{ font-size:12px; }
+/*shop now button*/
+.ss_samsung.b2c .ecom-module .toggle.clearfix.y-toggle{ font-size:12px; }
+@media (min-width:48em){
+	.ss_samsung.b2c .ecom-module .etc-btnList .stock-info .ecomText{ font-size:14px; }
+	.ss_samsung.b2c .ecom-module .nor-button{ font-size:13px; }
+	.ss_samsung.b2c .ecom-module .nor-button span.etc{ font-size:13px; }
+	.ss_samsung.b2c .ecom-module .toggle.clearfix.y-toggle{ font-size:13px; }
+}
+@media (min-width:64em){
+	.ss_samsung.b2c .ecom-module .etc-btnList .stock-info .ecomText p.cl{ font-size:15px; }
+	.ss_samsung.b2c .ecom-module .nor-btnList,
+	.ss_samsung .ecom-module .nor-btnList-etc{ font-size:0; }
+	.ss_samsung.b2c .ecom-module .nor-button span.etc{ font-size:13px; }
+}
+/* in store button style */
+.ss_samsung.b2c .ecom-module .find-it-container .onstore .ss-button{ font-size:13px; }
+@media (min-width:48em){
+	.ss_samsung.b2c .ecom-module .find-it-container .onstore .ss-button{ font-size:14px; }
+}
+@media (min-width:64em){
+	.ss_samsung.b2c .ecom-module .find-it-container .onstore .ss-button{ font-size:14px; }
+}

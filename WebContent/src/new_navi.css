@@ -1,0 +1,279 @@
+﻿@charset "utf-8";
+/*2015-04-03*/
+html.ltr .nav{height:50px;background-color:#1428a0;}
+html.ltr .nav .samsung_logo{top:0px;}
+html.ltr .nav nav .navigation{top:0px;}
+html.ltr .nav nav .navigation li.sub>a{padding:0 18px}
+html.ltr .nav nav .navigation li a{margin:0; padding: 0 20px;}
+html.ltr .nav nav .navigation li .icon-estore:before{content:""}
+html.ltr .nav nav .navigation li .icon-estore{display:inline-block;width:13px;height:14px;background:url(/sec/next/img/store.png) no-repeat;}
+/*html.ltr .nav nav .navigation li .icon-sec-building:before{content:""}
+html.ltr .cart-wrap .cartnum{background-color:#157dd6;}
+html.ltr .nav nav .navigation li.on{background:#4d4d4d}
+html.ltr .nav nav .navigation li.on>a{color:#fff; }*/
+@media(max-width: 1023px){
+	html.ltr .nav nav .navigation li .icon-estore{background:url(/sec/next/img/store_mobile.png) no-repeat;background-size:cover;}
+}
+@media(min-width: 1024px){
+	html.ltr .nav nav .navigation>li.sub>a:after{content:"";}
+}
+/*html.ltr .nav .samsung_logo{width:130px;}
+html.ltr .nav .samsung_logo img{width:100%;height:auto;}
+@media(max-width: 480px){
+	html.ltr .nav .samsung_logo{width:30%;}
+}*/
+body{overflow-x:hidden}
+html.ltr .nav .navbutton{display:block;position:absolute;top:0;right:0; float:none; width:49px;}/*2015-05-27*/
+html.ltr .nav .navbutton.on{color:#000;background:#fff}
+html.ltr .nav nav .utillink{position:absolute;right:0px;top:50px; overflow:hidden; width:0px; height:0px; text-align:left; box-shadow:4px 0 10px #999; z-index:999999;-webkit-transition:-webkit-width 500ms ease;-moz-transition:-moz-width 500ms ease;-o-transition:-o-width 500ms ease;transition:width 500ms ease; padding:0;}
+html.ltr .nav nav .utillink a{display:block;margin:0;font-size:14px;color:#000;line-height:35px; margin:0 20px;}
+html.ltr .nav nav .utillink a:first-child{margin-top:10px;}
+html.ltr .nav nav .utillink .expand ul{display:none;position:static;width:100%;padding-bottom:10px}
+html.ltr .nav nav .utillink .expand ul.on{display:block}
+html.ltr .nav nav .utillink .expand ul li{margin:0 0 -1px 0;padding:4px 15px;text-align:left;border:none;background:none}
+html.ltr .nav nav .utillink .expand ul li a{margin:0;font-size:12px;line-height:18px}
+html.ltr .navopen .nav nav .utillink{width:280px; -webkit-transition:-webkit-width 500ms ease;-moz-transition:-moz-width 500ms ease;-o-transition:-o-width 500ms ease;transition:width 500ms ease}
+.overlay.background{display:none; position:fixed;left:0;top:0; width:100%; height:100%; background-color:#000; opacity: .8; z-index:1021;}
+.navopen .overlay.background{display:block; z-index:99;opacity:.8}
+@media(max-width:1023px){
+	html.ltr .navopen .overlay.background{display:none;}
+	html.ltr .nav nav .navigation{left:0;top:0;margin-left:0;}
+	html.ltr .navopen .overlay.background{display:none;}
+	html.ltr .nav nav .utillink{display:block; position:static; padding:10px 20px; width:auto; box-shadow:none; height:auto !important;}
+	html.ltr .nav nav .utillink a{margin:0;}
+	html.ltr .navopen .nav nav .utillink{-webkit-transition:-webkit-width 0ms ease;-moz-transition:-moz-width 0ms ease;-o-transition:-o-width 0ms ease;transition:width 0ms ease}
+	html.ltr .navopen #overlay{opacity:.5}
+}
+@media(min-width: 1023px){
+	/*html.ltr .navopen #overlay{position:absolute;left:0;top:0;z-index:99;width:100%;height:100%;background:#333;box-shadow:4px 0 10px #999;opacity:.3}*/
+}
+html.ltr .nav .searchbox{top:50px;}
+@media(min-width: 1160px) {
+	html.ltr .nav .searchbutton{display:block;float:right;}/*2015-05-27*/
+	html.ltr .nav .searchbutton.on{display:none;}
+	html.ltr .nav .searchbox{position:relative;top:0; display:block; width:0; /*overflow:hidden;*/ background:none;}/*2015-05-27*/
+	html.ltr .nav .searchbox.searchopen{width:auto; -webkit-transition: width 5s ease-in-out; transition: width 5s ease-in-out;}
+	html.ltr .nav .searchbox form{min-width:210px; margin:0; display:none;}/*2015-05-27*/
+	html.ltr .nav .searchbox.searchopen form{display:block;}/*2015-05-27*/
+	html.ltr .nav .searchbox input{width:160px;}
+	html.ltr .nav .searchbox button{right:0px;}
+}
+@media all and (min-width:600px) and (max-width:1023px){
+	html.ltr .nav .searchbutton{display:block;}
+	html.ltr .nav .searchbutton.on{display:none;}
+	html.ltr .nav .searchbox{position:relative;top:0; display:block; width:0; /*overflow:hidden;*/ background:none;}/*2015-05-27*/
+	html.ltr .nav .searchbox.searchopen{width:auto; -webkit-transition: width 5s ease-in-out; transition: width 5s ease-in-out;}
+	html.ltr .nav .searchbox form{min-width:0px; margin:0; display:none;}/*2015-05-27*/
+	html.ltr .nav .searchbox.searchopen form{display:block;}/*2015-05-27*/
+	html.ltr .nav .searchbox input{width:160px;}
+	html.ltr .nav .searchbox button{right:0px;}
+}
+@media(max-width: 600px){
+	html.ltr .nav .searchbox{background-color:#1d1d1d;}
+}
+html.ltr .nav .container{height:50px; /*overflow:hidden;*/}/*2015-05-27*/
+html.ltr .nav .searchbutton .icon-search,
+html.ltr .nav .signbutton .icon-signin,
+html.ltr .nav .cartbutton .icon-cart,
+html.ltr .nav .navbutton .icon-list{display:block; width:100%; height:100%; background-image:url(/sec/next/img/gnb_2nd_icons.png); background-repeat:no-repeat;}
+html.ltr .nav .navbutton .icon-list{position:absolute;left:0;top:0;}
+html.ltr .nav .searchbutton .icon-search{background-position:11px 16px;}
+html.ltr .nav .searchbutton .icon-search:before{content:"";}
+html.ltr .nav .signbutton .icon-signin{background-position:12px -36px;}
+html.ltr .nav .signbutton .icon-signin:before{content:"";}
+html.ltr .nav .cartbutton .icon-cart{background-position:11px -85px;}
+html.ltr .nav .cartbutton .icon-cart:before{content:"";}
+html.ltr .nav .navbutton .icon-list{background-position:15px -131px;}
+html.ltr .nav .navbutton .icon-list:before{content:"";}
+html.ltr .nav .navbutton.on .icon-list{background-position:15px -181px;}
+html.ltr .nav .cart-wrap.on .cartbutton,
+html.ltr .nav .searchbutton.on{background-color:#1d1d1d;}
+@media(max-width: 767px){
+	html.ltr .nav .searchbutton .icon-search,
+	html.ltr .nav .signbutton .icon-signin,
+	html.ltr .nav .cartbutton .icon-cart,
+	html.ltr .nav .navbutton .icon-list{background-size:100px auto;}
+	html.ltr .nav .searchbutton .icon-search{background-position:-36px 18px;}
+	html.ltr .nav .signbutton .icon-signin{background-position:-36px -33px}
+	html.ltr .nav .cartbutton .icon-cart{background-position:-36px -82px}
+	html.ltr .nav .navbutton .icon-list{background-position:-33px -131px;}
+	html.ltr .nav .navbutton.on .icon-list{background-position:-33px -181px;}
+}
+.navclosebutton{display:none;}
+@media(max-width: 1023px){
+	.navclosebutton{display:block;position:absolute;right:0;top:-50px; width:100%; height:50px;}/*2015-05-27*/
+	.navclosebutton .icon-nav-close{display:block;width:100%;height:100%;line-height:50px; font-size:0; background:#1428a0 url(/sec/next/img/gnb_2nd_icons.png) no-repeat 240px -235px !important;}/*2015-05-27*/
+}
+html.ltr .cart-wrap .cart-list-wrap{top:50px !important;}
+/*footer*/
+.ss_samsung .footer{font-size:12px;color:#000;}
+.ss_samsung .footer .bottom{color:#4e4e4e;font-size:11px !important;line-height:15px !important;}
+.ss_samsung .footer .section div span.col2a strong, 
+.ss_samsung .footer .section div span.col2b strong{color:#272727;font-size:12px;}
+.ss_samsung .footer .fbico, 
+.ss_samsung .footer .twico{ font-size:22px; font-size:1.375rem !important;}
+.ss_samsung .footer .section .address a, 
+.ss_samsung .footer .section div a{color:#2f88d3;}
+.ss_samsung .footer .section .address{padding-top:0;margin-bottom:0;}
+html.ltr .ss_samsung .footer .middle{background:none;padding-top:30px;}
+html.ltr .ss_samsung .footer .top.section,
+html.ltr .ss_samsung .footer .bottom{background:#f3f3f3}
+html.ltr .ss_samsung .footer .bottom{padding-top:0;}
+html.ltr .ss_samsung .footer .top.section ul{width:50%;}
+html.ltr .ss_samsung .footer .top.section li a:after{content:"|"; margin-left:12px; color:#d2d3d5;}
+html.ltr .ss_samsung .footer .top.section li:last-child a:after{content:"";}
+html.ltr .ss_samsung .footer .top.section ul li{margin-right:12px}
+html.ltr .ss_samsung .footer .middle li{margin-top:5px;}
+html.ltr .ss_samsung .footer .middle li a{margin-top:5px;}
+html.ltr .ss_samsung .footer .middle .flagKR{margin-top:15px !important;}
+html.ltr .ss_samsung .footer .section .topBtn{top:0px;}
+html.ltr .ss_samsung .footer .address span{display:block; padding:0; margin:0;}
+.ss_samsung .footer .section .claim{color:#346c9b;}
+.ss_samsung .footer .section div{margin-top:0;}
+
+html.ltr .ss_samsung .footer-navi-wrap{position:relative; clear:both;}/*2015-05-27*/
+html.ltr .ss_samsung .fnavibutton{position:absolute;right:7.7%;/*top:20px;*/bottom:-55px; width:100px; padding:10px 0 5px; margin-bottom:5px;color:#0057a4; 
+background-image:url(/sec/next/img/gnb_2nd_icons.png); background-repeat:no-repeat;background-position:87px -488px;text-align:left;font-size:12px;z-index:100;}/*2015-05-27*/
+html.ltr .ss_samsung .fnavibutton.on{background-position:87px -388px;}/*2015-05-27*/
+
+@media (max-width:1024px){
+	html.ltr .ss_samsung .footer .top.section ul{float:none; width:auto; display:inline; text-align:left; }
+	html.ltr .ss_samsung .footer .top.section ul li{display:inline-block; vertical-align:top; margin-bottom:5px; }
+	html.ltr .ss_samsung .footer .top.section li a:after{margin-left:10px;}
+	html.ltr .ss_samsung .footer .top.section .cola li a:after{content:"|"; margin-left:10px;}
+	html.ltr .ss_samsung .footer .top.section .colb li:first-child{margin-left:10px;}
+}
+@media (max-width:767px){
+	html.ltr .ss_samsung .footer .middle.section ul .flagKR{width:auto;}
+	html.ltr .ss_samsung .footer .middle ul li{margin:0;margin-right:20px;}
+}
+@media (max-width:600px){
+	.ss_samsung .footer .section{padding:20px;}
+	html.ltr .ss_samsung .footer .middle{padding:20px 10px 0;}
+	html.ltr .ss_samsung .footer .middle ul{padding-top:0px;}
+	html.ltr .ss_samsung .footer .middle li{ font-size:11px; vertical-align:top;}
+	html.ltr .ss_samsung .footer .middle .sns_link{width:100%;}
+	html.ltr .ss_samsung .footer .middle .sns_link li:nth-child(1){width:10%; margin:0 0 10px;}
+	html.ltr .ss_samsung .footer .middle .sns_link li:nth-child(2){width:10%; margin:0 0 10px;}
+	html.ltr .ss_samsung .footer .middle .sns_link li:nth-child(3){width:10%; margin-right:70%; margin-bottom:10px;}
+	html.ltr .ss_samsung .footer .middle ul li .fbico,
+	html.ltr .ss_samsung .footer .middle ul li .twico{padding-top:0px;}	
+	html.ltr .ss_samsung .footer .middle .accreditation{width:100%;}
+	html.ltr .ss_samsung .footer .middle .accreditation li{width:33% !important; margin:0; text-align:left !important;}
+	html.ltr .ss_samsung .footer .middle .accreditation .flagKR{width:30% !important; margin-top:0px !important; text-align:left !important; }
+	html.ltr .ss_samsung .footer .middle .accreditation .acclink span{width:auto !important; word-break:break-all;}
+	html.ltr .ss_samsung .footer .middle.section .acclink a img{margin-right:5px;}
+	html.ltr .ss_samsung .footer .fnavibutton{position:absolute;right:20px;top:20px;}
+}
+@media (max-width:480px){
+	html.ltr .ss_samsung .footer .middle .acclink.ccm span{width:50px !important; padding:0 !important;}
+	html.ltr .ss_samsung .footer .middle .accreditation li{width:24% !important; margin:0; text-align:center !important;}
+	html.ltr .ss_samsung .footer .middle .accreditation .flagKR{width:17% !important; margin-top:0px !important; text-align:left !important; padding-left:5px; }
+	html.ltr .ss_samsung .footer .middle .accreditation li.wa { padding-left: 10px;}
+	html.ltr .ss_samsung .footer .middle.section ul .acclink a img{ float:none; margin:0;}
+	html.ltr .ss_samsung .footer .middle.section ul .acclink a span{ text-align:center !important;}
+}
+.ss_samsung .footer .notice_sec{overflow:hidden; padding:15px 0 !important;margin:0px 7.7%; border-top:1px solid #ededee; color:#566888 !important; background:#fff !important;}
+.ss_samsung .footer .notice_sec h3{float:left; font-size:12px !important; margin:0 15px 0 0  !important;color:#566888;}
+.ss_samsung .footer .notice_sec a{color:#566888 !important; font-family: 'SECGCWB', sans-serif !important;}
+.ss_samsung .footer .notice_sec .prev,
+.ss_samsung .footer .notice_sec .next{display:none;}
+.ss_samsung .footer .notice_sec .notice_box{overflow:hidden;float:left;width:80% !important;height:14px !important;margin-left:0px !important;text-overflow:ellipsis;white-space:nowrap;font-family: 'SECGCWM', sans-serif !important;}
+html.ltr .footer-navi{display:none;min-height:370px;background-color:#353535;}/*2015-08-06 display:none add*/
+html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{min-height:209px;}
+html.ltr .footer-navi .footer-nav-wrap .utillink{background-color:#5f5f5f;}
+html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit,
+html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a{font-family: 'SECGCWM', sans-serif;font-weight:normal;}
+@media (max-width:480px){
+	.ss_samsung .footer .notice_sec .notice_box{ height:30px !important; white-space:inherit !important;}
+}
+
+@media (max-width:1280px){
+	html.ltr .footer-navi{min-height:570px;}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{min-height:210px !important;}
+	html.ltr .footer-navi .footer-nav-wrap .utillink{background:none;}
+}
+@media (max-width:767px){
+	html.ltr .footer-navi{min-height:0px;}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{min-height:0px !important;}
+	html.ltr .footer-navi .footer-navi-tit{font-family: 'SECGCWM', sans-serif;font-weight:normal;}
+}
+.ss_samsung .footer .section{width:84.6% !important;padding-left:7.7% !important;padding-right:7.7% !important;}
+@media (max-width:767px){
+	.ss_samsung .footer .section{width:100% !important;padding-left:30px !important;padding-right:30px !important;box-sizing:border-box !important;}
+	.ss_samsung .footer .notice_sec{margin:0 30px !important;}
+	html.ltr .ss_samsung .footer .fnavibutton{right:30px !important;}
+}
+@media (max-width:479px){
+	.ss_samsung .footer .section{padding-left:10px !important;padding-right:10px !important;}
+	.ss_samsung .footer .notice_sec{margin:0 10px !important;}
+	html.ltr .ss_samsung .footer .fnavibutton{right:10px !important;}
+}
+/*etc*/
+html.ltr .nav h1{top:0;}
+.body_wrapper{height:100% !important;}
+
+/*container+navbutton 2015-05-27*/
+html.ltr .nav .container{display:none;padding-right:49px;}
+html.ltr .nav nav .container{display:block;}
+html.ltr .nav .navbutton{display:none;}
+html.ltr .nav nav .navbutton{display:block;}
+@media(max-width:1023px){
+	html.ltr .nav .container{display:block;}
+	html.ltr .nav nav .container{display:none;}
+	html.ltr .nav .navbutton{display:block;}
+	html.ltr .nav .mobile_container .navbutton{display:none;}
+}
+/*
+html.ltr .ss_samsung .nav div.auto-complete{ display:none !important;}
+*/
+.nav .mobile_container .container:nth-child(2){display:none;}
+
+.ss_samsung .footer .top.section ul li a strong{color:#2f88d3;}
+
+/* FOOTER ADD : samsung tommorrow : 20150917 */
+.ss_samsung .footer .blogico {background:url('/sec/next/img/icon_samsungtomorrow.png') no-repeat 0 0; width:22px; height:22px; margin-top:8px !important;}
+
+/*
+#sign_wrap .icon-link-play {
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+    background: url(/common/img/layer-ir.png) no-repeat -36px 0 !important;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.icon-link-play:before {
+    content:none !important;
+}
+*/
+
+/* 2016-05-19 flickr 아이콘 추가 */
+#footer .social-list .icon-flickr {background: url(/sec/common/img/nav-ir.png) no-repeat;}
+#footer .social-list .icon-flickr, .touch-device .social-list .icon-flickr, #footer .social-list .icon-flickr:focus, #footer .social-list .icon-flickr:active {background-position: -57px -57px;}
+#footer .social-list .icon-flickr:hover{background-position:-57px -86px}
+
+@media screen and (max-width: 1024px){
+
+#footer .social-list .icon-flickr {
+    background: url(/sec/common/img/nav-ir_2x.png) no-repeat;
+    background-size: 235px auto;
+}
+#footer .social-list a {height: 25px; width: 25px;}
+#footer .social-list .icon-flickr,
+#footer .social-list .icon-flickr:hover,
+#footer .social-list .icon-flickr:focus,
+#footer .social-list .icon-flickr:active{background-position: -54px -27px;}
+
+}
+
+@media screen and (max-width: 767px) {
+ #footer .social-list {text-align:center;}
+ #footer .social-list li {display:inline-block; float:none !important;}
+ .footer-accreditation {text-align:center;}
+ .footer-accreditation li {display:inline-block; float:none !important;}
+}
+
+#footer .footer-address .legal-list span {padding-right: 1px !important;}
+#footer .footer-address .legal-list .ico-rgt-bar{margin-left: 4px !important;}

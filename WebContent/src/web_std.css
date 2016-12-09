@@ -1,0 +1,6 @@
+/* Add NextGen Store Popup Style */
+/*
+.popup-nextgen-type{position: absolute;z-index: 9999;width:350px;min-height:130px;margin: 0 0 0 -250px !important;left: 50% !important;display: block;background:#fff}
+*/
+.popup-nextgen-type{position: absolute;z-index: 9999;width:350px;min-height:130px;display: block;background:#fff}
+.popup-nextgen-type .pop-btn{margin-bottom:30px}

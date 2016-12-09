@@ -1,0 +1,26 @@
+/*select box 15.03.18*/
+
+/*
+ * Stepper Plugin [Formstone Library]
+ * Copyright © 2013 Ben Plum <mr@benplum.com>
+ * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+ */
+.stepper { border-radius: 3px; /* margin: 0 0 10px 0; */ overflow: hidden; position: relative; width: 46px; }
+.stepper .stepper-input { background: #F9F9F9; border-radius: 3px; color: #333; line-height: 1.2; margin: 0; overflow: hidden; padding: 1px 10px 1px; width: 100%; z-index: 49; }
+.stepper .stepper-input:focus { background-color: #fff; }
+.stepper .stepper-step { background:#f7f7f7 url('/common/next/img/fs-stepper-arrows.png') no-repeat; cursor: pointer; display: block; height: 45%; position: absolute; right: 0; text-indent: -99999px; width: 10px; z-index: 50; }
+html.rtl .stepper .stepper-step{left:0;right:auto;}
+.stepper .stepper-step.up { background-position: center 3px; border-bottom: none; top: 0; }
+.stepper .stepper-step.down { background-position: center bottom; bottom: 2px; }
+
+@media screen and (min-width: 740px) {
+	.stepper:hover .stepper-input { background-color: #fff; }
+	
+	.stepper .stepper-step:hover { background-color: #F9F9F9; }
+	
+	.stepper.disabled .stepper-step { background: #fff; border-color: #eee; cursor: default; }
+}
+
+.stepper.disabled .stepper-input { background: #fff; border-color: #eee; color: #ccc; }
+.stepper.disabled .stepper-step { background: #fff; border-color: #eee; cursor: default; }
+/*select box 15.03.18*/

@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import url("/sec/next/css/modules/ecom-module.css");
+@import url("/sec/next/css/modules/media-module.css");
+.ss_samsung .ecom-module .find-it-container .onstore .ss-button{font-family:'SECGCWM', sans-serif !important;}
+.ss_samsung .product-info .product-title{font-size:21px; line-height:1.2;}
+.ss_samsung .product-info p{font-size:13px;}
+.ss_samsung .product-info .badges{margin-top:.3em;color:#D02E08;font-size:16px;font-family:'SECGCWM', sans-serif;font-weight:normal;text-transform: uppercase;}
+.ss_samsung .product-info .product-code{font-size:11px;margin-top:5px!important;}
+.ss_samsung .breadcrumb a{font-size:13px;}
+.ss_samsung .breadcrumb a span{font-size:12px;}
+.ss_samsung .optionsList li{font-size:13px;}
+html.ltr .ss_samsung .product-info-section .product-info .breadcrumb{padding-right:65px !important;}
+@media (min-width:48em){
+	.ss_samsung .product-info .product-title{font-size:28px;}
+	.ss_samsung .product-info .mda-tagline{font-size:14px;}
+	.ss_samsung .product-info .badges{font-size:18px;}
+	.ss_samsung .product-info .breadcrumb{font-size:14px;}
+	.ss_samsung .product-info .product-code{font-size:12px;}
+	.ss_samsung .product-info .optionsList li{font-size:15px;}
+}
+@media (min-width:64em){
+	.ss_samsung .product-info .product-title{font-size:30px;}
+	.ss_samsung .product-info .badges{font-size:20px;}
+}
+.mda-tagline{display:none;}
+@media (min-width:768px){.mda-tagline{display:block;}}
+.ss_samsung .product-info h1{margin:10px 0 0 0;}
+.ss_samsung .product-info .product-code{font-family:"SECGCWM", sans-serif;margin:10px 0 0 0;}
+
+/* PDP info 박스 TV 인치 모듈 optionsList */
+
+.ss_samsung .product-info-section .product-info .badges { margin:0 0 10px !important; }
+.ss_samsung .optionsList{ width:360px; height:auto; overflow:hidden; margin:20px 0; }
+.ss_samsung .optionsList li{ 
+	background: #dedede; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2RlZGVkZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2M5YzljOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiMmIyYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #dedede 1%, #c9c9c9 49%, #b2b2b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#dedede), color-stop(49%,#c9c9c9), color-stop(100%,#b2b2b2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dedede 1%,#c9c9c9 49%,#b2b2b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dedede 1%,#c9c9c9 49%,#b2b2b2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dedede 1%,#c9c9c9 49%,#b2b2b2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dedede 1%,#c9c9c9 49%,#b2b2b2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#b2b2b2',GradientType=0 ); /* IE6-8 */
+}
+
+.ss_samsung .optionsList li.on{
+	background: #3472bf; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM0NzJiZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzM0NzBhZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzMyNjA5YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  #3472bf 0%, #3470ae 50%, #32609c 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3472bf), color-stop(50%,#3470ae), color-stop(99%,#32609c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3472bf 0%,#3470ae 50%,#32609c 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3472bf 0%,#3470ae 50%,#32609c 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3472bf 0%,#3470ae 50%,#32609c 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3472bf 0%,#3470ae 50%,#32609c 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3472bf', endColorstr='#32609c',GradientType=0 ); /* IE6-8 */
+}
+
+/* 로컬 분기 */
+.ss_samsung #dummy-popup-container .badges{margin:20px 0 0 0;font-size:13px;font-family:'SECGCWM', 'sans-serif';margin-bottom:10px;height:1em}
