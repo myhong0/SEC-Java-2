@@ -1,0 +1,631 @@
+@charset 'utf-8';
+
+/*삼성긴고딕 Light*/
+/* font를 cdn에서 호출로 변경 2015-05-13 */
+@font-face{
+	font-family:'SECGCWL';
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWL.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWL.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWL.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWL.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+/*삼성긴고딕 Bold*/
+/* font를 cdn에서 호출로 변경 2015-05-13 */
+@font-face{
+	font-family:'SECGCWB';
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWB.eot");
+	src:url("http://cdn.samsung.com/sec/next/font/SECGCWB.eot?#iefix") format("embedded-opentype"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWB.woff") format("woff"),
+	url("http://cdn.samsung.com/sec/next/font/SECGCWB.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+/*나눔 바른고딕 폰트 사이즈 48px 이상인 경우 */
+@font-face{
+	font-family:'nanumbarungothicbold';
+	src:url("../font/nanumbarungothicbold.eot");
+	src:url("../font/nanumbarungothicbold.eot?#iefix") format("embedded-opentype"),
+	url("../font/nanumbarungothicbold.woff") format("woff"),
+	url("../font/nanumbarungothicbold.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.featureWrap{position:relative;z-index:0;min-width:320px;height:100%;margin:0;padding:0;background:#fff;color:#666;font-family:'SECGCWL';line-height:1.2;letter-spacing:-1px}
+.featureWrap *{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.featureWrap img{border:0;vertical-align:top}
+.featureWrap em{font-style:normal}
+.featureWrap strong{font-style:normal}
+.featureWrap ol,
+.featureWrap ul{list-style:none}
+.featureWrap h1,
+.featureWrap h2,
+.featureWrap h3{font-size:100%;line-height:1.2;font-weight:normal;}
+
+.featureWrap a,
+.featureWrap a:active,
+.featureWrap a:focus,
+.featureWrap a:hover,
+.featureWrap a:link,
+.featureWrap a:visited{color:#000;font-size:100%;text-decoration:none}
+.featureWrap .hiddenTxt{overflow:hidden; text-indent:-99999px; position:absolute; left:-9999px; top:-9999px;}
+.featureWrap .bgGray{background:#f7f7f7;}
+.featureWrap .tac{text-align:center !important;}
+.featureWrap .btnArea{text-align:center;margin-top:26px;}
+.featureWrap .btns{display:inline-block;padding:0 52px;height:58px;border:1px solid #000;-webkit-border-radius:35px;border-radius:35px;background-color:transparent;color:#000;white-space:nowrap;}
+.featureWrap .btns span{display:block;font-size:16px;font-family:'SECGCWB'; line-height:58px;}
+.featureWrap .btns:hover,
+.featureWrap .btns:focus{background:#000;color:#fff;}
+
+.featureWrap .IIV::-webkit-media-controls-play-button,
+.featureWrap .IIV::-webkit-media-controls-start-playback-button {
+	opacity: 0;
+	pointer-events: none;
+	width: 5px;
+}
+.featureWrap video::-webkit-media-controls {
+	display: none;
+}
+
+/* Could Use thise as well for Individual Controls */
+.featureWrap video::-webkit-media-controls-play-button{}
+.featureWrap video::-webkit-media-controls-volume-slider{}
+.featureWrap video::-webkit-media-controls-mute-button{}
+.featureWrap video::-webkit-media-controls-timeline{}
+.featureWrap video::-webkit-media-controls-current-time-display{}
+
+.featureWrap .webBlock{display:block;vertical-align:middle;}
+.featureWrap .mobileBlock{display:inline;vertical-align:middle;}
+.featureWrap .txtWeb {display: block;}
+.featureWrap .txtMobile {display: none;}
+
+.featureSection{margin-top:120px;}
+.featureBox{position:relative;max-width:1440px;margin:0 auto;}
+.featureBox > .titBox{text-align:center;}
+.featureSection .iconArea.tab li a span em{font-family:'SECGCWB';}
+
+.visualArea{position:relative;text-align:center;margin-top:70px;}
+.visualArea img{width:100%;vertical-align:top;}
+
+.videoArea{position:relative;margin-top:70px;}
+.videoArea img{width:100%;vertical-align:top;}
+
+.featureSection h2.tit{margin:0 0 45px 0;font-size:72px;color:#000;font-family:'nanumbarungothicbold';}
+.featureSection h2.tit *{font-family:'nanumbarungothicbold';font-size:1em;vertical-align:top;}
+.featureSection h2.tit.etc{margin-bottom:20px !important;}
+.featureSection h3.tit{margin:0 0 12px 0;font-size:32px;color:#000; font-family:'SECGCWB';}
+.featureSection h3.tit *{font-family:'SECGCWB';font-size:1em;vertical-align:top;}
+.featureSection p.txt{line-height:1.5;font-size:20px;color:#363636;}
+
+/* location - col4 */
+.locationArea{width:100%;border-bottom:1px solid #e9e9e9; background: #f7f7f7;}
+.locationArea ul{display:table;table-layout:fixed;width:100%;max-width:1440px;margin:0 auto;padding:80px 0;overflow:hidden;background:#f7f7f7;}
+.locationArea ul li{display:table-cell;width:25%;padding:30px 0;border-left:1px solid #eaeaea;text-align:center;}
+.locationArea ul li:first-child{border-left:0;}
+.locationArea ul li > span{display:block;height:97px;padding:0 5px;}
+.locationArea ul li > span img{width:auto;height:100%;}
+.locationArea ul li > em{display:block;margin-top:25px;padding:0 5px;font-size:20px;color:#363636;font-family:'SECGCWB';}
+.locationArea ul li > em .mobileBlock{display:inline;font-size:1em;color:#363636;font-family:'SECGCWB';}
+
+/* location - col5 */
+.locationArea.ico5 ul li{width:20%;}
+
+.featureSection .img{font-size:0;line-height:0;vertical-align:top;}
+.featureSection .img img{width:100%;}
+
+.featureSection .video{position:relative;width:100%;font-size:0;line-height:0;-webkit-background-size: 100% 100%;background-size: 100% 100%;background-repeat:no-repeat}
+.featureSection .video.play.on:after{display:none;}
+.featureSection .video img{width:100%;}
+.featureSection video{width:100%;font-size:0;line-height:0;object-fit: inherit;visibility:hidden}
+
+.featureSection .videoMobile{position:relative;width:100%;font-size:0;line-height:0;}
+.featureSection .videoMobile.on:after{display:none;}
+.featureSection .videoMobile img{width:100%;}
+.featureSection .video.videoMobile.play video{visibility:visible}
+
+.featureSection .colWrap{overflow:hidden;position:relative;width:100%;}
+.featureSection .colWrap .col50{float:right;width:50%;}
+.featureSection .colWrap .col50:first-child{float:left;}
+
+.featureSection .colWrap .txtMiddle{height:100%;min-height:100%;vertical-align:middle;}
+.featureSection .colWrap .txtMiddle > div{position:absolute;left:10%;top:50%;right:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
+.featureSection .colWrap.rightTxt .txtMiddle > div{left:18%;}
+
+.featureSection .colWrap.leftTxt .img,
+.featureSection .colWrap.rightTxt .txtBoxArea{float:right;}
+.featureSection .colWrap.rightTxt .img,
+.featureSection .colWrap.leftTxt .txtBoxArea{float:left;}
+
+.featureSection .colWrap.leftTxt *,
+.featureSection .colWrap.rightTxt *{text-align:left;}
+
+.featureSection .dragTxt{margin:60px 0 55px 0;text-align:center;}
+.featureSection .dragTxt span{font-size:17px;display:inline-block;vertical-align:middle;}
+.featureSection .dragTxt span.img{width:76px;margin-right:18px;}
+
+.dragBoxArea{width:100%;}
+.dragBoxArea div{width:100%;}
+.dragBoxArea div img{width:100%;max-width:1440px}
+
+.txtBox *{display:none;}
+.txtBox .on{display:block;}
+.txtBox .on br{display:block;}
+.txtBox .on *{display:block;}
+
+.featureWrap p.tips{margin-top:45px;font-size:15px;line-height:20px;color:#363636;}
+.featureWrap ul.tips{margin:45px 0 0 0;}
+.featureWrap ul.tips li{color:#363636;margin-top:5px;font-size:15px;line-height:20px;}
+.featureWrap ul.tips li:first-child{margin-top:0;}
+
+.featureWrap .tipBox{padding:24px 10px 24px 10px;position:absolute;left:0;right:0;bottom:0;text-align:center;width:100%;background:#000;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;z-index:99;}
+.featureWrap .tipBox p.tips{margin-top:0 !important;color:#f7f7f7;font-size:15px;line-height:18px;}
+.featureWrap .tipBox ul.tips{margin:0;padding:0;}
+.featureWrap .tipBox ul.tips li{color:#f7f7f7;font-size:15px;line-height:18px;}
+
+.featureSection .bgImg{ position:relative;}
+.featureSection .bgImg .img{ position:absolute; left:0; top:0; display:none;}
+.featureSection .bgImg .img.on{ position:relative; left:auto; top:auto; display:block;z-index:10}
+
+/*awardWrap*/
+.awardWrap{width:100%;}
+.awardWrap .featureBox{padding:120px 0 0 0;background:#f7f7f7;}
+.awardWrap h2.tit{font-size:72px;color:#000;font-family:'nanumbarungothicbold';}
+.awardWrap h2.tit *{font-family:'nanumbarungothicbold';font-size:1em;vertical-align:top;}
+.awardWrap .tipBox{position:static;margin-top:100px;}
+.awardArea .awardRow{position:relative; overflow:hidden;margin-top:100px;}
+.awardArea .awardRow:after{display:block;content:"";position:absolute;left:50%;top:0;width:1px;height:calc(100% - 1px);;background:#e1e1e1;}
+.awardArea .awardBox{position:relative;float:left;width:50%;text-align:center;padding:5px 0 0 0;}
+.awardArea .awardBox p.logo{height:130px;margin-bottom:45px}
+.awardArea .awardBox p.logo img{width:auto;height:100%;}
+.awardArea .awardBox p.name{text-align:center;font-size:18px;color:#363636;font-family:'SECGCWB';}
+.awardArea .awardBox p.name02{margin:30px 0 0 0;text-align:center;font-size:20px;color:#000;font-family:'SECGCWB';}
+.awardArea .awardBox p.txt{margin:45px 0 0 0;text-align:center;font-size:18px;color:#000;line-height:1.5;}
+.awardArea.lineTop{padding:100px 0 0 0;position:relative;}
+.awardArea.lineTop:before{content:"";position:absolute;display:block;top:100px;height:1px;background:#e1e1e1;width:90%;margin:0 5%;z-index:10;}
+
+@media screen and (min-width:768px) and (max-width: 1439px){
+
+	.featureSection .video.play:after{margin:-3.055vw 0 0 -3.055vw;width:6.180vw;height:6.180vw;background-size:100% 100%;}
+	.visualArea{margin-top:4.861vw;}
+	.videoArea{margin-top:4.861vw;}
+
+	.locationArea ul{padding:5.555vw 0;}
+	.locationArea ul li{padding:2.083vw 0;}
+	.locationArea ul li > span{height:6.736vw;}
+	.locationArea ul li > em{margin-top:1.736vw;font-size:1.388vw;}
+
+	.locationArea.ico5 ul{padding:5.555vw 0;}
+	.locationArea.ico5 ul li{padding:2.083vw 0;}
+	.locationArea.ico5 ul li span{height:6.736vw;}
+	.locationArea.ico5 ul li span em{margin-top:1.736vw;}
+
+	.featureSection h2.tit{margin:0 0 3.125vw 0;font-size:5vw;}
+	.featureSection h2.tit.etc{margin-bottom:1.388vw !important;}
+	.featureSection h3.tit{margin:0 0 0.833vw 0;font-size:2.222vw;}
+	.featureSection p.txt{font-size:1.388vw;line-height:2.083vw;}
+
+	.featureWrap p.tips{margin:3.125vw 0 0 0;font-size:1.041vw;}
+	.featureWrap ul.tips{margin:3.125vw 0 0 0;}
+	.featureWrap ul.tips li{margin-top:0.347vw;font-size:1.041vw;color:#363636;line-height:16px;}
+
+	.featureWrap .tipBox{padding:1.666vw 10px 1.666vw 10px;}
+	.featureWrap .tipBox p.tips{font-size:1.041vw;line-height:15px;}
+	.featureWrap .tipBox ul.tips li{font-size:1.041vw;line-height:15px;}
+
+	.awardWrap .featureBox{padding-top:8.333vw;}
+	.awardWrap h2.tit{font-size:5vw;}
+	.awardWrap .tipBox{margin-top:6.944vw;}
+	.awardArea .awardRow{margin-top:6.944vw;}
+	.awardArea .awardBox p.logo{height:9.027vw;margin-bottom:3.125vw}
+	.awardArea .awardBox p.name{font-size:1.25vw;}
+	.awardArea .awardBox p.name02{margin:2.083vw 0 0 0;font-size:1.388vw;}
+	.awardArea .awardBox p.txt{margin:3.125vw 0 0 0;font-size:1.25vw;line-height:1.5;}
+	.awardArea.lineTop{padding-top:6.944vw;}
+	.awardArea.lineTop:before{top:6.944vw;}
+
+	@media screen and (min-width:768px) and (max-width: 1024px){
+		.featureSection p.txt{font-size:13px;line-height:20px;}
+		.featureWrap .tipBox{padding:20px 10px 20px 10px;}
+		.featureSection p.tips,
+		.featureSection ul.tips li{font-size:12px !important;}
+		.awardWrap p.tips{font-size:13px !important;}
+		.awardArea .awardBox p.name,
+		.awardArea .awardBox p.txt{font-size:13px;}
+		.awardArea .awardBox p.name02{font-size:15px;}
+		.locationArea ul li > em{font-size:15px;}
+	}
+}
+
+/*mobile size*/
+@media screen and (min-width: 0px) and (max-width: 767px){
+	.featureWrap h2{line-height:1.565;}
+	.featureWrap h3{line-height:1.17;}
+	.featureSection .iconArea li{line-height:1.29;}
+
+
+	.featureWrap{max-width:767px;font-size:14px}
+	.featureWrap .webBlock{display:inline !important;}
+	.featureWrap .mobileBlock{display:block;}
+	.featureWrap .txtWeb {display: none;}
+	.featureWrap .txtMobile {display: block;}
+
+	.titBox{padding-left:10px; padding-right:10px;}
+	.featureSection .video.play:after{margin:-5.794vw 0 0 -5.794vw;width:11.588vw;height:11.588vw;background-size:100% 100%;}
+
+	.featureWrap p.tips{margin-top:20px;font-size:11px;line-height:14px;text-align:center;}
+	.featureWrap ul.tips li{font-size:11px;line-height:14px;text-align:center;}
+
+	.featureWrap .tipBox{padding:20px 10px 20px 10px;}
+	.featureWrap .tipBox p.tips,
+	.featureWrap .tipBox ul.tips li{font-size:11px;line-height:16px;}
+
+	.featureWrap .videoArea .tipBox{position:static;left:auto;right:auto;top:auto;bottom:auto;}
+	.featureWrap .visualArea .tipBox{position:static;left:auto;right:auto;top:auto;bottom:auto;}
+
+	p.tips.tipBtm{margin-top:0;padding:20px 10px 20px 10px;background:#000;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;color:#f7f7f7;}
+	ul.tips.tipBtm{margin-top:0;padding:20px 10px 20px 10px;background:#000;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+	ul.tips.tipBtm li{color:#f7f7f7;}
+
+	.visualArea{margin-top:40px;}
+	.videoArea{margin-top:40px;}
+
+	.locationArea ul{max-width:767px;padding:40px 0;}
+	.locationArea ul li{padding:5px 0;}
+	.locationArea ul li:first-child{border-left:0;}
+	.locationArea ul li > span{display:block;height:70px;}
+	.locationArea ul li > em{margin-top:20px;font-size:15px;}
+
+	.featureSection{margin-top:80px;}
+	.featureSection h2.tit{margin:0 0 25px 0;font-size:2.928em;text-align:center;font-family:'SECGCWB';}
+	.featureSection h2.tit *{font-family:'SECGCWB';}
+	.featureSection h3.tit{margin:0 0 20px 0;font-size:1.714em;text-align:center;}
+	.featureSection p.txt{font-size:1em;text-align:center;}
+	.featureSection .txtBox > p.txt,
+	.featureSection .titBox > p.txt,
+	.featureSection .prdInfo > p.txt,
+	.featureSection .prdTxt > p.txt	{min-width:300px;margin:0 auto;max-width:60%;line-height:1.29}
+
+	.awardWrap .featureBox{padding-top:80px;}
+	.awardWrap h2.tit{font-size:2.928em;font-family:'SECGCWB';}
+	.awardWrap h2.tit *{font-family:'SECGCWB';}
+	.awardWrap h2.tit .mobileBlock{display:inline !important;}
+	.awardWrap .tipBox{margin-top:70px;}
+	.awardWrap .tipBox p.tips{font-size:11px !important;}
+
+	.awardArea .awardRow{position:relative;overflow:hidden;margin-top:70px;}
+	.awardArea .awardBox p{padding-left:10px;padding-right:10px;}
+	.awardArea .awardBox p.logo{height:70px;margin-bottom:25px}
+	.awardArea .awardBox p.name{font-size:14px;}
+	.awardArea .awardBox p.name02{margin:15px 0 0 0;font-size:16px;}
+	.awardArea .awardBox p.txt{margin:20px 0 0 0;font-size:14px;}
+	.awardArea.lineTop{padding-top:70px;}
+	.awardArea.lineTop:before{top:70px;}
+
+	.featureSection .colWrap .col50{float:none !important;width:100%;}
+	.featureSection .colWrap .txtBoxArea .prdTxt{padding:0 10px 40px 10px !important;}
+	.featureSection .colWrap *{text-align:center !important;}
+
+	@media screen and (max-width:640px){
+		.locationArea ul{padding:35px 0;}
+		.locationArea ul li > span{height:60px;}
+	}
+	@media screen and (min-width:0px) and (max-width: 600px){
+		.locationArea.ico5 ul{display:table;max-width:100%;width:100%;text-align:center; font-size:0;padding:30px 0}
+		.locationArea.ico5 ul li{width:33.3333%;display:inline-block;float:none;}
+		.locationArea.ico5 ul li:nth-child(4){border-left:0;margin-top:15px;}
+		.locationArea.ico5 ul li:nth-child(5){margin-top:15px;}
+		.locationArea.ico5 ul li > span{height:55px}
+	}
+	@media screen and (max-width:480px){
+		.locationArea ul{padding:30px 0;}
+		.locationArea ul li > span{height:50px;}
+		.locationArea ul li > em{margin-top:15px;font-size:13px;}
+		.locationArea ul li > em .mobileBlock{display:block;}
+
+		.awardWrap h2.tit .mobileBlock{display:block !important;}
+	}
+
+	@media screen and (max-width:414px){
+		.featureSection{margin-top:60px;}
+		.featureSection h2.tit,
+		.awardWrap h2.tit{font-size:2.285em;}
+
+		.awardWrap .featureBox{padding-top:60px;}
+		.awardWrap .tipBox{margin-top:50px;}
+		.awardArea .awardRow{margin-top:50px;}
+		.awardArea .awardBox p.name{font-size:13px;}
+		.awardArea .awardBox p.name02{font-size:15px;}
+		.awardArea .awardBox p.txt{font-size:13px;}
+		.awardArea.lineTop{padding-top:50px;}
+		.awardArea.lineTop:before{top:50px;}
+
+		.locationArea ul{padding:20px 0;}
+		.locationArea ul li > span{height:40px;}
+		.locationArea ul li > em{margin-top:10px;font-size:12px;}
+	}
+	@media screen and (max-width:320px){
+		.locationArea ul li > span{height:35px;}
+		.awardWrap .featureBox{padding-top:40px;}
+		.awardWrap .tipBox{margin-top:30px;}
+		.awardArea .awardRow{margin-top:30px;}
+		.awardArea .awardBox p{padding-left:5px;padding-right:5px;}
+		.awardArea .awardBox p.logo{height:55px;}
+		.awardArea .awardBox p.name,
+		.awardArea .awardBox p.txt{font-size:12px;}
+		.awardArea.lineTop{padding-top:30px;}
+		.awardArea.lineTop:before{top:30px;}
+	}
+}
+
+.lSAction > a{background:none;}
+
+.featureSection .video.play:after{position:absolute;left:50%;top:50%;margin:-44px 0 0 -44px;display:block;content:"";width:89px;height:89px;background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico-play.png") no-repeat left top;}
+
+/* section */
+.featureSection.sec01 .mTabArea{display:none;}
+.locationArea ul li > span{height:72px;}
+
+.colWrap.leftTxt .txtBoxArea{padding:0;vertical-align:middle;height:100%;min-height:100%;}
+.colWrap .txtBoxArea .prdTxt{width:100%;}
+.colWrap .txtBoxArea .prdInfo{padding:12% 0 0 15%;}
+
+.colWrap.rightTxt .col50{float:left;}
+.colWrap.rightTxt .txtBoxArea{padding:0;height:100%;float:none !important;position:absolute;right:0;top:0;}
+
+.featureSection .txtType{position:relative;overflow:hidden;margin-top:80px;}
+.featureSection .txtType p.tit{padding:0;font-size:20px;color:#363636;font-family:'SECGCWB';}
+.featureSection .txtType p.tit *{font-family:'SECGCWB';font-size:1em;}
+.featureSection .txtType p.txt{padding:0;margin:20px 0 0 0;font-size:18px;color:#363636;}
+.featureSection .txtType .txtTypeBox:first-child{margin-top:0;}
+.featureSection .txtType .txtTypeBox{position:relative;margin:60px 0 0 0;}
+.featureSection .txtType .txtTypeBox .img{float:left;display:table-cell;width:60px;vertical-align:middle;}
+.featureSection .txtType .txtTypeBox .iconTxt{padding-left:52px;display:table-cell;vertical-align:middle;}
+
+.featureSection .imgMotion{position:relative;}
+.featureSection .imgMotion .img{position:absolute; left:0; top:0; display:none;}
+.featureSection .imgMotion .img.on{position:relative; left:auto; top:auto; display:block;}
+
+.featureSection.sec01 .iconArea{ display:none;}
+.featureSection.sec01 .iconArea ul{text-align:center;padding:80px 0 30px 0;display:table;text-align:center;font-size:0;line-height:0;width:100%;}
+.featureSection.sec01 .iconArea ul li{padding:92px 45px 0 45px;display:inline-block;text-align:center;font-size:20px;line-height:1.2;color:#363636;vertical-align:top;opacity:0;transition-property:opacity,transform;transition-duration:0.8s;transform: translateY(20%);}
+.featureSection.sec01 .iconArea ul li.ico01{background:url(../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0101.png) no-repeat center top;background-size:74px 63px;}
+.featureSection.sec01 .iconArea ul li.ico02{background:url(../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0102.png) no-repeat center top;background-size:74px 63px;}
+.featureSection.sec01 .iconArea ul li.ico03{background:url(../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0103.png) no-repeat center top;background-size:74px 63px;}
+.featureSection.sec01 .iconArea ul li.ico04{background:url(../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0104.png) no-repeat center top;background-size:74px 63px;}
+.featureSection.sec01 .iconArea ul li.ico05{background:url(../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0105.png) no-repeat center top;background-size:74px 63px;}
+.featureSection.sec01 .iconArea.on ul li.ico01{transform: translateY(0%);opacity:1;transition-delay:0.1s}
+.featureSection.sec01 .iconArea.on ul li.ico02{transform: translateY(0%);opacity:1;transition-delay:0.3s}
+.featureSection.sec01 .iconArea.on ul li.ico03{transform: translateY(0%);opacity:1;transition-delay:0.5s}
+.featureSection.sec01 .iconArea.on ul li.ico04{transform: translateY(0%);opacity:1;transition-delay:0.7s}
+.featureSection.sec01 .iconArea.on ul li.ico05{transform: translateY(0%);opacity:1;transition-delay:0.9s}
+.featureSection.sec01 .imgMotion{ margin-top:30px;}
+
+.featureSection.sec02 .titBox h2.tit,
+.featureSection.sec04 .titBox h2.tit{margin-bottom:80px;}
+
+.featureSection.sec03{}
+.featureSection.sec03 .imgMotion .img{position:absolute; left:0; top:0; display:block;}
+.featureSection.sec03 .lSPager { display:none;}
+
+.featureSection.sec05 .stepArea{overflow:hidden;margin:70px 0 0 0;}
+.featureSection.sec05 .stepArea dl{float:left;width:25%;text-align:center;position:relative;}
+.featureSection.sec05 .stepArea dl:after{position:absolute;left:0;top:50%;margin:-10px 0 0 0;display:block;content:"";width:12px;height:21px;background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv_bg01.png") no-repeat left top;}
+.featureSection.sec05 .stepArea dl dt{font-size:20px;color:#363636;font-weight:700;}
+.featureSection.sec05 .stepArea dl dd{padding:106px 0 0 0;font-size:20px;color:#363636;line-height:1.4;text-align:center;}
+.featureSection.sec05 .stepArea dl.step01:after{display:none;}
+.featureSection.sec05 .stepArea dl.step01 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0501.png") no-repeat center 15px;}
+.featureSection.sec05 .stepArea dl.step02 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0502.png") no-repeat center 15px;}
+.featureSection.sec05 .stepArea dl.step03 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0503.png") no-repeat center 15px;}
+.featureSection.sec05 .stepArea dl.step04 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0503.png") no-repeat center 15px;}
+.featureSection.sec05 .img{margin:60px 0 0 0;}
+
+.featureSection.sec06,
+.featureSection.sec07,
+.featureSection.sec08,
+.featureSection.sec10,
+.featureSection.sec11{margin-top:0;}
+.featureSection.sec06 .txtType .txtTypeBox .img{float:left;width:64px;}
+.featureSection.sec07 .txtType .txtTypeBox .img{float:left;width:64px;}
+.featureSection.sec09 .txtType .txtTypeBox .img{float:left;width:65px;}
+.featureSection.sec08 p.tips{padding-right:20px;}
+
+
+@media screen and (min-width:768px) and (max-width: 1439px){
+
+	.locationArea ul li > span{height:5vw;}
+	.featureSection.sec05 .stepArea dl dd{font-size:1.388vw;}
+
+	@media screen and (min-width:768px) and (max-width: 815px){
+		.colWrap.leftTxt .txtMiddle > div{left:7%}
+		.colWrap .txtBoxArea .prdInfo{padding:8% 0 0 15%;}
+		.featureSection.sec05 .stepArea dl dd{font-size:13px;}
+	}
+
+	.featureSection.sec01 .iconArea ul{padding:5.555vw 0 2.083vw 0;}
+	.featureSection.sec01 .iconArea ul li{padding:6.388vw 3.125vw 0 3.125vw;font-size:1.388vw;}
+	.featureSection.sec01 .iconArea ul li.ico01{background-size:5.138vw 4.375vw;}
+	.featureSection.sec01 .iconArea ul li.ico02{background-size:5.138vw 4.375vw;}
+	.featureSection.sec01 .iconArea ul li.ico03{background-size:5.138vw 4.375vw;}
+	.featureSection.sec01 .iconArea ul li.ico04{background-size:5.138vw 4.375vw;}
+	.featureSection.sec01 .iconArea ul li.ico05{background-size:5.138vw 4.375vw;}
+	.featureSection.sec01 .imgMotion{ margin-top:2.083vw;}
+
+	.featureSection.sec02 .titBox h2.tit,
+	.featureSection.sec03 .titBox h2.tit,
+	.featureSection.sec04 .titBox h2.tit{margin-bottom:5.555vw;}
+
+	.featureSection .txtType{margin-top:5.555vw;}
+	.featureSection .txtType p.tit{font-size:1.388vw;}
+	.featureSection .txtType p.txt{margin:1.388vw 0 0 0;font-size:1.25vw;}
+	.featureSection .txtType .txtTypeBox .iconTxt{padding-left:3.611vw;}
+	.featureSection .txtType .txtTypeBox:first-child{margin-top:0;}
+	.featureSection .txtType .txtTypeBox{position:relative;margin:4.166vw 0 0 0;}
+	.featureSection .txtType .txtTypeBox .img{width:4.166vw !important;}
+	.featureSection.sec06 .txtType .txtTypeBox .img{width:4.444vw;}
+
+	@media screen and (min-width:768px) and (max-width: 1024px){
+		.featureSection .txtType .txtTypeBox{margin-top:3vw;}
+
+	}
+	@media screen and (min-width:768px) and (max-width: 946px){
+		.featureSection .txtType p.txt{font-size:12px;}
+	}
+}
+
+/*mobile size*/
+@media screen and (min-width: 0px) and (max-width: 767px){
+	.featureSection .video.play:after{margin:-22px 0 0 -22px;display:block;content:"";-webkit-background-size:45px auto; background-size:45px auto; width:45px; height:45px;}
+	.featureSection.sec02 .titBox h2.tit,
+	.featureSection.sec04 .titBox h2.tit{margin-bottom:25px;}
+
+	.locationArea ul li > span{height:55px;}
+
+	.featureSection .txtType .txtTypeBox .iconTxt{display:block;text-align:center;padding-left:0}
+	.featureSection .txtType .txtTypeBox .img{display:block;float:none !important;text-align:center;margin:0 auto;}
+
+	.featureSection.sec01 .iconArea ul{padding:48px 0 70px 0;}
+	.featureSection.sec01 .iconArea ul li{padding:82px 16px 0 16px;display:inline-block;text-align:center;font-size:14px;}
+
+	.featureSection.sec03 .visualArea{margin-top:40px;}
+
+	.featureSection.sec05 .stepArea{margin-top:40px;}
+	.featureSection.sec05 .stepArea dl dt,
+	.featureSection.sec05 .stepArea dl dd{font-size:1em;}
+	.featureSection.sec05 .stepArea dl dd{padding-top:84px;}
+	.featureSection.sec05 .stepArea dl.step01 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0501.png") no-repeat center 12px;background-size:58px 58px;}
+	.featureSection.sec05 .stepArea dl.step02 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0502.png") no-repeat center 12px;background-size:58px 58px;}
+	.featureSection.sec05 .stepArea dl.step03 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0503.png") no-repeat center 12px;background-size:58px 58px;font-size:14px;}
+	.featureSection.sec05 .stepArea dl.step04 dd{background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv-ico0504.png") no-repeat center 12px;background-size:58px 58px;}
+
+	.featureSection.sec06,
+	.featureSection.sec07,
+	.featureSection.sec08,
+	.featureSection.sec10,
+	.featureSection.sec11{margin-top:80px;}
+
+	@media screen and (max-width: 630px){
+		.featureSection.sec01 .iconArea ul{max-width:410px;margin:0 auto;text-align:center;}
+		.featureSection.sec01 .iconArea ul li.ico01{width:33.3%;}
+		.featureSection.sec01 .iconArea ul li.ico02{width:33.3%;}
+		.featureSection.sec01 .iconArea ul li.ico03{width:33.3%;}
+		.featureSection.sec01 .iconArea ul li.ico04{width:40%;margin-top:20px;}
+		.featureSection.sec01 .iconArea ul li.ico05{width:40%;margin-top:20px;}
+		@media screen and (max-width: 420px){
+			.featureSection.sec01 .iconArea ul li{background-size:65px auto !important;}
+			@media screen and (max-width: 415px){
+				.featureSection.sec01 .iconArea ul li span{display:block;}
+			}
+		}
+	}
+
+	.featureSection.sec02 .colWrap.leftTxt .txtBoxArea,
+	.featureSection.sec08 .colWrap.leftTxt .txtBoxArea,
+	.featureSection.sec11 .colWrap.leftTxt .txtBoxArea{float:left;width:100%;position:static;left:auto;top:auto;right:auto;}
+	.featureSection.sec02 .colWrap.leftTxt .txtBoxArea .prdInfo,
+	.featureSection.sec08 .colWrap.leftTxt .txtBoxArea .prdInfo,
+	.featureSection.sec11 .colWrap.leftTxt .txtBoxArea .prdInfo{width:100%;position:static;left:auto;top:auto;right:auto;}
+	.featureSection.sec02 .colWrap .txtBoxArea .prdTxt,
+	.featureSection.sec08 .colWrap .txtBoxArea .prdTxt,
+	.featureSection.sec11 .colWrap .txtBoxArea .prdTxt{width:100%;position:static;left:auto;top:auto;right:auto;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0%);}
+	.featureSection.sec02 .colWrap.leftTxt .col50,
+	.featureSection.sec08 .colWrap.leftTxt .col50,
+	.featureSection.sec11 .colWrap.leftTxt .col50{width:100%;}
+
+	.featureSection.sec04 .colWrap.rightTxt .txtBoxArea{position:static;top:auto;left:auto;right:auto;height:100%;}
+	.featureSection.sec04 .colWrap .txtBoxArea .prdTxt{position:static;top:auto;left:auto;right:auto;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0%);}
+
+	.featureSection.sec10 .colWrap .txtBoxArea{position:static;top:auto;left:auto;right:auto;width:100%;height:100%;}
+	.featureSection.sec10 .colWrap .txtBoxArea .prdTxt{position:static;top:auto;left:auto;right:auto;width:100%;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0%);}
+
+	.featureSection.sec04 .txtType,
+	.featureSection.sec06 .txtType{position:relative;overflow:hidden;margin-top:60px;}
+	.featureSection.sec04 .txtType p.tit,
+	.featureSection.sec06 .txtType p.tit{margin-top:20px;padding:0;font-size:14px !important;line-height:1.2;}
+	.featureSection.sec04 .txtType p.txt,
+	.featureSection.sec06 .txtType p.txt{padding:0;margin:20px 0 0 0;font-size:14px !important;line-height:1.2;}
+	.featureSection.sec04 .txtType,
+	.featureSection.sec06 .txtType{width:100%;font-size:0;display:table;line-height:0;}
+	.featureSection.sec04 .txtType .txtTypeBox,
+	.featureSection.sec06 .txtType .txtTypeBox{margin-top:0;position:relative;width:33.3%;display:inline-block;vertical-align:top;}
+	.featureSection.sec04 .txtType .txtTypeBox:first-child,
+	.featureSection.sec06 .txtType .txtTypeBox:first-child{width:33.4%;}
+	.featureSection.sec04 .txtType .txtTypeBox:first-child,
+	.featureSection.sec06 .txtType .txtTypeBox:first-child{margin-top:0;}
+
+	.featureSection.sec06 .txtBoxArea,
+	.featureSection.sec07 .txtBoxArea,
+	.featureSection.sec08 .txtBoxArea{width:100%;text-align:center;position:static;left:auto;top:auto;right:auto;bottom:auto;}
+	.featureSection.sec06.leftTxt .img,
+	.featureSection.sec07.leftTxt .img,
+	.featureSection.sec08.leftTxt .img{position:relative;max-width:100%;width:100%;float:none !important;margin-top:165px;width:100%;}
+	.featureSection.sec06 .col50.img,
+	.featureSection.sec07 .col50.img{margin-top:40px;}
+	.featureSection.sec08 .col50.img{margin-top:40px;}
+	.featureSection.sec06 .col50,
+	.featureSection.sec07 .col50,
+	.featureSection.sec08 .col50{width:100%;}
+	.featureSection.sec06 .colWrap .txtBoxArea .prdInfo,
+	.featureSection.sec07 .colWrap .txtBoxArea .prdInfo,
+	.featureSection.sec08 .colWrap .txtBoxArea .prdInfo{padding:0 10px 0 10px;}
+
+	.featureSection.sec06 .txtType,
+	.featureSection.sec07 .txtType,
+	.featureSection.sec08 .txtType{position:relative;overflow:hidden;margin-top:40px;}
+	.featureSection.sec06 .txtType p.tit,
+	.featureSection.sec07 .txtType p.tit,
+	.featureSection.sec08 .txtType p.tit{margin-top:20px;padding:0;font-size:15px !important;line-height:1.2;}
+	.featureSection.sec06 .txtType p.txt,
+	.featureSection.sec07 .txtType p.txt,
+	.featureSection.sec08 .txtType p.txt{padding:0 5px;margin:20px 0 0 0;font-size:13px !important;line-height:1.4;}
+	.featureSection.sec06 .txtType,
+	.featureSection.sec07 .txtType,
+	.featureSection.sec08 .txtType{width:100%;font-size:0;display:table;line-height:0;}
+	.featureSection.sec06 .txtType .txtTypeBox,
+	.featureSection.sec07 .txtType .txtTypeBox,
+	.featureSection.sec08 .txtType .txtTypeBox{margin-top:0;position:relative;width:33.3%;display:inline-block;vertical-align:top;}
+	.featureSection.sec06 .txtType .txtTypeBox:first-child,
+	.featureSection.sec07 .txtType .txtTypeBox:first-child,
+	.featureSection.sec08 .txtType .txtTypeBox:first-child{width:33.4%;}
+	.featureSection.sec06 .txtType .txtTypeBox:first-child,
+	.featureSection.sec07 .txtType .txtTypeBox:first-child,
+	.featureSection.sec08 .txtType .txtTypeBox:first-child{margin-top:0;}
+
+	.featureSection.sec03 .visualArea { margin-bottom:100px;}
+	.featureSection.sec03 .lSPager { display:block;}
+	.featureSection.sec03 .lSSlideOuter .lSPager.lSpg{ position:absolute; left:0;bottom:-40px; width:100%; font-size:0; display:table;}
+	.featureSection.sec03 .lSSlideOuter .lSPager.lSpg > li a {display:inline-block;width:10px;height:10px;background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv_dot.png") no-repeat left top;background-size:10px}
+	.featureSection.sec03 .lSSlideOuter .lSPager.lSpg > li.active a {background:url("../images/contents/sec-pd-wow-washers-dryers-wd21j9840kv_dot_on.png") no-repeat left top;background-size:10px}
+
+	.featureSection.sec06 p.txt .mobileBlock,
+	.featureSection.sec07 p.txt .mobileBlock{display:block !important;}
+	.featureSection.sec07 p.tit .mobileBlock{display:inline !important;}
+
+
+	@media screen and (max-width:640px){
+		.locationArea ul li > span{height:50px;}
+	}
+	@media screen and (max-width:480px){
+		.locationArea ul li > span{height:45px;}
+
+		.featureSection.sec05 .img{margin-top:0;}
+		.featureSection.sec05 .stepArea dl{height:200px;}
+		.featureSection.sec05 .stepArea dl:after{left:-7%;top:35%;}
+		.featureSection.sec05 .stepArea dl dd{font-size:13px;}
+	}
+	@media screen and (max-width:414px){
+		.featureSection.sec06,
+		.featureSection.sec07,
+		.featureSection.sec08,
+		.featureSection.sec10,
+		.featureSection.sec11{margin-top:60px;}
+
+		.locationArea ul li > span{height:40px;}
+
+		.featureSection.sec06 p.txt .mobileBlock,
+		.featureSection.sec07 p.txt .mobileBlock,
+		.featureSection.sec08 p.txt .mobileBlock{display:inline !important;}
+		.featureSection.sec07 p.tit .mobileBlock{display:block !important;}
+	}
+}

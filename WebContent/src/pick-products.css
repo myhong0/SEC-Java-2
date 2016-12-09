@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.ss_samsung #recopick .inner-x, .ss_samsung #store_pick .inner-x{width:100%;position:inherit;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6; background:#fcfcfc;}
+.ss_samsung #recopick #rec-similar .inner-x, .ss_samsung #store_pick #rec-similar .inner-x{padding:0;}
+.ss_samsung #recopick .module-heading .heading-text, .ss_samsung #store_pick .module-heading .heading-text{letter-spacing:-.9px;font-family:SECGCWM, sans-serif!important;font-size:26px!important;line-height:1;text-transform:uppercase;}
+@media (min-width:48.0625em) {.ss_samsung #recopick .module-heading .heading-text, .ss_samsung #store_pick .module-heading .heading-text{font-size:36px!important;}}
+@media (min-width:56.125em) {  html .ss_samsung.home #recopick .module-heading .heading-text, html .ss_samsung.home #store_pick .module-heading .heading-text{font-size:32px!important}}
+/*estore*/
+.ss_samsung.estore #recopick .inner-x, .ss_samsung.estore #store_pick .inner-x{width:100%;position:inherit;border-top:none;border-bottom:1px solid #e6e6e6; background:#fcfcfc;}
+.ss_samsung.estore #recopick .module-heading .heading-text, .ss_samsung.estore #store_pick .module-heading .heading-text{letter-spacing:-.9px;font-family:SECGCWM, sans-serif!important;font-size:inherit !important;line-height:1;text-transform:uppercase;}
+
+.ss_samsung.estore #store_pick,.ss_samsung.estore #newProduct {border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;}
+.ss_samsung.estore .inner-x{ padding: 0 !important;}
+.ss_samsung.estore .module-heading {font-family: 'SECGCWL',Arial,sans-serif;font-size: 22px;line-height: 21px;color: #222222;background: #fcfcfc;padding: 26px 0 18px 20px;}
+@media screen and (min-width: 48em){.ss_samsung.estore .module-heading {font-size: 24px;padding: 31px 0 23px 24px;}}
+@media (min-width: 50.063em){.ss_samsung .module-heading {font-size: 24px;}}
+@media screen and (min-width: 64em){.ss_samsung.estore .module-heading {font-size: 28px;padding: 40px 0 24px 24px;}}
+
+
+
+
+
+
+
+
+
+#recopick,#store_pick{clear:both;overflow:hidden;}
+
+.pick_products ul li .add_basket {display: none;/* inline-block */padding-top: 0;position: absolute;bottom: 0;left: 50%;  box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-izing: border-box;text-align: center;margin: 7px auto 0;width: 116px;height: 34px;text-transform: uppercase;font-size: 12px;line-height: 30px;color: #fff;background: #107bda;border: 2px solid #2183da;}
+
+.pick_products {overflow: hidden;position:relative; width: 100%;}
+.pick_products a{color:#292929;}
+.pick_products ul li a{display:block;font-size: 14px;}
+.pick_products ul li .product_price {margin-top: 6px;color:#777777;}
+/*20141208 adn jun - line-height:1.3 추가*/
+.pick_products ul li .product_name {overflow: hidden; width: 150px;margin: 6px auto 0;max-height: 37px; font-size:15px;line-height:1.3}
+.pick_products ul li .product_promotion {color: #ff6600;margin-top: 0px;min-height: 17px;font-size: 13px;}
+
+.pick_products .direction a{position:absolute; top:42%;font-size:50px;color:#777;}
+.pick_products .direction .prev{ left:25px;}
+.pick_products .direction .next{ right:25px;}
+.pick_products .direction a.disable{color:#e0e0e0;}
+
+.pick_products .cover_wrap {overflow:hidden;margin:0 auto; width:100%;}
+.pick_products .cover_wrap ul{overflow:hidden; width:100%;}
+/*adn/jun-20141229 ie8 대응--> height:265px--> height:285px 변경 */
+.pick_products .cover_wrap ul li{ float:left; position: relative; height:285px; padding: 30px 0 21px; text-align:center;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.pick_products .cover_wrap ul li span{display:block;}
+.pick_products .cover_wrap ul li .price_custom{display:inline;}
+.pick_products .cover_wrap ul li .price_now{display:inline;}
+.pick_products .cover_wrap ul li span img{width: 150px;height:150px;}
+
+/*        recopick  mobile            */
+.recopick_list{ width:100%;}
+.recopick_list li{  display:none; width:50%;}
+.recopick_list li:nth-child(-n+4){display:block; border-left:1px solid #dadada;;border-top:1px solid #dadada;border-right:none;}
+.recopick_list li:nth-child(-n+2){border-top:none;}
+.recopick_wrap .direction {display:block;}
+
+/* desktop */
+@media (min-width: 48em){
+
+.pick_products .cover_wrap ul li{height:auto;}
+.recopick_wrap .direction {display:none;}
+.recopick_wrap .cover_wrap {margin:0 auto;}
+.recopick_wrap .direction {display:block;}
+.recopick_list{width:6700px;border:none;}
+.recopick_wrap .recopick_list li{display:block; border:none;}
+}
+
+/*        store pick  mobile      */
+/*  adn/jun 20141229  모바일  수정*/
+.pick_products .blits{display:none}
+@media(max-width:767px){
+	.pick_products .blits{display:block;padding-bottom: 16px;padding-top: 21px;}
+	.pick_products .blits ul {overflow:hidden; text-align: center;width: 100%;}
+	.pick_products .blits ul li {display: inline-block; position:relative; width: auto;float: none;padding: 0 4px;height: auto;}
+	.pick_products .blits ul li a {display: inline-block;width: 12px;height: 12px;overflow: hidden;background: url('/common/next/img/estore_static/main_paging_dot.png') left bottom no-repeat;}
+	.pick_products .blits ul li.current a {background-position: left top;}
+	.pick_products .direction,
+	.recopick_wrap .direction,
+	.storepick_wrap .direction {display:none;}
+}
+@media (min-width: 48em){
+    .storepick_wrap .cover_wrap {margin:0 auto; width:85%;}
+}

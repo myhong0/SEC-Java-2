@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.selectScroll{font-family: SECGCWL, sans-serif !important;}
+@media (min-width:50.063em){
+.selectScroll{font-family: SECGCWL, sans-serif !important;}
+}
+
+
+.static-policy .policy-list li strong{ font-size:2.188em; }
+.static-policy .policy-list li li strong{ font-size: 0.875em}
+
+@media screen and (min-width: 1280px) {
+.support-container .support-manuals-lst .detail-option .info-tit{font-size:1.25em !important;}
+}

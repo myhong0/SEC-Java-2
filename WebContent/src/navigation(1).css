@@ -1,0 +1,200 @@
+@charset "utf-8";
+html.ltr .nav nav .utillink a{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .nav nav .navigation li a{ font-family:'SECGCWL', sans-serif !important; font-size:13px; }
+html.ltr .nav .signbutton{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .ss_samsung div.auto-complete li a{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .nav .otherlink > a,
+html.ltr .nav .cart-wrap > button{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .cart-wrap{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .ss_samsung .cart-wrap .cart-products .ss-button{ font-family:'SECGCWM', sans-serif !important; }
+html.ltr .footer-navi h1{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .footer-navi h2{ font-family:'SECGCWM', sans-serif !important; font-weight:normal; }
+html.ltr .footer-navi .footer-nav-wrap h2{ font-family:'SECGCWL', sans-serif !important; }
+html.ltr .footer .bottom{ font-size:13px; }
+html.ltr .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; word-break:keep-all; }
+html.ltr .footer-navi .footer-nav-wrap h3{ font-family:'SECGCWM', sans-serif !important; }
+/*20141027 - font-weight:bold--> font-weight:normal*/
+html.ltr .footer-navi .footer-nav-wrap h3 a{ font-weight:normal }
+html.rtl .nav nav .navigation li a{ font-family:'SECGCWL', sans-serif !important; }
+html.rtl .cart-wrap{ font-family:'SECGCWL', sans-serif !important; }
+html.rtl .ss_samsung .cart-wrap .cart-products .ss-button{ font-family:'SECGCWM', sans-serif !important; }
+html.rtl .footer-navi h1{ font-family:'SECGCWM', sans-serif !important; }
+html.rtl .footer-navi .footer-nav-wrap h2{ font-family:'SECGCWL', sans-serif !important; }
+html.rtl .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; }
+@media (max-width:1280px){
+	html.ltr .footer-navi h1{ font-family:'SECGCWL', sans-serif !important; }
+	html.ltr .footer-navi .footer-nav-wrap h2{ font-size:16px; }
+	html.ltr .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi h1{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi .footer-nav-wrap h2{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; }
+	html.ltr .footer-navi .footer-nav-wrap h3{ font-family:'SECGCWM', sans-serif !important; }
+}
+@media (max-width:767px){
+	html.ltr .footer-navi h1{ font-family:'SECGCWL', sans-serif !important; }
+	html.ltr .footer-navi .footer-nav-wrap h2{ font-family:'SECGCWL', sans-serif !important; }
+	html.ltr .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi h1{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi .footer-nav-wrap h2{ font-family:'SECGCWL', sans-serif !important; }
+	html.rtl .footer-navi .footer-nav-wrap ul li a{ font-family:'SECGCWL', sans-serif !important; }
+}
+html.ltr .nav h1{ font-size:1px; }
+html.ltr .nav nav .utillink{ font-size:12px; }
+html.ltr .nav nav .utillink .expand > a:after{ font-size:10px; }
+html.ltr .nav nav .utillink .expand ul li a{ font-size:12px; }
+html.ltr .nav nav .navigation li .icon-estore{ font-size:21px; font-size:1.313rem; }
+html.ltr .nav nav .navigation li a{ font-size:14px; }
+html.ltr .nav nav .navigation li > a:after{ font-size:8px; }
+html.ltr .nav nav .navigation li ul li > a:after{ font-size:10px; }
+html.ltr .nav nav .navigation li ul li ul li > a:after{ font-size:15px; }
+html.ltr .nav nav .navigation li ul li.exception > a:after{ font-size:15px; }
+html.ltr .nav nav .navigation li ul li.sub.exception > a:after{ font-size:10px; }
+html.ltr .nav nav .navigation li ul li.exception ul li > a:after{ font-size:15px; }
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li > a:after{ font-size:15px; }
+html.ltr .nav .navbutton{ font-size:0; }
+html.ltr .nav .searchbutton{ font-size:0; }
+html.ltr .nav .signbutton{ font-size:0; }
+html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{ font-size:14px; }
+html.ltr .nav .cart-wrap > button{ font-size:0; }
+html.ltr .nav .icon-signin, html.ltr .nav .icon-signout, html.ltr .nav .icon-list, html.ltr .nav .icon-save, html.ltr .nav .icon-cart{ width:auto; font-size:14px; }
+html.ltr .nav .icon-localization-store{ font-size:14px; }
+html.ltr .cart-wrap .cart-list-wrap h3{ font-size:17px; }
+html.ltr .cart-wrap .cart-products .colour-selection{ font-size:0.938rem; font-size:15px; }
+html.ltr .cart-wrap .cart-products .product-desc .product-title .product-title-code{ font-size:0.75rem; font-size:12px; }
+html.ltr .cart-wrap .cart-products .colour-selection span{ font-size:13px; }
+html.ltr .cart-wrap .cart-products .product-quantity span{ font-size:0.813rem; font-size:13px; }
+html.ltr .cart-wrap .cart-products .product-quantity span.product-quantity-label{ font-size:0.813rem; font-size:13px; }
+html.ltr .cart-wrap .cart-products .product-price span{ font-size:13px; }
+html.ltr .cart-wrap .cart-products .product-price span + span{ font-size:23px; }
+html.ltr .cart-wrap .total .price strong{ font-size:1.313rem; font-size:21px }
+html.ltr .cart-wrap .total .price span{ font-size:1.313rem; font-size:21px }
+html.ltr .cart-wrap .cartnum{ font-size:11px;  background: none repeat scroll 0 0 #d93c04 !important; }
+html.ltr .ss_samsung .cart-wrap .cart-products .ss-button{ font-size:10px; }
+html.ltr .footer-navi h2{ font-size:21px; }
+html.ltr .footer-navi .footer-nav-wrap h3{ font-size:13px; }
+
+html.ltr .nav .icon-signin, html.ltr .nav .icon-signout, html.ltr .nav .icon-search, html.ltr .nav .icon-list, html.ltr .nav .icon-cart{ width:auto; font-size:15px; }
+html.ltr .nav .icon-localization-store{ font-size:14px; }
+html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{ font-size:14px; }
+html.ltr .footer-navi h2{ font-size:21px; }
+html.ltr .footer-navi .footer-nav-wrap h3{ font-size:14px; }
+html.ltr .footer-navi .footer-nav-wrap ul li a{ font-size:14px; padding:2px 0;}
+@media (max-width:1023px){
+	html.ltr .nav nav .utillink a{ font-size:13px; }
+	html.ltr .nav nav .navigation li a{ font-size:14px; }
+	html.ltr .nav nav .navigation li > a:after{ font-size:10px; }
+	html.ltr .nav nav .navigation li ul li > a:after{ font-size:10px; }
+	html.ltr .nav nav .navigation li ul li ul li > a:after{ font-size:13px; }
+	html.ltr .nav nav .utillink .expand ul li a{ font-size:12px; }
+	html.ltr .nav nav .navigation li ul li.exception ul li > a:after{ font-size:10px; }
+	html.ltr .nav nav .navigation li ul li.on.exception ul li > a:after{ font-size:10px; }
+	html.ltr .nav .icon-localization-store{ font-size:21px; }
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{ font-size:14px; }
+}
+@media (max-width:767px){
+	html.ltr .ss_samsung .nav div.auto-complete li a{ font-size:12px; }
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{ font-size:14px; }
+	html.ltr .footer-navi h2{ font-size:21px; }
+	html.ltr .footer-navi .footer-nav-wrap h3{ font-size:14px; }
+	html.ltr .footer-navi .footer-nav-wrap h3 a:after{ font-size:12px; }
+	html.ltr .footer-navi .footer-nav-wrap ul li a{ font-size:14px; }
+}
+/* 배너 추가 */
+@media (min-width:64em){	.ltr .ss_samsung .footer .section .col2a{ width:48%; float:left; margin-right:2%; }}
+.ss_samsung .footer{ font-size:13px; }
+.ss_samsung .footer .top.section ul li a{ line-height:1.6; }
+.ss_samsung .footer .middle ul li .lang{ height:36px; }
+.ss_samsung .footer .middle-ico-last .flag-kr{ background:url(/common/next/img/flag-sec.gif); width:32px; height:20px; margin-left:10px; display:-moz-inline-stack; display:inline-block; vertical-align:middle; zoom:1; }
+html.ltr .ss_samsung .footer .middle.section ul .acclink{ overflow:hidden; }
+html.ltr .ss_samsung .footer .middle.section ul .acclink a img{ float:left; margin-right:10px; height:36px; }
+html.ltr .ss_samsung .footer .middle.section ul .acclink a span{ display:inline-block; height:36px; width:85px; padding-right:20px; line-height:1.4; }
+html.ltr .ss_samsung .footer .middle.section ul .acclink.ccm a span{ padding:10px 20px 0 0; height:auto; }
+.ss_samsung .footer .section{ position:relative; }
+.ss_samsung .footer .section div{ overflow:hidden; margin-top:15px; line-height:1.4 }
+/*20150128 adn/jun 접근성 관련 컬러 수정*/
+.ss_samsung .footer .section .address a, .ss_samsung .footer .section div a{ color:#0071BF !important; }
+.ss_samsung .footer .section div span{ display:block; margin-bottom:5px; }
+.ss_samsung .footer .section div span.col2a strong{ display:block; }
+.ss_samsung .footer .section div span.col2a strong, .ss_samsung .footer .section div span.col2b strong{ font-weight:normal; font-family:'SECGCWM', sans-serif !important; }
+.ss_samsung .footer .section .address{ display:block; padding-top:6px; width:95%; line-height:1.4; margin-bottom:15px }
+.ss_samsung .footer .section .claim{ color:#0057a4; }
+.ss_samsung .footer .section .topBtn{ position:absolute; top:30px; right:30px; }
+@media (max-width:1024px){.ss_samsung .footer .section .address{ display:block; padding-top:6px; width:80%; }}
+@media (max-width:768px){
+	html.ltr .ss_samsung .footer .middle.section ul .flagKR{ width:inherit; text-align:right }
+	html.ltr .ss_samsung .footer .middle.section ul .acclink a img{ height:32px; }
+}
+@media (max-width:530px){
+	html.ltr .ss_samsung .footer .middle.section ul .acclink{ width:100%; text-align:right; padding-top:3px;}
+	html.ltr .ss_samsung .footer .middle.section ul .acclink a span{ text-align:left; padding-right:0px; }
+	html.ltr .ss_samsung .footer .middle.section ul .acclink.ccm a span{ padding:10px 0 0 0; }
+	html.ltr .ss_samsung .footer .middle.section ul .flagKR{ width:95%; text-align:right }
+}
+@media (max-width:390px){
+	html.ltr .ss_samsung .footer .middle.section ul .flagKR{ width:93%; text-align:right }
+	html.ltr .ss_samsung .footer .middle.section ul .acclink{ width:100%; text-align:right; }
+}
+/* estore -busket */
+html.ltr .nav nav .navigation li .icon-estore{ position:relative; top:2px; left:-5px; font-size:13px; }
+html.ltr .nav nav .navigation li .icon-estore:before{ content:"\e048"; }
+html.ltr .nav nav .navigation li .icon-sec-building{ position:relative; top:2px; left:-5px; font-size:13px; }
+/* busket */
+html.ltr .cart-wrap .cart-products .product-desc .product-title .product-title-label{ font-family:'SECGCWM' !important; font-weight:normal }
+html.ltr .cart-wrap .cart-products .product-price span + span{ font-family:'SECGCWM' !important; font-size:18px }
+html.ltr .cart-wrap .cart-products .colour-selection span{ line-height:18px }
+html.ltr .cart-wrap .total .price strong,
+html.ltr .cart-wrap .total .price span{ font-weight:normal; font-size:18px }
+.ss_samsung.b2c .ss-button{ font-family:'SECGCWL'; font-weight:normal }
+html.ltr .cart-wrap .total .btn{ height:auto }
+html.ltr .cart-wrap.on .cart-list-wrap .cart-list{ max-height:578px }
+html.ltr .cart-wrap a.shop{font-size:16px; }
+/* busket 20150102 */
+html.ltr .cart-wrap .cart-products .product-desc{ line-height:1.2; width:100%; padding-right:20px }
+@media (min-width:768px){html.ltr .nav .searchbox form{min-width:315px;}}
+html.ltr .footer-navi .footer-navi-tit{font-family:'SECGCWL';}
+html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a{font-family:'SECGCWL'; font-weight:normal;}
+
+/*new gnb */
+html[lang=ko] #header,html[lang=ko] #header input[type=text],html[lang=ko] #header input[type=search],
+html[lang=ko] #footer,html[lang=ko] #footer input[type=text],html[lang=ko] #footer input[type=search]{font-family:'SECGCWL',sans-serif}
+html[lang=ko] .footer-nav-list a,html[lang=ko] .footer-nav-title,html[lang=ko] .footer-shoplist a,html[lang=ko] .back-top{font-size:13px}
+html[lang=ko] .footer-social-title{font-family:'SECGCWL',sans-serif;font-size:13px;line-height:26px;color:#707070}
+
+#header .header-wrap{position:static}
+
+#footer .footer-wrap .footer-accreditation{clear:both;margin:42px 0 50px;overflow:hidden}
+#footer .footer-wrap .footer-accreditation li{float:left;margin:0 13px 10px 0;height:36px;width:100px}
+#footer .footer-wrap .footer-accreditation li:first-child{width:120px}
+#footer .footer-wrap .footer-accreditation li:last-child{width:112px}
+#footer .footer-wrap .footer-accreditation li:last-child{margin-right:0}
+#footer .footer-wrap .footer-accreditation a{display:block;color:#006ec5;line-height:16px;font-size:12px;padding-top:3px}
+.img-accreditation{float:left;margin-right:10px;margin-top:-3px}
+
+#footer .footer-wrap .footer-notice{display:none}
+#footer .txt-blue strong{font-weight:normal;font-family:"SECGCWB",Arial,sans-serif}
+
+@media (min-width:1025px) and (max-width:1220px){
+#footer .footer-wrap .footer-accreditation li{height:auto;text-align:center;width:auto;margin-right:30px}
+#footer .footer-wrap .footer-accreditation li:first-child,#footer .footer-wrap .footer-accreditation li:last-child{width:auto}
+.img-accreditation{float:none;display:block;margin:0 auto 5px}
+}
+
+@media (min-width:767px) and (max-width:1024px){
+#footer .footer-wrap .footer-accreditation{position:absolute;right:0;bottom:-10px;margin:0}
+}
+
+@media screen and (max-width:767px){
+#footer .footer-wrap .footer-accreditation{margin:20px 0 15px}
+}
+
+@media screen and (max-width:420px){
+#footer .footer-wrap .footer-accreditation li{height:auto;text-align:center;width:auto;margin-right:30px}
+#footer .footer-wrap .footer-accreditation li:first-child,#footer .footer-wrap .footer-accreditation li:last-child{width:auto}
+.img-accreditation{float:none;display:block;margin:0 auto 5px}
+}
+#footer .others-list a span[class^="flag-"] { display: inline-block; width: 20px; height: 13px; margin-bottom:-2px; background-position: center center; background-repeat: no-repeat; }
+.flag-sec {background: url('/common/next/img/flag/ico_Korea.gif');}
+
+.search-form div.auto-complete div h5, .search-form div.auto-complete div .auto-tit{font-family:'SECGCWL', sans-serif !important;}
+
+#footer .footer-policy{ word-break:keep-all;}
