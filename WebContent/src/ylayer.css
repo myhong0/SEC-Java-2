@@ -1,0 +1,306 @@
+/* ylayer-detail */
+html.ltr .ylayer-locator-container.ylayer-detail.ylayer-detail-normal{left:0}
+.ylayer-locator-container.ylayer-detail.ylayer-detail-normal{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:1px solid #ccc;position:absolute;width:600px;top:10%;padding:20px;height:auto;display:none;z-index:999;overflow-x:hidden;overflow-y:auto}
+.ylayer-locator-container.ylayer-detail{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal;scrollbar-face-color:#888a8d;scrollbar-arrow-color:#888a8d;scrollbar-track-color:#cdcdcd;scrollbar-shadow-color:#888a8d;scrollbar-highlight-color:#888a8d;scrollbar-3dlight-color:#888a8d;scrollbar-darkshadow-color:#888a8d;min-width:320px;position:relative;background-color:#f9f9f9;z-index:800}
+.ylayer-locator-container.ylayer-detail:after{content:" ";display:block;clear:both;visibility:hidden;line-height:0;height:0;*zoom:1}
+.ylayer-locator-container.ylayer-detail::-webkit-scrollbar{height:10px;background-color:#cdcdcd}
+.ylayer-locator-container.ylayer-detail::-webkit-scrollbar-thumb{background-color:#888a8d}
+.ylayer-locator-container.ylayer-detail .inner-content{padding:0 20px}
+@media all and (max-width:48em) {
+  .ylayer-locator-container.ylayer-detail .inner-content{padding:0 20px}
+  .y_ptdl dd ul li{padding:10px 15px}
+  .ylayer-locator-container h3{font-size:15px}
+  .y_ptdl dt{font-size:12px}
+}
+/* selectScroll */
+.selectScroll{height:130px;overflow-x:hidden!important;overflow-y:auto!important}
+.selectScroll{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal;scrollbar-face-color:#888a8d;scrollbar-arrow-color:#888a8d;scrollbar-track-color:#cdcdcd;scrollbar-shadow-color:#888a8d;scrollbar-highlight-color:#888a8d;scrollbar-3dlight-color:#888a8d;scrollbar-darkshadow-color:#888a8d;min-width:320px;position:relative;background-color:#f9f9f9;z-index:800}
+.selectScroll:after{content:" ";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.selectScroll::-webkit-scrollbar{height:10px;background-color:#cdcdcd}
+.selectScroll::-webkit-scrollbar-thumb{background-color:#888a8d}
+
+/* y_ptList */
+.ylayer-locator-container h2{margin-top:20px}
+.ylayer-locator-container>.icon-close-x{position:absolute;right:10px;top:10px;color:#25aee2;font-size:1.5em;background-color:transparent}
+.y_ptList{width:100%;height:auto;overflow:hidden;margin:0 auto;padding:10px 0 20px 0}
+.y_ptList li{width:100%;height:auto;overflow:hidden;margin:20px auto}
+.y_ptList li>ol{width:100%;height:auto;overflow:hidden;margin:0;padding:0}
+.y_ptList li>ol li{width:100%;height:auto;overflow:visible;padding:0;margin:0 0 0 20px;list-style-type:disc}
+.y_ptList li.battery{min-height:200px;background:url(/common/next/img/pdp/etc_battery.png) no-repeat left top}
+@media all and (max-width:48em) {.y_ptList li.battery{min-height:200px;width:100%;background:url(/common/next/img/pdp/etc_battery.png) no-repeat center top}}
+.y_ptList li>p.nm{margin:0}
+.y_ptList li a,.y_ptList li a:hover{text-decoration:underline;color:#0071bf}
+.y_ptList li.battery p{margin-left:210px}
+@media all and (max-width:48em) {.y_ptList li.battery p{margin-left:0;margin-top:210px}}
+
+/* y_ptdl */
+.ylayer-locator-container h3{margin-top:20px;text-align:center;font-weight:bold}
+.ylayer-locator-container h3.yh3{margin-top:0}
+.y_ptdl{width:100%;height:auto;overflow:hidden;margin:10px auto 0 auto}
+.y_ptdl dt{width:100%;height:auto;overflow:hidden;margin:20px auto;font-weight:bold}
+.y_ptdl dd{width:100%;height:auto;overflow:hidden;margin:20px auto}
+.y_ptdl dd ul{width:100%;height:auto;overflow:hidden;margin:0;padding:0}
+.y_ptdl dd ul li{padding:10px 25px;position:relative;margin-left:10px}
+.y_ptdl dd ul li table{width:100%;border-collapse:collapse}
+.y_ptdl dd ul li table tr th{text-align:center}
+.y_ptdl dd ul li table caption{position:absolute;left:-2000px}
+.y_ptdl dd ul li table tr th,.y_ptdl dd ul li table tr td{border:1px solid #ccc;padding:5px}
+.lt1:before,.lt2:before,.lt3:before,.lt4:before,.lt5:before,.lt6:before,.lt7:before,.lt8:before,.lt9:before,.lt10:before,.lt11:before,.lt12:before,.lt13:before,.lt14:before,.lt15:before,.lt16:before,.lt17:before,.lt18:before,.lt19:before,.lt20:before,.lt21:before,.lt22:before,.lt23:before,.lt24:before,.lt25:before,.lt26:before,.lt27:before,.lt28:before,.lt29:before,.lt30:before,.lt31:before,.lta:before,.ltb:before,.ltc:before,.ltd:before,.lte:before{position:absolute;left:0;top:10px}
+.lt10:before,.lt11:before,.lt12:before,.lt13:before,.lt14:before,.lt15:before,.lt16:before,.lt17:before,.lt18:before,.lt19:before,.lt20:before,.lt21:before,.lt22:before,.lt23:before,.lt24:before,.lt25:before,.lt26:before,.lt27:before,.lt28:before,.lt29:before,.lt30:before,.lt31:before{left:-5px}
+.lt1:before{content:"1."}
+.lt2:before{content:"2."}
+.lt3:before{content:"3."}
+.lt4:before{content:"4."}
+.lt5:before{content:"5."}
+.lt6:before{content:"6."}
+.lt7:before{content:"7."}
+.lt8:before{content:"8."}
+.lt9:before{content:"9."}
+.lt10:before{content:"10."}
+.lt11:before{content:"11."}
+.lt12:before{content:"12."}
+.lt13:before{content:"13."}
+.lt14:before{content:"14."}
+.lt15:before{content:"15."}
+.lt16:before{content:"16."}
+.lt17:before{content:"17."}
+.lt18:before{content:"18."}
+.lt19:before{content:"19."}
+.lt20:before{content:"20."}
+.lt21:before{content:"21."}
+.lt22:before{content:"22."}
+.lt23:before{content:"23."}
+.lt24:before{content:"24."}
+.lt25:before{content:"25."}
+.lt26:before{content:"26."}
+.lt27:before{content:"27."}
+.lt28:before{content:"28."}
+.lt29:before{content:"29."}
+.lt30:before{content:"30."}
+.lt31:before{content:"31."}
+.lta:before{content:"a."}
+.ltb:before{content:"b."}
+.ltc:before{content:"c."}
+.ltd:before{content:"d."}
+.lte:before{content:"e."}
+
+/* input & common */
+.ss_samsung form:not(#foo)>fieldset input[type="radio"]+label{clear:none;cursor:pointer;line-height:30px}
+.ss_samsung form:not(#foo)>fieldset input[type="radio"]+label:before,.ss_samsung form:not(#foo)>fieldset .input [type="radio"].placeholder+label:before,.ss_samsung .input form:not(#foo)>fieldset [type="radio"].placeholder+label:before{float:left;margin-right:5px;width:29px;height:29px;background:url(/common/next/img/pdp/ico_radio_off.png) no-repeat;content:""}
+.ss_samsung form:not(#foo)>fieldset input[type="radio"]:checked+label:before,.ss_samsung form:not(#foo)>fieldset .input [type="radio"].placeholder:checked+label:before,.ss_samsung .input form:not(#foo)>fieldset [type="radio"].placeholder:checked+label:before{background:url(/common/next/img/pdp/ico_radio_on.png) no-repeat}
+html.ltr .ss_samsung form:not(#foo)>fieldset input[type="radio"]+label{float:left;padding-left:20px!important}
+
+/* box style */
+.y_btnBox01,.y_btnBox02{width:100%;height:auto;overflow:hidden;text-align:center;background:#fff;padding:20px 0}
+.y_btnBox01 .button,.y_btnBox02 .button{padding:.8em}
+.y_btnBox02{display:table;table-layout:fixed;padding:0;background:#0071bf}
+.y_btnBox02 .terms-button{display:table-cell;width:50%;border:30px solid #0071bf}
+html.ltr .y_btnBox02 .terms-button{border-right:5px solid #0071bf}
+.y_btnBox02 .review-button{display:table-cell;width:50%;border:30px solid #0071bf}
+html.ltr .y_btnBox02 .review-button{border-left:5px solid #0071bf}
+.ylayerBox{width:100%;height:auto;overflow:hidden;background:#fff}
+.ylayerBox .reviews-module p{margin-bottom:1em}
+.ylayerBox .module-heading{background:#fff}
+.ylayerBox h4.module-heading{padding:20px 0 10px 0}
+.ylayerBox>h4.module-heading{padding:20px}
+@media (min-width:50em) {.ylayerBox>h4.module-heading{padding:30px}}
+.ylayerBox .style{margin:0 20px}
+.ylayerBox .style:after{display:block;clear:both;content:" "}
+@media (min-width:50em) {.ylayerBox .style{margin:0 30px}}
+
+/* FORM BOX */
+.ylayerBox .yformBox{border-top:1px solid #d2d2d2;width:100%;height:auto;overflow:hidden;margin:20px auto 0 auto;padding:20px 0 0 0}
+.ylayerBox .yformBox form{margin:0 20px}
+@media (min-width:50em) {.ylayerBox .yformBox form{margin:0 30px}}
+.ylayerBox .yformBox .module-heading span{margin-left:0}
+.style .icoStarBox{margin:0 auto}
+.style .yetc{width:215px;height:auto;overflow:hidden;margin:5px auto 0 auto;font-size:1.2em;min-height:19px}
+.style .yetc span.fl{font-size:.75em}
+html.ltr .style .yetc span.fl{float:left}
+.style .yetc span.fr{font-size:.75em}
+html.ltr .style .yetc span.fr{float:right}
+.style .star-score span{display:none}
+.style .star-score span.on{display:block}
+.style .star-score span.on{display:block}
+.ss_samsung .yformBox form label.focused{outline-width:1px;outline-style:dotted}
+.ss_samsung .ylayerBox .style .col-span{margin:0 0 40px 0}
+.y_radioText{font-size:1.4em;margin-right:20px;color:#0071bf}
+html.ltr .y_radioText{float:left}
+.ss_samsung .yformBox form .clear label{margin:0 10px 0 0}
+.ss_samsung .yformBox form .input{margin-top:20px;overflow:auto}
+.ss_samsung .yformBox form label mark{color:red;background:transparent}
+.ss_samsung .yformBox form textarea{width:100%;height:100px;border:0;background:#f1f1f1;margin-bottom:15px;resize:none}
+.y_btnBox02 .button.gray{width:200px}
+.ylayerBox .module-heading.first{position:relative;background:#1428a0;color:#fff}
+.ylayerBox .module-heading.first .icon-video.heading-icon{margin-left:20px;color:#fff}
+.ylayerBox .module-heading.first>.icon-close-x{position:absolute;right:20px;top:16px;color:#fff}
+.ss_samsung .cta strong,.ss_samsung .cta span,.ss_samsung .cta strong,.ss_samsung .cta strong{vertical-align:middle}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p strong,html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p a{vertical-align:middle}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p a.cta>strong{margin-right:0}
+.popup_wrapper .module-heading .heading-text{width:300px}
+.ss_samsung .col-span .col{width:50%}
+@media (min-width:48em) {
+  .ss_samsung.ylayer-locator .maps-container,.ss_samsung.ylayer-locator .ylayer-locator-container{position:absolute}
+  .ylayer-locator-container.ylayer-detail.ylayer-detail-normal{position:absolute;top:10%;z-index:1022;width:600px;overflow:hidden;overflow-y:auto;height:auto}
+  html.ltr .ylayer-locator-container.ylayer-detail.ylayer-detail-normal{left:10%;padding:30px}
+  .ss_samsung .col-span .col{width:50% !important }
+}
+@media (max-width:47.9375em) {
+  .y_radioText{font-size:1em}
+  .ss_samsung form:not(#foo)>fieldset input[type="radio"]+label{line-height:1.5em}
+  .ss_samsung form:not(#foo)>fieldset input[type="radio"]+label:before,.ss_samsung form:not(#foo)>fieldset .input [type="radio"].placeholder+label:before,.ss_samsung .input form:not(#foo)>fieldset [type="radio"].placeholder+label:before{width:18px;height:18px;background-size:18px 18px}
+  .ss_samsung form:not(#foo)>fieldset input[type="radio"]:checked+label:before,.ss_samsung form:not(#foo)>fieldset .input [type="radio"].placeholder:checked+label:before,.ss_samsung .input form:not(#foo)>fieldset [type="radio"].placeholder:checked+label:before{background-size:18px 18px}
+  .yformBox form .clear label{margin:0 5px 0 0;font-size:.75em}
+  .ylayerBox .module-heading.first>.icon-close-x{right:20px;top:16px}
+}
+@media (max-width:64em) {.style .yetc{width:150px;font-size:1em}}
+@media (max-width:22.5em) {
+  .y_radioText{margin-right:10px;font-size:.85em}
+  .ss_samsung .ylayerBox .style .col-span .col{float:none}
+  .ss_samsung .y_btnBox01 .button{font-size:.8em}
+  .ss_samsung .y_btnBox02 .button{font-size:.8em;width:145px}
+  .ylayerBox .yformBox form{margin:0 10px}
+  .ylayerBox h4.module-heading .heading-text,.ylayerBox .module-heading.first .icon-video.heading-icon{margin-left:10px}
+  .popup_wrapper .module-heading .heading-text{width:250px}
+}
+
+/* popup_wrapper */
+html.ltr .ss_samsung.pdp_standard .popup_wrapper{position:relative;width:100%;background:#fff;overflow:hidden}
+html.ltr .ss_samsung.pdp_standard .popup_wrapper .sar_info{width:100%;background:#0071bf;position:relative}
+html.ltr .ss_samsung .popup_wrapper .inner{float:none}
+html.ltr .ss_samsung .popup_wrapper .inner dl dt{font-weight:bold;margin:0 0 10px 0}
+html.ltr .ss_samsung .popup_wrapper .inner dl dd{margin:0 0 20px 0}
+html.ltr .ss_samsung .popup_wrapper .form-secttion{padding:0 1.525em 1.525em 1.525em;margin-top:-15px}
+html.ltr .ss_samsung .popup_wrapper .form-secttion:after{content:"";display:block;clear:both}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .left{width:100%;background:#fff;padding-bottom:1.125em}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .left .option-selector{background:#dfe0e3}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p{float:left}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p strong{display:inline-block;margin-right:10px}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result .btn{display:block;float:right}
+html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p a.cta{margin-left:20px;font-weight:bold}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info:after{content:"";display:block;clear:both}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual-sect{width:50%;float:left}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info .inner{padding-top:10px}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual img{width:100%;float:left}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont{width:100%;overflow:hidden;background:#f1f1f1}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .bg_type01{background:#f9f9f9}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .bg_type02{background:#f1f1f1}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont h2{margin-bottom:.25em}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .dots{padding-left:1.25em}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .dots li{list-style-type:disc;padding-bottom:0}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect{width:15em}
+html.ltr .ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect{float:left}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect div img{width:100%}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-txt{width:50%}
+html.ltr .ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-txt{float:left}
+.ss_samsung.pdp_standard .popup_wrapper .sar_cont .button{padding:.8em 2em}
+.ss_samsung.pdp_standard .popup_wrapper .close-button{font-size:1.875rem;position:absolute;right:20px;top:16px;color:#b8d8ee}
+@media (max-width:22.5em) {.ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect{width:10em}}
+html.ltr .ss_samsung .popup_wrapper .module-heading{float:none}
+@media (min-width:48em) {
+  html.ltr .ss_samsung .popup_wrapper .form-secttion .left .option-selector.left-option{margin-right:20px}
+  html.ltr .ss_samsung .popup_wrapper .form-secttion .left{width:50%}
+}
+@media (max-width:48em) {
+  html.ltr .ss_samsung .popup_wrapper .module-heading{padding-left:.25em}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_info .visual-sect{width:100%}
+  .ss_samsung.pdp_standard .popup_wrapper .close-button{font-size:1.25rem}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_info .visual img{height:12em!important}
+}
+@media (min-width:50.063em) {
+  .selectScroll{height:130px;overflow-x:hidden!important;overflow-y:auto!important}
+  .selectScroll{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal;scrollbar-face-color:#888a8d;scrollbar-arrow-color:#888a8d;scrollbar-track-color:#cdcdcd;scrollbar-shadow-color:#888a8d;scrollbar-highlight-color:#888a8d;scrollbar-3dlight-color:#888a8d;scrollbar-darkshadow-color:#888a8d;min-width:320px;position:relative;background-color:#f9f9f9;z-index:800}
+  .selectScroll:after{content:" ";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+  .selectScroll::-webkit-scrollbar{height:10px;background-color:#cdcdcd}
+  .selectScroll::-webkit-scrollbar-thumb{background-color:#888a8d}
+}
+@media (max-width:64em) {.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual img{height:16em}}
+@media (min-width:64em) {
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .col2a,.ss_samsung.pdp_standard .popup_wrapper .sar_cont .col2b{overflow:hidden}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .bg_type03{background:#f1f1f1}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .bg_type02.bg_type04{background:#f9f9f9}
+}
+@media (max-width:71.25em) {
+  .ss_samsung.pdp_standard .popup_wrapper .sar_info .visual img{height:15em}
+  html.ltr .ss_samsung .popup_wrapper .form-secttion .form-bottom .form-result p strong{display:block}
+}
+@media (max-width:600px) {.ylayer-locator-container.ylayer-detail .inner-content h2{width:90%}}
+@media (max-width:500px) {
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect{width:100%;text-align:center}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-sect div img{width:60%}
+  .ss_samsung.pdp_standard .popup_wrapper .sar_cont .img-txt{width:100%}
+  .ss_samsung .y_btnBox02 .button{font-size:.8em;width:145px}
+}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual-sect .visual{width:100%;height:280px;display:table}
+.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual-sect .visual img{display:table-cell;height:100%}
+@media (max-width:760px) {.ss_samsung.pdp_standard .popup_wrapper .sar_info .visual-sect .visual{height:auto}}
+.style .icoStarBox{margin:0}
+.style .yetc{margin:5px 0 0 0}
+.alertBox{position:absolute;top:0;left:0;background:#f9f9f9;width:400px;display:none;height:auto;border:1px solid #ccc;z-index:9999}
+.alertBox .rela{position:relative;padding:30px 0 10px 0}
+.alertBox p{text-align:center;padding:10px 20px}
+.alertBox .icon-close-x{position:absolute;right:10px;top:10px}
+.ss_samsung .alertBox p{margin-bottom:0}
+@media (max-width:480px) {.alertBox{width:318px}}
+
+/* ss-similar-items */
+.ss_samsung .ss-similar-items .prev,.ss_samsung .ss-similar-items .next{display:block}
+#rec-popover-container .popover{overflow-y:scroll;scrollbar-face-color:#888a8d;scrollbar-arrow-color:#888a8d;scrollbar-track-color:#cdcdcd;scrollbar-shadow-color:#888a8d;scrollbar-highlight-color:#888a8d;scrollbar-3dlight-color:#888a8d;scrollbar-darkshadow-color:#888a8d;min-width:320px;background-color:#f9f9f9}
+#rec-popover-container .popover .icon-close-x{position:absolute;right:20px;top:16px;color:#000}
+#rec-popover-container .popover{width:500px;height:570px;top:150px;left:50%!important;margin-left:-250px!important}
+@media all and (min-width:48em) and (max-width:80em) {#rec-popover-container .popover{width:500px;height:570px}}
+@media all and (max-width:48em) {#rec-popover-container .popover{width:320px;height:570px;top:150px;left:50%!important;margin-left:-160px!important}}
+#ratings-popover-container .popover{top:150px;left:50%!important;margin-left:-300px!important}
+@media all and (max-width:767px) {#ratings-popover-container .popover{top:150px;width:100%;left:0!important;margin-left:0!important}}
+
+/* b2c font */
+.b2c .ylayer-locator-container.ylayer-detail{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal}
+.b2c .ylayer-locator-container.ylayer-detail:after{line-height:0}
+@media all and (max-width:48em) {
+  .b2c .ylayer-locator-container h3{font-size:15px}
+  .b2c .y_ptdl dt{font-size:12px}
+}
+.b2c .selectScroll{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal}
+.b2c .selectScroll:after{line-height:0}
+.b2c .ylayer-locator-container>.icon-close-x{font-size:1.5em}
+.b2c .ylayer-locator-container h3{font-weight:bold}
+.b2c .y_ptdl dt{font-weight:bold}
+.b2c .ss_samsung form:not(#foo)>fieldset input[type="radio"]+label{line-height:30px}
+.b2c .style .yetc span.fl{font-size:.75em}
+.b2c .style .yetc span.fr{font-size:.75em}
+.b2c .y_radioText{font-size:1.4em}
+@media (max-width:47.9375em) {
+  .b2c .y_radioText{font-size:1em}
+  .b2c .ss_samsung form:not(#foo)>fieldset input[type="radio"]+label{line-height:1.5em}
+  .b2c .yformBox form .clear label{font-size:.75em}
+}
+@media (max-width:64em) {.b2c .style .yetc{font-size:1em}}
+@media (max-width:22.5em) {
+  .b2c .y_radioText{font-size:.85em}
+  .b2c .ss_samsung .y_btnBox01 .button{font-size:.8em}
+  .b2c .ss_samsung .y_btnBox02 .button{font-size:.8em}
+}
+html.ltr .ss_samsung.b2c .popup_wrapper .inner dl dt{font-weight:bold}
+html.ltr .ss_samsung.b2c .popup_wrapper .form-secttion .form-bottom .form-result p a.cta{font-weight:bold}
+.ss_samsung.pdp_standard.b2c .popup_wrapper .close-button{font-size:1.875rem}
+@media (max-width:48em) {.ss_samsung.pdp_standard.b2c .popup_wrapper .close-button{font-size:1.25rem}}
+@media (min-width:50.063em) {
+  .b2c .selectScroll{font-family:"SamsungIFRg",Arial,sans-serif;font-weight:normal}
+  .b2c .selectScroll:after{line-height:0}
+}
+@media (max-width:500px) {.b2c .ss_samsung .y_btnBox02 .button{font-size:.8em}}
+
+/* fix : layer checkbox, font issue */
+.checkArea { font-size: 14px; }
+.y_btnBox01 { padding: 30px; }
+.y_btnBox01 label { line-height: 1.4 !important; padding-left: 0 !important; }
+.y_btnBox01 label:before { position: static !important; display: inline-block; vertical-align: middle; width: 20px !important; height: 20px !important; font-size: 0.688em !important; line-height: 21px !important; margin-right: 8px; }
+
+@media (min-width:48em) {
+  .y_btnBox01 { padding: 20px 50px; }
+  .yformBox input { font-size: 1.125em !important; }
+}
+
+@media (min-width:50.063em) {
+  .yformBox input { font-size: 1.125em !important; }
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.mgFeature{font-family: SECGCWL, sans-serif !important;}
+.need-support-module .support-manuals-lst strong {
+    display: block;
+    margin-top: 0px;
+    font-size: 1em;
+    font-weight: normal;
+    color: #212428;
+}
+div#accessories-heading {padding: 0px !important;}
+.ss_samsung .need-support-module {padding:0px !important;}
+.ss_samsung .need-support-module .module-heading{ padding:20px !important;}
+.need-support-module .support-manuals-lst{ padding:0 20px 20px 20px !important;}
+.ss_samsung #recopick .inner-x, .ss_samsung #store_pick .inner-x{ padding:0 !important;}
+.ss_samsung .inner-x .module-heading{ padding:20px !important;}
+.need-support-module .detail-option .down-info{ float:left;} 
+
+@media screen and (max-width: 1279px){
+.need-support-module .detail-option .down-info {float:none;}
+}
+
+@media screen and (min-width: 1280px) {
+.need-support-module .support-manuals-lst strong{font-size:1.8em !important;}
+.need-support-module .support-manuals-lst strong.info-tit {font-size:1.25em !important;}
+}
+
+@media (min-width: 50em){
+.ss_samsung .need-support-module {padding: 0px !important;}
+.need-support-module .support-manuals-lst{ padding:0 30px 30px 30px !important;}	
+.ss_samsung .need-support-module .module-heading {padding: 30px !important;}
+.ss_samsung .inner-x .module-heading{ padding:30px !important;}
+
+}
+
+@media screen and (max-width: 1279px){
+.need-support-module .support-manuals-lst strong {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+}
+
+div#compatible-heading{ padding:0;}
+
+@media (max-width: 48em){
+.ss_samsung .jump-module .info-section {
+	position:relative;
+
+}
+.ss_samsung .jump-module {
+padding-top: 0;
+}
+}

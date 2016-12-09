@@ -1,0 +1,279 @@
+@charset "utf-8";
+.ss_samsung.pdp_standard #content .pdp-hero .flag .promotion span:first-child{ font-family:'SECGCWM', sans-serif !important; }
+.ss_samsung.b2c .product-info-section .ecom-module .nor-btnList a span{ font-family:'SECGCWM', sans-serif !important; }
+.ss_samsung .flag .promotion{ font-size:12px; }
+.ss_samsung .flag .promotion span:first-child{ font-size:13px; }
+@media (min-width:48em){
+	.ss_samsung .flag .promotion{ font-size:13px; }
+	.ss_samsung .flag .promotion span:first-child{ font-size:14px; }
+}
+.ss_samsung.pdp_standard #content .pdp-hero .controls .controls-wrap{ font-size:0; }
+.ss_samsung.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail span.icon-button{ font-size:14px; }
+.ss_samsung.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .num-count{ font-size:14px; }
+@media (min-width:64em){.ss_samsung.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{ font-size:14px; }}
+.ss_samsung .product-info-section .product-info .breadcrumb a{ font-size:13px; }
+.ss_samsung .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{ font-size:13px; }
+.ss_samsung .product-info-section .product-info .mda-tagline{ font-size:14px; }
+.ss_samsung .product-info-section .product-info .badges{ font-size:14px; }
+@media (min-width:48em){
+	.ss_samsung .product-info-section .product-info .product-title{ font-size:29px; }
+	.ss_samsung .product-info-section .product-info .badges{ font-size:14px; }
+}
+@media (min-width:48em){.ss_samsung.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{ font-size:14px; }}
+/* s: ecom module */
+.ss_samsung .product-info-section .ecom-module{ font-size:13px; }
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num span strong{ font-size:13px; }
+.ss_samsung .product-info-section .ecom-module .ecom-text .price .num strong{ font-size:17px; }
+.ss_samsung .product-info-section .ecom-module .ecom-text .eco-tax{ font-size:13px; }
+.ss_samsung .product-info-section .ecom-module .nor-btnList a span{ font-size:14px; }
+.ss_samsung .product-info-section .media-module .wrap{ font-size:0; }
+.ss_samsung .product-info-section .media-module .wrap a{ font-size:14px; }
+.ss_samsung .product-info-section .media-module .media .label{ font-size:12px; }
+@media (min-width:48em){.ss_samsung .product-info-section .media-module .media .label{ font-size:13px; }}
+/* BEGIN: b2c font reset */
+.ss_samsung.b2c .flag .promotion{ font-size:13px }
+@media (min-width:48em){.ss_samsung.b2c .flag .promotion{ font-size:14px }}
+.ss_samsung.b2c.pdp_standard #content .pdp-hero .controls .controls-wrap{ font-size:0 }
+.ss_samsung.b2c.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .thumbnail-btn .wrap a.thumbnail span.icon-button{ font-size:14px; }
+.ss_samsung.b2c.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual .num-count{ font-size:14px }
+@media (min-width:64em){.ss_samsung.b2c.pdp_standard #content .pdp-hero .controls .controls-wrap .thumbnail-visual button{ font-size:14px }}
+.ss_samsung.b2c .product-info-section .product-info .breadcrumb a{ font-size:13px }
+.ss_samsung.b2c .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{ font-size:13px; }
+@media (min-width:48em){
+	.ss_samsung.b2c .product-info-section .product-info .breadcrumb a{ font-size:14px }
+	.ss_samsung.b2c .product-info-section .product-info .breadcrumb span.icon-breadcrumb-back{ font-size:14px; }
+}
+.ss_samsung.b2c .product-info-section .product-info .mda-tagline{ font-size:14px }
+.ss_samsung.b2c .product-info-section .product-info .badges{ font-size:13px }
+.ss_samsung.b2c .product-info-section .product-info .product-title{ font-size:23px;font-family:'SECGCWM', sans-serif !important; padding-bottom:15px;}
+@media (min-width:48em){
+	.ss_samsung.b2c .product-info-section .product-info .product-title{ font-size:29px }
+	.ss_samsung.b2c .product-info-section .product-info .badges{ font-size:14px }
+}
+@media (min-width:48em){.ss_samsung.b2c.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{ font-size:14px }}
+.ss_samsung.b2c .product-info-section .ecom-module{ font-size:12px }
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .ecom-module{ font-size:12px }}
+.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .price .num span strong{ font-size:13px }
+.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .price .num strong{ font-size:17px; }
+.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .price .stock{ font-size:13px; }
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .price .stock{ font-size:14px; }}
+.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .eco-tax{ font-size:12px }
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .eco-tax{ font-size:13px }}
+.ss_samsung.b2c .product-info-section .ecom-module .nor-btnList a span{ font-size:13px; }
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .ecom-module .nor-btnList a span{ font-size:14px; }}
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .ecom-module .ecom-text .price .stock{ font-size:14px }}
+.ss_samsung.b2c .product-info-section .media-module .wrap{ font-size:0 }
+.ss_samsung.b2c .product-info-section .media-module .wrap a{ font-size:14px; }
+.ss_samsung.b2c .product-info-section .media-module .media .label{ font-size:12px }
+@media (min-width:48em){.ss_samsung.b2c .product-info-section .media-module .media .label{font-size:13px }}
+/* by demoon */
+.ss_samsung.pdp_standard #content .pdp-hero .product-info-section .compare-button-container button{color:#292929 !important;}
+.sec-product-info{font-size:13px !important; line-height:1.2;}
+.sec-product-info [class*="btn-link-"]{display:inline-block; padding:5px 2px 4px 5px;font-size:12px; color:#fff;font-family:SECGCWM, sans-serif !important;}
+.sec-product-info [class*="btn-link-"] [class*="icon-"]{vertical-align:middle; font-size:10px;}
+.sec-product-info .btn-link-01{background:#1428a0;}
+.sec-product-info .btn-link-02{background:#1428a0;}
+.sec-product-info .call-question{ position:relative;}
+.sec-product-info .icon-sec-question{color:#8b8d91;vertical-align: middle;font-size: 16px;}
+.sec-product-info .icon-signin{font-size:15px;}
+.sec-product-info .blue-font{color:#0162b5;}
+.sec-product-info .red-font{color:#e40020;}
+.sec-product-info .sec-p-item{margin-top:10px; position:relative;}
+.sec-product-info .sec-p-item:after{content:""; clear:both; display:block;}
+.sec-product-info .sec-p-item .tit{ position:absolute; left:0; top:0; font-size:13px; line-height:1.2;font-family:SECGCWM, sans-serif !important;}
+.sec-product-info .sec-p-item .con{ padding-left:80px;}
+.ss_samsung .product-info .layout-2{margin-top:0 !important;}
+.product-info-section .product-info .breadcrumb{margin-bottom:0 !important;}
+.product-info-section .product-info .breadcrumb a{ font-size:18px !important; font-family:'SECGCWL', 'sans-serif' !important;}
+.product-info-section .product-info .breadcrumb a span{ font-size:14px !important;}
+.product-info-section .product-info .mda-tagline{margin:14px 0 !important;}
+.product-info-section .product-info .product-title{margin:14px 0 0 0 !important; font-size:22px !important; line-height:1.1em;}
+.product-info-section .product-info .product-code{margin-top:0px !important; font-family:'SECGCWL', 'sans-serif' !important; font-size:13px!important;}
+/* 퀵픽스 스타일 중복으로 인한 제거 (20150327)
+/*.product-info-section .product-info .badges{margin:10px 0 0 0!important; font-size:13px !important; }*/
+.product-info-section .product-info .swatches{margin-top:10px;}
+.product-info-section .product-info .swatches .swatch{ width:23px; height:23px; margin-right:7px !important;}
+.product-info-section .product-info .swatches .swatch a{width:23px; height:23px;}
+
+
+html.ltr .ss_samsung .swatches .swatch.active { width:23px; height:23px; background: url("/common/next/img/ico_active_color.png") no-repeat 50% 50%; }
+
+@media (min-width:48em) {
+	.ss_samsung .swatches .swatch{width:23px;height:23px;margin-bottom:8px}
+	html.ltr .ss_samsung .swatches .swatch{margin-right:8px}
+}
+@media (min-width:80em) {
+	.ss_samsung .swatches .swatch{width:23px;height:23px}
+	html.ltr .ss_samsung .swatches .swatch{margin-right:10px}
+}
+
+
+
+.product-info-section .product-info .optionsList li{margin: 0 8px 0 0 !important;}
+@media (max-width:768px){.product-info-section .product-info .model-name{display:block;}}
+.sec-product-info .stock{margin-top:10px !important;;}
+.sec-product-info [class*="price-"] .tit{top:4px;}
+.sec-product-info .price-01 .before-price{ text-decoration:line-through;color:#666;margin-right:5px;}
+.sec-product-info .price-01 .after-price{color:#666;}
+.sec-product-info .price-01 .calculator{margin-bottom:5px;}
+.sec-product-info .price-02{margin-top:15px;}
+.sec-product-info .price-02 .sale-price{ font-size:18px; color:#666;}
+.sec-product-info .price-02 .member-discount-rate{color:#0162b5;}
+.sec-product-info .price-03{margin-top:10px;}
+.sec-product-info .price-03 .tit{color:#e40020;top:7px;}
+.sec-product-info .price-03 .sale-price{ font-size:18px;color:#e40020;}
+.sec-product-info .price-03 .d-rate{display:inline-block; padding:3px; background:#685bc7; color:#fff;font-size:12px;font-family:'SECGCWM', sans-serif !important;}
+.sec-product-info .price-03 .d-rate span{display:inline-block; padding:2px 2px 0 2px; background:#fff; color:#685bc7; font-size:13px;}
+.sec-product-info .price-03 .d-desc{display:inline-block;}
+.sec-product-info .price-03 .price-box{ display:inline-block;}
+.sec-product-info .price-03 .price-box .call-question{top:-2px;}
+.sec-product-info .price-03 .discount{display:inline-block;vertical-align:3px; padding-left:5px;}
+.sec-product-info .price-04 .sale-price,.sec-product-info .price-05 .sale-price{ font-size:18px; color:#666;}
+.sec-product-info .card-discount{margin-top:5px;}
+.sec-product-info .card-discount .icon-sec-card{font-size:20px;vertical-align:-4px;}
+.sec-product-info .card-discount .rate{color:#e40020;}
+.sec-product-info .card-discount .term{color:#6d6f75; font-size:12px;}
+.sec-product-info .sec-point{background:#dddee3;padding:7px 10px 10px 10px ;margin-top:10px;}
+.sec-product-info .sec-point .tit{display:inline-block;margin-top:5px;font-size:13px;font-family:'SECGCWM', sans-serif;}
+.sec-product-info .sec-point .con{display:inline-block;margin-top:5px;}
+.sec-product-info .sec-point .call-question{top:-1px;}
+.sec-product-info .freebie .free-item{color:#0162b5; padding-left:20px; text-indent:-10px; position:relative;}
+.sec-product-info .freebie .free-item span{text-indent:0;}
+.sec-product-info .freebie .call-question{top:-1px;left:0;}
+.sec-product-info .stock-condition .condition{color:#0162b5;}
+.sec-product-info .stock-condition .tit{top:5px;}
+.sec-product-info .order-quantity input{width:30px; height:23px; border:1px solid #d8d9db; text-align:center;}
+.sec-product-info .order-quantity .btn-quantity{width:17px; display:inline-block;vertical-align:bottom;}
+.sec-product-info .order-quantity .btn-quantity button{ display:block; font-size:10px;}
+.sec-product-info .order-quantity .btn-quantity button.plus:after{content:"\25B2";}
+.sec-product-info .order-quantity .btn-quantity button.minus:after{content:"\25BC";}
+.sec-product-info .order-quantity .disable button{color:#bababa; cursor:default;}
+.sec-product-info .order-quantity .tit{top:7px;}
+.sec-product-info .order-quantity .con{display:table;table-layout:fixed;}
+.sec-product-info .order-quantity .con .input-area{display:table-cell;vertical-align:top;width:55px;}
+.sec-product-info .order-quantity .con .input-area.readonly{width:40px;}
+.sec-product-info .order-quantity .con .desc{display:table-cell; vertical-align:top; padding-top:7px;color:#6d6f75;}
+.sec-product-info .order-quantity .con[class*="icon-"]{font-size:5px;}
+.sec-product-info .order-quantity .con .desc {padding-left:14px;}
+.sec-product-info .order-quantity .con .desc .limit-num{color:#0162b5;}
+.sec-product-info .order-quantity .con .desc span + .limit-num{display:inline-block;}
+.sec-product-info .date .con{color:#0162b5;}
+.sec-product-info .date .d-day{color:#e40020; display:inline-block;}
+.sec-product-info .store-choice .address{color:#0162b5; display:inline-block;}
+.sec-product-info .store-choice .tit{top:5px;}
+.sec-product-info .store-stock .con{color:#0162b5;}
+.sec-product-info .pickup{position:relative;margin-top:10px;min-height:20px;}
+.sec-product-info .pickup .tit{ position:absolute; top:0; left:0;font-size:13px;}
+.sec-product-info .pickup .con{padding-left:80px;}
+.sec-product-info .pickup .call-question{top:-1px;}
+.sec-product-info .pickup input[type='checkbox']{padding:0;margin:0;opacity:0;position:absolute;left:-9999em;}
+.sec-product-info .pickup input[type='checkbox'] + label{clear:none;cursor:pointer;position:relative;padding: 4px 0 2px 27px;}
+.sec-product-info .pickup input[type='checkbox'] + label:before{width:19px;height:19px;background:#a6a8aa;content:" ";position:absolute;left:0;top:1px;}
+.sec-product-info .pickup input[type='checkbox']:checked + label:before{font-family: 'samsungIcon';background:#0689d8;content:"\e003";color:white;font-size:10px;text-align:center;line-height:22px;display:-moz-inline-stack;display:inline-block;vertical-align:middle;}
+.sec-product-info .notice{ color:#6d6f75; font-size:12px;margin-top:10px!important; padding-left:12px; text-indent:-12px; line-height:1.5em;}
+
+/*online_pdp jump to menu 15.02.05*/
+@media (min-width:48em) { .pdp_standard.shop_gnb_add .feature-module {padding-top:35px}
+.pdp_standard.shop_gnb_add .tech-spec-module {padding-top:35px}
+.pdp_standard.shop_gnb_add .reviews-module {padding-top:65px}
+.pdp_standard.shop_gnb_add .need-support-module {padding-top:65px}
+.pdp_standard.shop_gnb_add .accessories-module {padding-bottom:40px}
+.pdp_standard.shop_gnb_add .similar-items-module {padding-top:35px}
+}
+.pdp_standard.shop_gnb_add .accessories-module {padding-top:35px;padding-bottom:35px;}
+.pdp_standard.shop_gnb_add .similar-items-module {padding-top:30px}
+/*online_pdp jump to menu 15.02.05*/
+
+/*online_pdp offer 15.02.05*/
+.pdp_standard.shop_gnb_add .flag {top:42px;}
+/*online_pdp offer 15.02.05*/
+
+/*online_pdp shop_ 15.03.18*/
+.pdp_standard .choose_section .product-info .badges{border-bottom:1px solid #c2c2c2;padding-top:15px;}
+.pdp_standard .choose_section .layout-2 .carrier-sec p.tit, .pdp_standard .choose_section .layout-2 .others-sec p.tit{font-size:14px;font-weight:bold;margin:0;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .carrier-sec p.tit, .pdp_standard .choose_section .layout-2 .others-sec p.tit{font-size:16px;}}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .carrier-sec label, .pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label,
+	{
+    font-size:16px;
+}}
+.pdp_standard .choose_section .layout-2 .carrier-sec label, .pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label {
+    font-size:14px;
+    padding:0 10px 0 3px;
+}
+.pdp_standard .choose_section .layout-2 .carrier-sec .carrier_ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .carrier-sec .carrier_ul li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding:11px 0 0 1px}
+
+.pdp_standard .choose_section .layout-2 .memory-sec .memory_ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .memory-sec .memory_ul li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding-left:1px;}
+
+.pdp_standard .choose_section .layout-2 .others-sec ul {overflow:hidden;box-sizing:border-box; }
+html.ltr .pdp_standard .choose_section .layout-2 .others-sec ul>li {float:left;overflow:hidden;box-sizing:border-box;word-wrap:break-word;padding:11px 0 0 1px}
+
+.pdp_standard .choose_section .layout-2 .carrier-sec,
+.pdp_standard .choose_section .layout-2 .memory-sec,
+.pdp_standard .choose_section .layout-2 .others-sec, {
+	float:none!important;padding-bottom:14px;margin-top:-3px;
+}
+.pdp_standard .choose_section .layout-2 .carrier-sec, .pdp_standard .choose_section .layout-2 .memory-sec, .pdp_standard .choose_section .layout-2 .others-sec {
+	float:none!important;padding-bottom:14px;border-bottom: 1px solid #e3e3e3;margin-top:-3px;
+}
+.pdp_standard .choose_section .layout-2 .memory-sec {
+	border-bottom: 1px solid #c2c2c2;
+}
+@media (min-width:80em) {
+	.pdp_standard .choose_section .layout-2 .carrier-sec label,.pdp_standard .choose_section .layout-2 .memory-sec label, .pdp_standard .choose_section .layout-2 .others-sec label {
+		font-size:16px;
+	}
+}
+@media (min-width:80em) {
+	.pdp_standard .choose_section .layout-2 .memory-sec {
+		padding-bottom:13px;
+	}
+}
+/*choose a Carrier*/
+.pdp_standard .choose_section .layout-2 .carrier-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .carrier-sec .contract_ul {opacity:1;}
+
+
+/*choose a Memory*/
+.pdp_standard .choose_section .layout-2 .memory-sec{opacity:1;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:16px;font-weight:bold;}}
+.pdp_standard .choose_section .layout-2 .memory-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:14px;font-weight:bold;margin:15px 0 13px;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .memory-sec p.tit{font-size:16px;}}
+
+
+/*choose Others*/
+.pdp_standard .choose_section .layout-2 .others-sec legend{display:none;}
+.pdp_standard .choose_section .layout-2 .others-sec {margin-top:11px;}
+
+/*Choose a Color*/
+.pdp_standard .choose_section .layout-2 .swatches {border-bottom: 1px solid #dedee0;margin-top:11px;margin-bottom:10px;padding-bottom:13px; opacity:1; }
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .swatches{margin-top:15px;}}
+.pdp_standard .choose_section .layout-2 .swatches .swatches-tit{font-weight:bold;margin:0 0 10px 0;font-size:14px;line-height: 18px;}
+@media (min-width:80em) {.pdp_standard .choose_section .layout-2 .swatches .swatches-tit{font-size:16px;}}
+
+/* 바잉 툴 고정 20150401
+.ss_samsung.b2c .product-info-section .product-info .badges{ height:1em;}
+.ss_samsung .product-info .layout-2{ height:14em;}
+.ss_samsung .product-info-section .ecom-module{ height:15em;}
+*/
+
+/* KV 영역 상단 고정 20150401 */
+@media (min-width: 64em){
+.ss_samsung .product-img-section {vertical-align: top;}
+.ss_samsung.b2c .product-info-section .product-info .badges{ height:1em;}
+}
+
+.sec-product-info .price-03 .con p {
+    padding-top: 2px;
+	color: #0071bf;
+}
+.sec-product-info .price-03 .con p.d-rate {
+    color: #fff;
+	padding:3px;
+}
+.sec-product-info .price-03 .price-box p {
+    padding-top: 2px;
+    color: #0071bf;
+}
