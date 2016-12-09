@@ -3,6 +3,9 @@ declared-services:
   dashDB-microsite:
     label: dashDB
     plan: Entry
+  Auto-Scaling-53:
+    label: Auto-Scaling
+    plan: free    
 applications:
 - path: jpbackendmsktemplate.war
   memory: 386M
@@ -10,5 +13,7 @@ applications:
   disk_quota: 1024M
   services:
   - dashDB-microsite
+  - Auto-Scaling-53
 services:
 - dashDB-microsite
+- Auto-Scaling-53
