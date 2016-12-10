@@ -20,6 +20,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Vector;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -38,8 +39,7 @@ import org.json.JSONException;
 @Path("/service")
 public class ServiceAPI {
 
-	
-	
+	static Vector v = new Vector();
 	
 	@Path("/login")
 	@POST
@@ -185,8 +185,52 @@ public class ServiceAPI {
 			e.printStackTrace();
 		}
 		return vcapObject;
-}
+	}
 
+	
+	@Path("/autoscaling")
+	@POST
+	public String autoScalingByMem(String param) {
+		try {
+			JSONObject meta = new JSONObject(param);
+			
+			
+			Runtime rt = Runtime.getRuntime();
+			int mem_usage = (int)((rt.totalMemory()*100.0)/(rt.maxMemory()*1.0));
+			
+				String action = meta.getString("action");
+	
+			if ("mem_up".equalsIgnoreCase(action)) {
+				// 10M 씩 늘려간다. Out of memory 발생할 수 있음.
+				for (int i = 0 ; i < 10; i++) {
+					byte b[] = new byte[1048576];
+					v.add(b);
+				}
+			} else if ("mem_safe_up".equalsIgnoreCase(action) && mem_usage < 90) {
+				// 메모리 사용량 90% 이하 일때, 10M 추가. OOM 방지
+				for (int i = 0 ; i < 10; i++) {
+					byte b[] = new byte[1048576];
+					v.add(b);
+				}					
+			} else if ("mem_reset".equalsIgnoreCase(action)) {
+				// 메모리 점유 해제
+				v = new Vector();
+				rt.gc();
+			}			
+			String msg = "Max " + (rt.maxMemory()/1000) + " KB  Total used : " + (rt.totalMemory()/1000) + " KB  Free : " + (rt.freeMemory() / 1000) + " KB  " + (int)((rt.totalMemory()*100.0)/(rt.maxMemory()*1.0)) + " %";
+		    System.out.println( msg);
+			return msg;
+			
+		} catch (JSONException e) {
+
+			e.getStackTrace();
+			return "Failed";
+
+		}
+	}	
+	
+	
+	
 	@Path("/searchtips")
 	@POST
 	public String searchTips(String keyword){
