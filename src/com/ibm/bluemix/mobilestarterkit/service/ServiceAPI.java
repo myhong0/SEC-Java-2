@@ -15,178 +15,83 @@
  */
 package com.ibm.bluemix.mobilestarterkit.service;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.util.Vector;
 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.servlet.http.HttpServletRequest;
-import javax.sql.DataSource;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.UriInfo;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
 import org.json.JSONException;
-
+import org.json.JSONObject;
 
 @Path("/service")
 public class ServiceAPI {
 
-	
+	static Vector v = new Vector<>();
 	
 	
 	@Path("/login")
 	@POST
-	public String checkLogin(
-			@Context HttpServletRequest request, 
-			@Context UriInfo uriInfo, 
-			String creds) 
-	{
-		
-		System.out.println("checkLogin () ");
-		
-		// PAGE 주
-		String PAGE_ADDRESS = request.getRequestURL().toString();
-
-		// IP_ADDRESS
-        String IP_ADDRESS = request.getHeader("X-FORWARDED-FOR");
-        if (IP_ADDRESS == null)
-        	IP_ADDRESS = request.getRemoteAddr();
-
-        // 브라우져
-        String BROWSER = request.getHeader("User-Agent");
-		
-		// Insert log into LogTable
-		saveLog(PAGE_ADDRESS, IP_ADDRESS, BROWSER);
-        //System.out.println(">>> " + PAGE_ADDRESS + "  " + IP_ADDRESS + "  " + BROWSER);
-        
-        
+	public String checkLogin(String creds) {
 		try {
 			JSONObject credentials = new JSONObject(creds);
 			String userID = credentials.getString("user_id");
 			String password = credentials.getString("password");
-			
 			if (userID.equals("admin") && password.equals("password")) {
 				return "Successful";
 			} else {
 				return "Failed";
 			}
 
+			
 		} catch (JSONException e) {
+
 			e.getStackTrace();
 			return "Failed";
 
 		}
 	}
 	
-	private void saveLog(String PAGE_ADDRESS, String IP_ADDRESS, String BROWSER){
-		System.out.println("saveLog () ");
-		/*
-		 * Look up DB for dashDB to connect with VCAP_Service
-		 * 
-		 */
-		String lookupName = null;
+	@Path("/autoscaling")
+	@POST
+	public String autoScalingByMem(String param) {
 		try {
-			com.ibm.json.java.JSONObject vcap = getVcapServices();
-			if(vcap.get("dashDB") != null) {
-				com.ibm.json.java.JSONObject dashDB0 = (com.ibm.json.java.JSONObject)((com.ibm.json.java.JSONArray)vcap.get("dashDB")).get(0);
-				String luName = (String)dashDB0.get("name");
-				if(luName != null) {
-					lookupName = "jdbc/"+luName;
+			JSONObject meta = new JSONObject(param);
+			
+			
+			Runtime rt = Runtime.getRuntime();
+			int mem_usage = (int)((rt.totalMemory()*100.0)/(rt.maxMemory()*1.0));
+			
+				String action = meta.getString("action");
+	
+			if ("mem_up".equalsIgnoreCase(action)) {
+				// 10M 씩 늘려간다. Out of memory 발생할 수 있음.
+				for (int i = 0 ; i < 10; i++) {
+					byte b[] = new byte[1048576];
+					v.add(b);
 				}
-			}
+			} else if ("mem_safe_up".equalsIgnoreCase(action) && mem_usage < 90) {
+				// 메모리 사용량 90% 이하 일때, 10M 추가. OOM 방지
+				for (int i = 0 ; i < 10; i++) {
+					byte b[] = new byte[1048576];
+					v.add(b);
+				}					
+			} else if ("mem_reset".equalsIgnoreCase(action)) {
+				// 메모리 점유 해제
+				v = new Vector();
+				rt.gc();
+			}			
+			String msg = "Max " + (rt.maxMemory()/1000) + " KB  Total used : " + (rt.totalMemory()/1000) + " KB  Free : " + (rt.freeMemory() / 1000) + " KB  " + (int)((rt.totalMemory()*100.0)/(rt.maxMemory()*1.0)) + " %";
+		    System.out.println( msg);
+			return msg;
+			
+		} catch (JSONException e) {
 
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			e.getStackTrace();
+			return "Failed";
 
-		DataSource dataSource = null ; 
-		
-		try  { 
-			javax.naming.Context ctx = new InitialContext (); 
-            if(lookupName != null) {
-            	dataSource = (DataSource )ctx.lookup(lookupName); 
-            } else {
-            	dataSource = (DataSource )ctx.lookup( "jdbc/dashDB-microsite" ); 
-            }
-            
-        }  catch  (NamingException e)  { 
-            e.printStackTrace (); 
-        }
-		
-		
-		/*
-		 * Check if USER_LOG table exists in DashDB
-		 * 
-		 */
-		
-		try {
-			Connection conn = dataSource.getConnection();
-			PreparedStatement stmt = conn.prepareStatement("SELECT TABNAME,TABSCHEMA FROM SYSCAT.TABLES where TABNAME = 'USER_LOG'");
-			ResultSet rs = stmt.executeQuery();
-			
-			boolean tableExist = false;
-			
-			if(rs!=null){
-				while(rs.next()) {
-					System.out.println("table name : " + rs.getString(1));
-					if(rs.getString(1).equals("USER_LOG")){
-						tableExist = true;
-					}
-				}
-			}else {
-				tableExist = false;
-			}
-			
-			/*
-			 * If there is no table, create it.
-			 * 
-			 */
-			if(!tableExist){
-				System.out.println("table NOT exist ");
-				
-				Statement crtStatement = conn.createStatement();
-				String crtSql = "CREATE TABLE USER_LOG(PAGE_ADDRESS CHAR (80), IP_ADDRESS CHAR (20), BROWSER CHAR (200), ACCESS_TIME TIMESTAMP)" ;
-				crtStatement.executeUpdate(crtSql);
-				
-				System.out.println("Create done!!");
-			}
-			
-			
-			/*
-			 * Insert Log information
-			 * 
-			 */
-			Statement insertStatement = conn.createStatement();
-			String insertSql = "INSERT INTO USER_LOG (PAGE_ADDRESS, IP_ADDRESS, BROWSER, ACCESS_TIME) VALUES ('"
-								+ PAGE_ADDRESS + "','" + IP_ADDRESS + "','" + BROWSER + "',  CURRENT TIMESTAMP)";
-			insertStatement.executeUpdate(insertSql);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
-	
-	private com.ibm.json.java.JSONObject getVcapServices() {
-		String vcap = System.getenv("VCAP_SERVICES");
-		if (vcap == null) return null;
-		com.ibm.json.java.JSONObject vcapObject = null;
-		try {
-			vcapObject = com.ibm.json.java.JSONObject.parse(vcap);
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return vcapObject;
-}
 
 	@Path("/searchtips")
 	@POST
