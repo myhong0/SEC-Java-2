@@ -153,7 +153,7 @@ public class ServiceAPI {
 				System.out.println("table NOT exist ");
 				
 				Statement crtStatement = conn.createStatement();
-				String crtSql = "CREATE TABLE USER_LOG(PAGE_ADDRESS CHAR (80), IP_ADDRESS CHAR (20), BROWSER CHAR (200), ACCESS_TIME TIMESTAMP)" ;
+				String crtSql = "CREATE TABLE USER_LOG(PAGE_ADDRESS VARCHAR (200), IP_ADDRESS VARCHAR (200), BROWSER CHAR (200), ACCESS_TIME TIMESTAMP)" ;
 				crtStatement.executeUpdate(crtSql);
 				
 				System.out.println("Create done!!");
